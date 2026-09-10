@@ -1,672 +1,1802 @@
-(() => {
-    window.qxLiveObserver?.disconnect();
-    clearInterval(window.qxLiveFix);
-    clearInterval(window.qxUrlForceInterval);
-    clearInterval(window.qxBalanceInterval);
-    document.getElementById('qx-combined-style')?.remove();
-    document.getElementById('qx-dot-fix-style')?.remove();
-    document.getElementById('qx-manager-host')?.remove();
-    document.getElementById('qx-manager-modal-container')?.remove();
-    document.getElementById('shadin-bg')?.remove();
-    document.getElementById('access-denied-demo')?.remove();
-    document.getElementById('access-denied-demo-style')?.remove();
-    document.getElementById("shadin-demo")?.remove();
-    document.getElementById("shadin-demo-style")?.remove();
+javascript:(()=>{
 
-    function getBalance(){
-      const all = document.querySelectorAll('.zt1hG, header div, header span, .v2KPX');
-      for(const el of all){
-        const text = el.textContent.trim();
+window.qxLiveObserver?.disconnect();
+clearInterval(window.qxLiveFix);
+clearInterval(window.qxUrlForceInterval);
+clearInterval(window.qxBalanceInterval);
+clearInterval(window.qxProfitLine);
+window.qxProfitLine=null;
+
+document.getElementById('qx-combined-style')?.remove();
+document.getElementById('qx-dot-fix-style')?.remove();
+document.getElementById('qx-manager-host')?.remove();
+document.getElementById('qx-manager-modal-container')?.remove();
+document.getElementById('shadin-bg')?.remove();
+document.getElementById('access-denied-demo')?.remove();
+document.getElementById('access-denied-demo-style')?.remove();
+document.getElementById('shadin-demo')?.remove();
+document.getElementById('shadin-demo-style')?.remove();
+document.getElementById('qx-profit-line-style')?.remove();
+
+function getBalance(){
+
+    const all=document.querySelectorAll(
+        '.zt1hG, header div, header span, .v2KPX'
+    );
+
+    for(const el of all){
+
+        const text=el.textContent.trim();
+
         if(!text.includes('$')) continue;
-        const clean = text.replace(/,/g,'').replace('$','').replace(/LIVE/gi,'').replace(/DEMO/gi,'').trim();
-        const n = parseFloat(clean);
-        if(Number.isFinite(n) && n >= 0 && n < 100000000) return n;
-      }
-      return null;
+
+        const clean=text
+            .replace(/,/g,'')
+            .replace('$','')
+            .replace(/LIVE/gi,'')
+            .replace(/DEMO/gi,'')
+            .trim();
+
+        const n=parseFloat(clean);
+
+        if(
+            Number.isFinite(n) &&
+            n>=0 &&
+            n<100000000
+        ){
+            return n;
+        }
     }
 
-    function removeBonusBanner() {
-        const allDivs = document.querySelectorAll('div, section, aside');
-        allDivs.forEach(el => {
-            const text = el.textContent || '';
-            if (text.includes('50% bonus') || text.includes('bonus on your deposit') || text.includes('Get a 50%')) {
-                if (el.offsetHeight > 0 && el.offsetHeight < 400) {
-                    el.style.setProperty('display', 'none', 'important');
-                }
+    return null;
+}
+
+function removeBonusBanner(){
+
+    const allDivs=document.querySelectorAll(
+        'div, section, aside'
+    );
+
+    allDivs.forEach(el=>{
+
+        const text=el.textContent||'';
+
+        if(
+            text.includes('50% bonus') ||
+            text.includes('bonus on your deposit') ||
+            text.includes('Get a 50%')
+        ){
+
+            if(
+                el.offsetHeight>0 &&
+                el.offsetHeight<400
+            ){
+
+                el.style.setProperty(
+                    'display',
+                    'none',
+                    'important'
+                );
             }
-        });
-    }
+        }
+    });
+}
 
-    const currentInitBal = getBalance();
-    window.qxCustomStartingCapital = currentInitBal !== null ? currentInitBal.toString() : '0';
-    if (window.qxCustomName === undefined) window.qxCustomName = 'Trader X Team';
-    window.qxCustomCountry = 'Bangladesh';
+const currentInitBal=getBalance();
 
-    if (!window.qxHistoryPatched) {
-        window.qxHistoryPatched = true;
-        const originalPushState = history.pushState;
-        const originalReplaceState = history.replaceState;
+window.qxCustomStartingCapital=
+    currentInitBal!==null
+    ? currentInitBal.toString()
+    : '0';
 
-        history.pushState = function(state, title, url) {
-            if (url && typeof url === 'string' && url.includes('demo-trade')) {
-                url = url.replace('demo-trade', 'trade');
-            }
-            return originalPushState.apply(this, arguments);
-        };
+if(window.qxCustomName===undefined){
+    window.qxCustomName='Trader X Team';
+}
 
-        history.replaceState = function(state, title, url) {
-            if (url && typeof url === 'string' && url.includes('demo-trade')) {
-                url = url.replace('demo-trade', 'trade');
-            }
-            return originalReplaceState.apply(this, arguments);
-        };
-    }
+window.qxCustomCountry='Bangladesh';
 
-    if (window.location.href.includes('demo-trade')) {
-        try {
-            window.history.replaceState({}, '', window.location.href.replace('demo-trade', 'trade'));
-        } catch(e) {}
-    }
+if(!window.qxHistoryPatched){
 
-    window.qxUrlForceInterval = setInterval(() => {
-        if (window.location.href.includes('demo-trade')) {
-            try {
-                window.history.replaceState({}, '', window.location.href.replace('demo-trade', 'trade'));
-            } catch(e) {}
-        }
-    }, 500);
+    window.qxHistoryPatched=true;
 
-    const style = document.createElement('style');
-    style.id = 'qx-combined-style';
-    style.textContent = `
-        .v2KPX {
-          display: inline-flex !important;
-          align-items: center !important;
-          justify-content: flex-start !important;
-          gap: 0 !important;
-          padding-left: 0 !important;
-          margin-left: 0 !important;
-          color: #0faf59 !important;
-        }
-        .qx-level-icon {
-          width: 16px !important;
-          height: 16px !important;
-          min-width: 16px !important;
-          max-width: 16px !important;
-          min-height: 16px !important;
-          max-height: 16px !important;
-          display: inline-block !important;
-          flex: 0 0 16px !important;
-          margin-left: -10px !important;
-          margin-right: 8px !important;
-          padding: 0 !important;
-          vertical-align: middle !important;
-          will-change: transform, opacity !important;
-          transition: transform 0.1s ease, opacity 0.1s ease !important;
-        }
-        .qx-level-icon.qx-icon-updating {
-          transform: scale(0.7) rotate(-45deg) !important;
-          opacity: 0.4 !important;
-        }
-        .qx-level-icon use {
-          width: 100% !important;
-          height: 100% !important;
-        }
-        .qx-leaderboard-flag {
-          width: 18px !important;
-          height: 13px !important;
-          object-fit: cover !important;
-          border-radius: 2px !important;
-          margin-right: 6px !important;
-          vertical-align: middle !important;
-          display: inline-block !important;
-        }
-        svg.icon-academic,
-        .v2KPX svg:not(.qx-level-icon) {
-          display: none !important;
-          visibility: hidden !important;
-          width: 0 !important;
-          height: 0 !important;
-        }
-        .usFyP, 
-        [class*="watermark"] {
-          display: none !important;
-          opacity: 0 !important;
-          visibility: hidden !important;
-        }
-        div[class*="account"]:first-of-type input[type="radio"],
-        div[class*="account"]:first-of-type span[class*="yJfVf"] {
-            display: inline-block !important;
-            visibility: visible !important;
-            opacity: 1 !important;
-        }
-        div[class*="account"]:first-of-type span[class*="yJfVf"] {
-            background-color: #fff !important;
-        }
-    `;
-    document.head.appendChild(style);
+    const originalPushState=history.pushState;
+    const originalReplaceState=history.replaceState;
 
-    const countryFlagMap = {
-        'Bangladesh': 'bd',
-        'India': 'in',
-        'United States': 'us',
-        'United Kingdom': 'gb',
-        'Canada': 'ca',
-        'Australia': 'au',
-        'United Arab Emirates': 'ae',
-        'Saudi Arabia': 'sa',
-        'Pakistan': 'pk'
+    history.pushState=function(state,title,url){
+
+        if(
+            url &&
+            typeof url==='string' &&
+            url.includes('demo-trade')
+        ){
+
+            url=url.replace(
+                'demo-trade',
+                'trade'
+            );
+        }
+
+        return originalPushState.apply(
+            this,
+            arguments
+        );
     };
 
-    function fixLeaderboardPosition() {
-        const divs = document.querySelectorAll('div');
-        for (let div of divs) {
-            if (div.textContent.includes('Your position') && !div.textContent.includes('Leader Board') && div.textContent.length < 300) {
-                let walker = document.createTreeWalker(div, NodeFilter.SHOW_TEXT, null, false);
-                let node;
-                while (node = walker.nextNode()) {
-                    if (node.textContent.includes('-') && node.parentElement.tagName !== 'SCRIPT') {
-                        node.textContent = node.textContent.replace('-', '100+');
-                    }
-                }
+    history.replaceState=function(state,title,url){
+
+        if(
+            url &&
+            typeof url==='string' &&
+            url.includes('demo-trade')
+        ){
+
+            url=url.replace(
+                'demo-trade',
+                'trade'
+            );
+        }
+
+        return originalReplaceState.apply(
+            this,
+            arguments
+        );
+    };
+}
+
+if(window.location.href.includes('demo-trade')){
+
+    try{
+
+        window.history.replaceState(
+            {},
+            '',
+            window.location.href.replace(
+                'demo-trade',
+                'trade'
+            )
+        );
+
+    }catch(e){}
+}
+
+window.qxUrlForceInterval=setInterval(()=>{
+
+    if(
+        window.location.href.includes(
+            'demo-trade'
+        )
+    ){
+
+        try{
+
+            window.history.replaceState(
+                {},
+                '',
+                window.location.href.replace(
+                    'demo-trade',
+                    'trade'
+                )
+            );
+
+        }catch(e){}
+    }
+
+},500);
+
+const style=document.createElement('style');
+
+style.id='qx-combined-style';
+
+style.textContent=`
+
+.v2KPX{
+    display:inline-flex!important;
+    align-items:center!important;
+    justify-content:flex-start!important;
+    gap:0!important;
+    padding-left:0!important;
+    margin-left:0!important;
+    color:#0faf59!important;
+}
+
+.qx-level-icon{
+    width:16px!important;
+    height:16px!important;
+    min-width:16px!important;
+    max-width:16px!important;
+    min-height:16px!important;
+    max-height:16px!important;
+    display:inline-block!important;
+    flex:0 0 16px!important;
+    margin-left:-10px!important;
+    margin-right:8px!important;
+    padding:0!important;
+    vertical-align:middle!important;
+    will-change:transform,opacity!important;
+    transition:
+        transform .1s ease,
+        opacity .1s ease!important;
+}
+
+.qx-level-icon.qx-icon-updating{
+    transform:scale(.7) rotate(-45deg)!important;
+    opacity:.4!important;
+}
+
+.qx-level-icon use{
+    width:100%!important;
+    height:100%!important;
+}
+
+.qx-leaderboard-flag{
+    width:18px!important;
+    height:13px!important;
+    object-fit:cover!important;
+    border-radius:2px!important;
+    margin-right:6px!important;
+    vertical-align:middle!important;
+    display:inline-block!important;
+}
+
+svg.icon-academic,
+.v2KPX svg:not(.qx-level-icon){
+    display:none!important;
+    visibility:hidden!important;
+    width:0!important;
+    height:0!important;
+}
+
+.usFyP,
+[class*="watermark"]{
+    display:none!important;
+    opacity:0!important;
+    visibility:hidden!important;
+}
+
+div[class*="account"]:first-of-type input[type="radio"],
+div[class*="account"]:first-of-type span[class*="yJfVf"]{
+    display:inline-block!important;
+    visibility:visible!important;
+    opacity:1!important;
+}
+
+div[class*="account"]:first-of-type span[class*="yJfVf"]{
+    background-color:#fff!important;
+}
+
+`;
+
+document.head.appendChild(style);
+
+const profitLineStyle=document.createElement('style');
+
+profitLineStyle.id='qx-profit-line-style';
+
+profitLineStyle.textContent=`
+
+.qx-profit-card{
+    position:relative!important;
+}
+
+.qx-profit-original-line{
+    border-bottom-color:transparent!important;
+}
+
+.qx-profit-line{
+    position:absolute!important;
+    height:2px!important;
+    left:10px!important;
+    bottom:auto!important;
+    top:39px!important;
+    width:0%;
+    background:#0faf59!important;
+    z-index:999999!important;
+    pointer-events:none!important;
+    transition:width .35s ease!important;
+}
+
+`;
+
+document.head.appendChild(
+    profitLineStyle
+);
+
+const countryFlagMap={
+
+    'Bangladesh':'bd',
+    'India':'in',
+    'United States':'us',
+    'United Kingdom':'gb',
+    'Canada':'ca',
+    'Australia':'au',
+    'United Arab Emirates':'ae',
+    'Saudi Arabia':'sa',
+    'Pakistan':'pk'
+
+};
+
+function findCard(){
+
+    return [
+        ...document.querySelectorAll('div')
+    ].find(el=>{
+
+        const t=(el.innerText||'').trim();
+
+        return (
+            t.includes('Trader X Team') &&
+            t.includes('Your position:') &&
+            /\$?-?[\d,]+(?:\.\d+)?/.test(t) &&
+            el.getBoundingClientRect().width>250 &&
+            el.getBoundingClientRect().height>50 &&
+            el.getBoundingClientRect().height<140
+        );
+    });
+}
+
+function updateProfitLine(){
+
+    const card=findCard();
+
+    if(!card) return;
+
+    card.classList.add(
+        'qx-profit-card'
+    );
+
+    const matchText=card.innerText||'';
+
+    const m=matchText.match(
+        /\$?-?[\d,]+(?:\.\d+)?/
+    );
+
+    if(!m) return;
+
+    const rawValStr=m[0]
+        .replace(/[$,]/g,'');
+
+    const profit=parseFloat(
+        rawValStr
+    );
+
+    const isLoss=
+        rawValStr.startsWith('-') ||
+        profit<0;
+
+    [
+        ...card.querySelectorAll('*')
+    ].forEach(el=>{
+
+        const r=el.getBoundingClientRect();
+
+        if(
+            r.width>200 &&
+            r.height<=4 &&
+            r.top>
+                card.getBoundingClientRect().top &&
+            r.top<
+                card.getBoundingClientRect().bottom
+        ){
+
+            el.classList.add(
+                'qx-profit-original-line'
+            );
+        }
+    });
+
+    let line=
+        card.querySelector(
+            '.qx-profit-line'
+        );
+
+    if(!line){
+
+        line=document.createElement('div');
+
+        line.className=
+            'qx-profit-line';
+
+        card.appendChild(line);
+    }
+
+    const currentBalance=
+        getBalance()||0;
+
+    const startCap=
+        parseFloat(
+            (
+                window.qxCustomStartingCapital||
+                ''
+            ).replace(
+                /[^0-9.]/g,
+                ''
+            )
+        )||currentBalance;
+
+    const profitAmount=
+        currentBalance-startCap;
+
+    if(profitAmount===0){
+
+        line.style.width='0%';
+
+        return;
+    }
+
+    let absVal=Math.abs(profit);
+
+    let percent=
+        (absVal/15000)*100;
+
+    percent=Math.max(
+        2,
+        Math.min(
+            85,
+            percent
+        )
+    );
+
+    line.style.width=
+        percent+'%';
+
+    line.style.background=
+        isLoss
+        ? '#ef4444'
+        : '#0faf59';
+}
+
+
+/* =========================
+   LEADERBOARD POSITION FIX
+========================= */
+
+function fixLeaderboardPosition(){
+
+    const currentBalance=
+        getBalance();
+
+    const startCap=
+        parseFloat(
+            (
+                window.qxCustomStartingCapital||
+                ''
+            ).replace(
+                /[^0-9.]/g,
+                ''
+            )
+        ) ||
+        currentBalance ||
+        0;
+
+    /*
+     * Profit/Loss calculate
+     *
+     * 0  = "-"
+     * +  = "100+"
+     * -  = "100+"
+     */
+
+    const profitAmount=
+        currentBalance!==null
+        ? currentBalance-startCap
+        : 0;
+
+    const hasProfitOrLoss=
+        profitAmount!==0;
+
+    const divs=
+        document.querySelectorAll('div');
+
+    for(const div of divs){
+
+        const text=
+            div.textContent||'';
+
+        if(
+            !text.includes(
+                'Your position'
+            ) ||
+            text.includes(
+                'Leader Board'
+            ) ||
+            text.length>=300
+        ){
+
+            continue;
+        }
+
+        const walker=
+            document.createTreeWalker(
+                div,
+                NodeFilter.SHOW_TEXT,
+                null,
+                false
+            );
+
+        let node;
+
+        while(
+            (node=walker.nextNode())
+        ){
+
+            const parent=
+                node.parentElement;
+
+            if(
+                !parent ||
+                parent.tagName==='SCRIPT'
+            ){
+
+                continue;
+            }
+
+            const value=
+                (node.textContent||'')
+                .trim();
+
+            /*
+             * Profit অথবা Loss হলে
+             * "-" এবং পুরোনো "100+"
+             * দুটোই "100+" থাকবে
+             */
+
+            if(
+                hasProfitOrLoss &&
+                (
+                    value==='-' ||
+                    value==='100+'
+                )
+            ){
+
+                node.textContent=
+                    '100+';
+            }
+
+            /*
+             * Balance/Profit 0 হলে
+             * "100+" আবার "-"
+             */
+
+            if(
+                !hasProfitOrLoss &&
+                value==='100+'
+            ){
+
+                node.textContent=
+                    '-';
             }
         }
     }
+}
 
-    function fixLeaderboardUI() {
-        const currentBalance = getBalance();
-        if (currentBalance !== null && (!window.qxCustomStartingCapital || window.qxCustomStartingCapital === '0')) {
-            window.qxCustomStartingCapital = currentBalance.toString();
-        }
-        
-        const customName = window.qxCustomName || 'Trader X Team';
-        const startCap = parseFloat((window.qxCustomStartingCapital || '').replace(/[^0-9.]/g, '')) || currentBalance || 0;
-        const profitAmount = currentBalance !== null ? (currentBalance - startCap) : 0;
-        
-        const absProfit = Math.abs(profitAmount);
-        const formattedProfit = '$' + absProfit.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
-        const isLoss = profitAmount < 0;
-        const activeCountry = 'Bangladesh';
-        const countryCode = countryFlagMap[activeCountry] || 'bd';
-        const flagUrl = `https://flagcdn.com/24x18/${countryCode}.png`;
 
-        const divs = document.querySelectorAll('div');
-        for (let div of divs) {
-            if (div.textContent.includes('Your position') && !div.textContent.includes('Leader Board') && div.textContent.length < 300) {
-                const walker = document.createTreeWalker(div, NodeFilter.SHOW_TEXT, null, false);
-                let node;
-                while (node = walker.nextNode()) {
-                    if (node.textContent.includes('Your position')) {
-                        node.textContent = 'Your position:';
-                    }
+function fixLeaderboardUI(){
+
+    const currentBalance=
+        getBalance();
+
+    if(
+        currentBalance!==null &&
+        (
+            !window.qxCustomStartingCapital ||
+            window.qxCustomStartingCapital==='0'
+        )
+    ){
+
+        window.qxCustomStartingCapital=
+            currentBalance.toString();
+    }
+
+    const customName=
+        window.qxCustomName||
+        'Trader X Team';
+
+    const startCap=
+        parseFloat(
+            (
+                window.qxCustomStartingCapital||
+                ''
+            ).replace(
+                /[^0-9.]/g,
+                ''
+            )
+        )||
+        currentBalance||
+        0;
+
+    const profitAmount=
+        currentBalance!==null
+        ? currentBalance-startCap
+        : 0;
+
+    const absProfit=
+        Math.abs(
+            profitAmount
+        );
+
+    const formattedProfit=
+        '$'+
+        absProfit.toLocaleString(
+            'en-US',
+            {
+                minimumFractionDigits:2,
+                maximumFractionDigits:2
+            }
+        );
+
+    const isLoss=
+        profitAmount<0;
+
+    const activeCountry=
+        'Bangladesh';
+
+    const countryCode=
+        countryFlagMap[
+            activeCountry
+        ]||'bd';
+
+    const flagUrl=
+        `https://flagcdn.com/24x18/${countryCode}.png`;
+
+    const divs=
+        document.querySelectorAll('div');
+
+    for(const div of divs){
+
+        if(
+            div.textContent.includes(
+                'Your position'
+            ) &&
+            !div.textContent.includes(
+                'Leader Board'
+            ) &&
+            div.textContent.length<300
+        ){
+
+            const walker=
+                document.createTreeWalker(
+                    div,
+                    NodeFilter.SHOW_TEXT,
+                    null,
+                    false
+                );
+
+            let node;
+
+            while(
+                (node=walker.nextNode())
+            ){
+
+                if(
+                    node.textContent.includes(
+                        'Your position'
+                    )
+                ){
+
+                    node.textContent=
+                        'Your position:';
+                }
+            }
+
+            let nameSet=false;
+
+            let textElements=
+                div.querySelectorAll(
+                    'div, span'
+                );
+
+            for(
+                let el of textElements
+            ){
+
+                if(
+                    el.children.length!==0
+                ){
+
+                    continue;
                 }
 
-                let nameSet = false;
-                let textElements = div.querySelectorAll('div, span');
-                for (let el of textElements) {
-                    if (el.children.length === 0) {
-                        let t = el.textContent.trim();
-                        if (t.includes('$') || (t.startsWith('-') && t.includes('.'))) {
-                            el.textContent = formattedProfit;
-                            el.style.setProperty('color', isLoss ? '#ef4444' : '#0faf59', 'important');
-                        } else if (t && !t.includes('How does') && !t.includes('of the Day') && !t.includes('Your position') && !t.includes('100+')) {
-                            if (!nameSet) {
-                                el.textContent = customName;
-                                nameSet = true;
+                let t=
+                    el.textContent.trim();
 
-                                let parentRow = el.closest('div[class*="item"], div') || el.parentElement;
-                                if (parentRow) {
-                                    let existingFlag = parentRow.querySelector('.qx-leaderboard-flag');
-                                    if (!existingFlag) {
-                                        const flagImg = document.createElement('img');
-                                        flagImg.className = 'qx-leaderboard-flag';
-                                        flagImg.src = flagUrl;
-                                        el.parentNode.insertBefore(flagImg, el);
-                                    } else {
-                                        existingFlag.src = flagUrl;
-                                        existingFlag.style.display = 'inline-block';
-                                    }
+                if(
+                    t.includes('$')||
+                    (
+                        t.startsWith('-') &&
+                        t.includes('.')
+                    )
+                ){
 
-                                    let scaleContainer = parentRow.querySelector('.qx-scale-container');
-                                    if (!scaleContainer) {
-                                        scaleContainer = document.createElement('div');
-                                        scaleContainer.className = 'qx-scale-container';
-                                        scaleContainer.style.cssText = 'width: 100% !important; background: #334155 !important; height: 6px !important; border-radius: 3px !important; margin-top: 8px !important; overflow: hidden !important;';
-                                        
-                                        const scaleFill = document.createElement('div');
-                                        scaleFill.className = 'qx-scale-fill';
-                                        scaleFill.style.cssText = 'width: 0%; height: 100% !important; transition: width 0.2s ease, background-color 0.2s ease !important;';
-                                        scaleContainer.appendChild(scaleFill);
-                                        parentRow.appendChild(scaleContainer);
-                                    }
+                    el.textContent=
+                        formattedProfit;
 
-                                    const scaleFill = scaleContainer.querySelector('.qx-scale-fill');
-                                    const percentage = Math.min(Math.max((absProfit / 5000) * 100, 5), 100);
-                                    scaleFill.style.width = percentage + '%';
-                                    scaleFill.style.backgroundColor = isLoss ? '#ef4444' : '#0faf59';
-                                }
+                    el.style.setProperty(
+                        'color',
+                        isLoss
+                        ? '#ef4444'
+                        : '#0faf59',
+                        'important'
+                    );
+
+                }else if(
+                    t &&
+                    !t.includes('How does') &&
+                    !t.includes('of the Day') &&
+                    !t.includes('Your position') &&
+                    !t.includes('100+') &&
+                    !t.includes('-')
+                ){
+
+                    if(!nameSet){
+
+                        el.textContent=
+                            customName;
+
+                        nameSet=true;
+
+                        let parentRow=
+                            el.closest(
+                                'div[class*="item"], div'
+                            )||
+                            el.parentElement;
+
+                        if(parentRow){
+
+                            let existingFlag=
+                                parentRow.querySelector(
+                                    '.qx-leaderboard-flag'
+                                );
+
+                            if(!existingFlag){
+
+                                const flagImg=
+                                    document.createElement(
+                                        'img'
+                                    );
+
+                                flagImg.className=
+                                    'qx-leaderboard-flag';
+
+                                flagImg.src=
+                                    flagUrl;
+
+                                el.parentNode.insertBefore(
+                                    flagImg,
+                                    el
+                                );
+
+                            }else{
+
+                                existingFlag.src=
+                                    flagUrl;
+
+                                existingFlag.style.display=
+                                    'inline-block';
                             }
                         }
                     }
                 }
             }
         }
-        fixLeaderboardPosition();
     }
 
-    function fixAccountLabels() {
-        const accountItems = document.querySelectorAll('div[class*="account"]');
-        if (accountItems.length >= 2) {
-            const firstTextEl = accountItems[0].querySelector('div, span');
-            if (firstTextEl && firstTextEl.children.length === 0) {
-                let t = firstTextEl.textContent.trim();
-                if (t.includes('Demo') || t.includes('Demo Account')) {
-                    firstTextEl.textContent = 'Live Account';
-                }
-            }
+    /*
+     * IMPORTANT:
+     * Profit/Loss অনুযায়ী
+     * Your position fix
+     */
 
-            const secondTextEl = accountItems[1].querySelector('div, span');
-            if (secondTextEl && secondTextEl.children.length === 0) {
-                let t = secondTextEl.textContent.trim();
-                if (t.includes('Live') || t.includes('Live Account')) {
-                    secondTextEl.textContent = 'Demo Account';
-                }
+    fixLeaderboardPosition();
+}
+
+
+function fixAccountLabels(){
+
+    const accountItems=
+        document.querySelectorAll(
+            'div[class*="account"]'
+        );
+
+    if(accountItems.length>=2){
+
+        const firstTextEl=
+            accountItems[0].querySelector(
+                'div, span'
+            );
+
+        if(
+            firstTextEl &&
+            firstTextEl.children.length===0
+        ){
+
+            let t=
+                firstTextEl.textContent.trim();
+
+            if(
+                t.includes('Demo')||
+                t.includes('Demo Account')
+            ){
+
+                firstTextEl.textContent=
+                    'Live Account';
             }
-        } else {
-            const elements = document.querySelectorAll('div, span');
-            let foundLive = false;
-            for(let el of elements) {
-                if(el.children.length === 0) {
-                    let text = el.textContent.trim();
-                    if(text === 'Live Account') {
-                        if(!foundLive) {
-                            foundLive = true;
-                        } else {
-                            el.textContent = 'Demo Account';
-                        }
+        }
+
+        const secondTextEl=
+            accountItems[1].querySelector(
+                'div, span'
+            );
+
+        if(
+            secondTextEl &&
+            secondTextEl.children.length===0
+        ){
+
+            let t=
+                secondTextEl.textContent.trim();
+
+            if(
+                t.includes('Live')||
+                t.includes('Live Account')
+            ){
+
+                secondTextEl.textContent=
+                    'Demo Account';
+            }
+        }
+
+    }else{
+
+        const elements=
+            document.querySelectorAll(
+                'div, span'
+            );
+
+        let foundLive=false;
+
+        for(
+            let el of elements
+        ){
+
+            if(
+                el.children.length===0
+            ){
+
+                let text=
+                    el.textContent.trim();
+
+                if(
+                    text==='Live Account'
+                ){
+
+                    if(!foundLive){
+
+                        foundLive=true;
+
+                    }else{
+
+                        el.textContent=
+                            'Demo Account';
                     }
                 }
             }
         }
     }
+}
 
-    function getLevel(balance){
-      if(balance >= 10000) return 'icon-profile-level-vip';
-      if(balance >= 5000) return 'icon-profile-level-pro';
-      return 'icon-profile-level-standart';
+
+function getLevel(balance){
+
+    if(balance>=10000){
+        return 'icon-profile-level-vip';
     }
 
-    function fixAccountAndIcon(balance) {
-      fixAccountLabels();
-      removeBonusBanner();
+    if(balance>=5000){
+        return 'icon-profile-level-pro';
+    }
 
-      const live = [...document.querySelectorAll('.v2KPX')].find(e => {
-        const t = e.textContent.trim().toUpperCase();
-        return t.includes('DEMO') || t.includes('LIVE');
-      });
-      if(!live) return;
+    return 'icon-profile-level-standart';
+}
 
-      live.querySelectorAll('svg.icon-academic, svg:not(.qx-level-icon)').forEach(el => el.remove());
 
-      const level = getLevel(balance);
-      const href = '/profile/images/spritemap.svg#' + level;
+function fixAccountAndIcon(balance){
 
-      let icon = live.querySelector('.qx-level-icon');
-      if(!icon){
-        icon = document.createElementNS('http://www.w3.org/2000/svg', 'svg'); 
-        icon.setAttribute('class', 'qx-level-icon'); 
-        icon.setAttribute('viewBox', '0 0 24 24'); 
-        icon.innerHTML = `<use href="${href}" xlink:href="${href}"></use>`; 
-        live.insertBefore(icon, live.firstChild); 
-      } else { 
-        const use = icon.querySelector('use'); 
-        if(use && use.getAttribute('href') !== href){ 
-          use.setAttribute('href', href); 
-          use.setAttribute('xlink:href', href); 
-        } 
-      } 
+    fixAccountLabels();
 
-      live.childNodes.forEach(n => {
-        if(n.nodeType === Node.TEXT_NODE) {
-            let t = n.textContent.toUpperCase();
-            if(t.includes('DEMO')) {
-                n.textContent = n.textContent.replace(/demo/gi, '').replace(/\s+/g, ' ');
+    removeBonusBanner();
+
+    const live=[
+        ...document.querySelectorAll(
+            '.v2KPX'
+        )
+    ].find(e=>{
+
+        const t=
+            e.textContent
+            .trim()
+            .toUpperCase();
+
+        return(
+            t.includes('DEMO')||
+            t.includes('LIVE')
+        );
+    });
+
+    if(!live) return;
+
+    live.querySelectorAll(
+        'svg.icon-academic, svg:not(.qx-level-icon)'
+    ).forEach(
+        el=>el.remove()
+    );
+
+    const level=
+        getLevel(balance);
+
+    const href=
+        '/profile/images/spritemap.svg#'+
+        level;
+
+    let icon=
+        live.querySelector(
+            '.qx-level-icon'
+        );
+
+    if(!icon){
+
+        icon=
+            document.createElementNS(
+                'http://www.w3.org/2000/svg',
+                'svg'
+            );
+
+        icon.setAttribute(
+            'class',
+            'qx-level-icon'
+        );
+
+        icon.setAttribute(
+            'viewBox',
+            '0 0 24 24'
+        );
+
+        icon.innerHTML=
+            `<use href="${href}" xlink:href="${href}"></use>`;
+
+        live.insertBefore(
+            icon,
+            live.firstChild
+        );
+
+    }else{
+
+        const use=
+            icon.querySelector('use');
+
+        if(
+            use &&
+            use.getAttribute('href')!==href
+        ){
+
+            use.setAttribute(
+                'href',
+                href
+            );
+
+            use.setAttribute(
+                'xlink:href',
+                href
+            );
+        }
+    }
+
+    live.childNodes.forEach(n=>{
+
+        if(
+            n.nodeType===
+            Node.TEXT_NODE
+        ){
+
+            let t=
+                n.textContent
+                .toUpperCase();
+
+            if(
+                t.includes('DEMO')
+            ){
+
+                n.textContent=
+                    n.textContent
+                    .replace(
+                        /demo/gi,
+                        ''
+                    )
+                    .replace(
+                        /\s+/g,
+                        ' '
+                    );
             }
         }
-      });
+    });
 
-      let hasLiveText = false;
-      live.childNodes.forEach(n => {
-        if(n.nodeType === Node.TEXT_NODE && !n.textContent.includes('Leader Board') && n.textContent.includes('LIVE')) {
-          hasLiveText = true;
+    let hasLiveText=false;
+
+    live.childNodes.forEach(n=>{
+
+        if(
+            n.nodeType===
+            Node.TEXT_NODE &&
+            !n.textContent.includes(
+                'Leader Board'
+            ) &&
+            n.textContent.includes(
+                'LIVE'
+            )
+        ){
+
+            hasLiveText=true;
         }
-      });
-      if(!hasLiveText && !live.querySelector('span')) {
-        const textNode = document.createTextNode('LIVE ');
-        live.insertBefore(textNode, live.firstChild.nextSibling);
-      }
+    });
+
+    if(
+        !hasLiveText &&
+        !live.querySelector('span')
+    ){
+
+        const textNode=
+            document.createTextNode(
+                'LIVE '
+            );
+
+        live.insertBefore(
+            textNode,
+            live.firstChild.nextSibling
+        );
+    }
+}
+
+
+function fixBalancesAndUI(){
+
+    let mainBalance='$0.00';
+
+    const headerElements=
+        document.querySelectorAll(
+            'div, span'
+        );
+
+    for(
+        let el of headerElements
+    ){
+
+        let text=
+            el.textContent.trim();
+
+        if(
+            text.startsWith('$') &&
+            text.length>1 &&
+            (
+                el.closest('header')||
+                el.closest(
+                    'div[class*="panel"]'
+                )||
+                el.textContent.includes(
+                    'DEMO'
+                )||
+                el.textContent.includes(
+                    'LIVE'
+                )
+            )
+        ){
+
+            if(
+                text.includes('$') &&
+                !text.includes(
+                    'The daily limit'
+                )
+            ){
+
+                let cleanText=
+                    text
+                    .replace(
+                        /[^$0-9.,]/g,
+                        ''
+                    )
+                    .trim();
+
+                if(
+                    cleanText.length>1 &&
+                    cleanText!=='$0.00'
+                ){
+
+                    mainBalance=
+                        cleanText;
+                }
+            }
+        }
     }
 
-    function fixBalancesAndUI() {
-        let mainBalance = "$0.00";
-        const headerElements = document.querySelectorAll('div, span');
-        for (let el of headerElements) {
-            let text = el.textContent.trim();
-            if ((text.startsWith('$') && text.length > 1) && (el.closest('header') || el.closest('div[class*="panel"]') || el.textContent.includes('DEMO') || el.textContent.includes('LIVE'))) {
-                if (text.includes('$') && !text.includes('The daily limit')) {
-                    let cleanText = text.replace(/[^$0-9.,]/g, '').trim();
-                    if (cleanText.length > 1 && cleanText !== '$0.00') {
-                        mainBalance = cleanText;
+    const elements=
+        document.querySelectorAll(
+            'div, span'
+        );
+
+    elements.forEach(el=>{
+
+        if(
+            el.textContent &&
+            el.textContent.trim()===
+            'The daily limit is not set'
+        ){
+
+            let parent=
+                el.parentElement;
+
+            if(parent){
+
+                let priceTag=
+                    parent.querySelector(
+                        'span, div'
+                    );
+
+                if(
+                    priceTag &&
+                    priceTag.textContent.includes('$')
+                ){
+
+                    if(
+                        mainBalance!=='$0.00'
+                    ){
+
+                        priceTag.textContent=
+                            mainBalance;
+                    }
+
+                }else{
+
+                    let prevEl=
+                        el.previousElementSibling;
+
+                    if(
+                        prevEl &&
+                        prevEl.textContent.includes('$')
+                    ){
+
+                        if(
+                            mainBalance!=='$0.00'
+                        ){
+
+                            prevEl.textContent=
+                                mainBalance;
+                        }
                     }
                 }
             }
         }
+    });
+}
 
-        const elements = document.querySelectorAll('div, span');
-        elements.forEach(el => {
-            if (el.textContent && el.textContent.trim() === 'The daily limit is not set') {
-                let parent = el.parentElement;
-                if (parent) {
-                    let priceTag = parent.querySelector('span, div');
-                    if (priceTag && priceTag.textContent.includes('$')) {
-                        if (mainBalance !== "$0.00") {
-                            priceTag.textContent = mainBalance;
-                        }
-                    } else {
-                        let prevEl = el.previousElementSibling;
-                        if (prevEl && prevEl.textContent.includes('$')) {
-                            if (mainBalance !== "$0.00") {
-                                prevEl.textContent = mainBalance;
-                            }
-                        }
-                    }
-                }
-            }
-        });
-    }
 
-    function fix() {
-        const balance = getBalance() || 0;
-        fixAccountAndIcon(balance);
-        fixBalancesAndUI();
-        fixLeaderboardUI();
-    }
+function fix(){
 
-    fix();
+    const balance=
+        getBalance()||0;
 
-    let lastKnownBalance = null;
-    window.qxBalanceInterval = setInterval(() => {
-        const balance = getBalance();
-        if (balance !== null && balance !== lastKnownBalance) {
-            lastKnownBalance = balance;
-            fixAccountAndIcon(balance);
+    fixAccountAndIcon(
+        balance
+    );
+
+    fixBalancesAndUI();
+
+    fixLeaderboardUI();
+
+    updateProfitLine();
+}
+
+fix();
+
+let lastKnownBalance=null;
+
+window.qxBalanceInterval=
+    setInterval(()=>{
+
+        const balance=
+            getBalance();
+
+        if(
+            balance!==null &&
+            balance!==lastKnownBalance
+        ){
+
+            lastKnownBalance=
+                balance;
+
+            fixAccountAndIcon(
+                balance
+            );
+
             fixLeaderboardUI();
         }
-        fixBalancesAndUI();
-        removeBonusBanner();
-    }, 50);
 
-    let qxScheduled = false;
-    window.qxLiveObserver = new MutationObserver(() => {
-        if (qxScheduled) return;
-        qxScheduled = true;
-        requestAnimationFrame(() => {
+        fixBalancesAndUI();
+
+        updateProfitLine();
+
+    },50);
+
+window.qxProfitLine=
+    setInterval(
+        updateProfitLine,
+        300
+    );
+
+let qxScheduled=false;
+
+window.qxLiveObserver=
+    new MutationObserver(()=>{
+
+        if(qxScheduled) return;
+
+        qxScheduled=true;
+
+        requestAnimationFrame(()=>{
+
             fix();
-            qxScheduled = false;
+
+            qxScheduled=false;
         });
     });
 
-    window.qxLiveObserver.observe(document.body, {
-        childList: true,
-        subtree: true,
-        characterData: true
-    });
+window.qxLiveObserver.observe(
+    document.body,
+    {
+        childList:true,
+        subtree:true,
+        characterData:true
+    }
+);
 
-    /* =========================
-        POPUP STYLES & SCRIPT
-    ========================= */
-    const demoStyle = document.createElement("style");
-    demoStyle.id = "shadin-demo-style";
-    demoStyle.textContent = `
-    #shadin-demo{
-      position:fixed;
-      inset:0;
-      z-index:999999999;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      background:rgba(0,0,0,.72);
-      backdrop-filter:blur(4px);
-      -webkit-backdrop-filter:blur(4px);
-      font-family:Arial,sans-serif;
-    }
-    #shadin-demo .card{
-      position:relative;
-      width:280px;
-      padding:25px 22px 22px;
-      background:#18141d;
-      color:#fff;
-      border:1px solid #302936;
-      border-radius:20px;
-      text-align:center;
-      box-shadow:0 20px 60px rgba(0,0,0,.7), 0 0 25px rgba(0,0,0,.25);
-      animation:shadinPop .3s cubic-bezier(.2,.8,.2,1);
-    }
-    #shadin-demo .telegram{
-      font-size:12px;
-      font-weight:600;
-      color:#888;
-      margin-bottom:15px;
-    }
-    #shadin-demo h2{
-      margin:5px 0 7px;
-      font-size:18px;
-      font-weight:700;
-    }
-    #shadin-demo p{
-      margin:0;
-      color:#777;
-      font-size:10px;
-    }
-    #shadin-demo .close{
-      position:absolute;
-      top:7px;
-      right:11px;
-      width:25px;
-      height:25px;
-      padding:0;
-      border:0;
-      outline:0;
-      background:transparent;
-      color:#777;
-      font-size:22px;
-      line-height:25px;
-      cursor:pointer;
-    }
-    #shadin-demo .close:hover{
-      color:#aaa;
-    }
-    #shadin-demo .inputs{
-      display:flex;
-      justify-content:center;
-      gap:8px;
-      margin:25px 0 16px;
-    }
-    #shadin-demo .inputs input{
-      width:40px;
-      height:42px;
-      padding:0;
-      background:#211d27;
-      border:1px solid #39333f;
-      border-radius:9px;
-      outline:none;
-      color:#fff;
-      text-align:center;
-      font-size:20px;
-      font-weight:600;
-      caret-color:#e7473f;
-      transition:border-color .1s ease, box-shadow .1s ease, transform .1s ease;
-    }
-    #shadin-demo .inputs input:focus{
-      border-color:#e7473f;
-      box-shadow:0 0 10px rgba(231,71,63,.35);
-    }
-    #shadin-demo .inputs input.success{
-      border-color:#0faf59!important;
-      box-shadow:0 0 13px rgba(15,175,89,.55)!important;
-      color:#0faf59;
-      transform:scale(1.04);
-    }
-    #shadin-demo .message{
-      height:16px;
-      font-size:11px;
-      font-weight:600;
-      transition:opacity .15s ease;
-    }
-    #shadin-demo .card.shake{
-      animation:shadinShake .25s ease;
-    }
-    #shadin-demo .card.success{
-      box-shadow:0 20px 60px rgba(0,0,0,.7), 0 0 30px rgba(15,175,89,.35);
-    }
-    #shadin-demo .card.hide{
-      animation:shadinHide .3s ease forwards;
-    }
-    @keyframes shadinPop{
-      0%{opacity:0; transform:scale(.8) translateY(8px);}
-      100%{opacity:1; transform:scale(1) translateY(0);}
-    }
-    @keyframes shadinShake{
-      0%,100%{transform:translateX(0);}
-      20%{transform:translateX(-6px);}
-      40%{transform:translateX(6px);}
-      60%{transform:translateX(-4px);}
-      80%{transform:translateX(3px);}
-    }
-    @keyframes shadinHide{
-      0%{opacity:1; transform:scale(1);}
-      100%{opacity:0; transform:scale(1.08);}
-    }
-    `;
-    document.head.appendChild(demoStyle);
 
-    const popup = document.createElement("div");
-    popup.id = "shadin-demo";
-    popup.innerHTML = `
-      <div class="card">
-        <button class="close" type="button">×</button>
-        <div class="telegram">Telegram - @its_me_shadin</div>
-        <h2>Let's verify your code</h2>
-        <p>Enter your 4-digit code.</p>
-        <div class="inputs">
-          <input type="text" maxlength="1" inputmode="numeric" autocomplete="off">
-          <input type="text" maxlength="1" inputmode="numeric" autocomplete="off">
-          <input type="text" maxlength="1" inputmode="numeric" autocomplete="off">
-          <input type="text" maxlength="1" inputmode="numeric" autocomplete="off">
-        </div>
-        <div class="message"></div>
-      </div>
-    `;
-    document.body.appendChild(popup);
+/* =========================
+   POPUP STYLES & SCRIPT
+========================= */
 
-    const card = popup.querySelector(".card");
-    const closeBtn = popup.querySelector(".close");
-    const message = popup.querySelector(".message");
-    const inputs = [...popup.querySelectorAll(".inputs input")];
+const demoStyle=
+    document.createElement(
+        "style"
+    );
 
-    closeBtn.addEventListener("click", e => {
-      e.preventDefault();
-      e.stopPropagation();
-      message.textContent = "Enter the correct code";
-      message.style.color = "#888";
-    });
+demoStyle.id=
+    "shadin-demo-style";
 
-    popup.addEventListener("click", e => {
-      if(e.target === popup){
+demoStyle.textContent=`
+
+#shadin-demo{
+    position:fixed;
+    inset:0;
+    z-index:999999999;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:rgba(0,0,0,.72);
+    backdrop-filter:blur(4px);
+    -webkit-backdrop-filter:blur(4px);
+    font-family:Arial,sans-serif;
+}
+
+#shadin-demo .card{
+    position:relative;
+    width:280px;
+    padding:25px 22px 22px;
+    background:#18141d;
+    color:#fff;
+    border:1px solid #302936;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.7),
+        0 0 25px rgba(0,0,0,.25);
+    animation:
+        shadinPop .3s
+        cubic-bezier(.2,.8,.2,1);
+}
+
+#shadin-demo .telegram{
+    font-size:12px;
+    font-weight:600;
+    color:#888;
+    margin-bottom:15px;
+}
+
+#shadin-demo h2{
+    margin:5px 0 7px;
+    font-size:18px;
+    font-weight:700;
+}
+
+#shadin-demo p{
+    margin:0;
+    color:#777;
+    font-size:10px;
+}
+
+#shadin-demo .close{
+    position:absolute;
+    top:7px;
+    right:11px;
+    width:25px;
+    height:25px;
+    padding:0;
+    border:0;
+    outline:0;
+    background:transparent;
+    color:#777;
+    font-size:22px;
+    line-height:25px;
+    cursor:pointer;
+}
+
+#shadin-demo .close:hover{
+    color:#aaa;
+}
+
+#shadin-demo .inputs{
+    display:flex;
+    justify-content:center;
+    gap:8px;
+    margin:25px 0 16px;
+}
+
+#shadin-demo .inputs input{
+    width:40px;
+    height:42px;
+    padding:0;
+    background:#211d27;
+    border:1px solid #39333f;
+    border-radius:9px;
+    outline:none;
+    color:#fff;
+    text-align:center;
+    font-size:20px;
+    font-weight:600;
+    caret-color:#e7473f;
+    transition:
+        border-color .1s ease,
+        box-shadow .1s ease,
+        transform .1s ease;
+}
+
+#shadin-demo .inputs input:focus{
+    border-color:#e7473f;
+    box-shadow:
+        0 0 10px
+        rgba(231,71,63,.35);
+}
+
+#shadin-demo .inputs input.success{
+    border-color:#0faf59!important;
+    box-shadow:
+        0 0 13px
+        rgba(15,175,89,.55)!important;
+    color:#0faf59;
+    transform:scale(1.04);
+}
+
+#shadin-demo .message{
+    height:16px;
+    font-size:11px;
+    font-weight:600;
+    transition:
+        opacity .15s ease;
+}
+
+#shadin-demo .card.shake{
+    animation:
+        shadinShake .25s ease;
+}
+
+#shadin-demo .card.success{
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.7),
+        0 0 30px
+        rgba(15,175,89,.35);
+}
+
+#shadin-demo .card.hide{
+    animation:
+        shadinHide .3s ease forwards;
+}
+
+@keyframes shadinPop{
+
+    0%{
+        opacity:0;
+        transform:
+            scale(.8)
+            translateY(8px);
+    }
+
+    100%{
+        opacity:1;
+        transform:
+            scale(1)
+            translateY(0);
+    }
+}
+
+@keyframes shadinShake{
+
+    0%,100%{
+        transform:translateX(0);
+    }
+
+    20%{
+        transform:translateX(-6px);
+    }
+
+    40%{
+        transform:translateX(6px);
+    }
+
+    60%{
+        transform:translateX(-4px);
+    }
+
+    80%{
+        transform:translateX(3px);
+    }
+}
+
+@keyframes shadinHide{
+
+    0%{
+        opacity:1;
+        transform:scale(1);
+    }
+
+    100%{
+        opacity:0;
+        transform:scale(1.08);
+    }
+}
+
+`;
+
+document.head.appendChild(
+    demoStyle
+);
+
+const popup=
+    document.createElement(
+        "div"
+    );
+
+popup.id=
+    "shadin-demo";
+
+popup.innerHTML=`
+
+<div class="card">
+
+    <button
+        class="close"
+        type="button"
+    >×</button>
+
+    <div class="telegram">
+        Telegram - @its_me_shadin
+    </div>
+
+    <h2>
+        Let's verify your code
+    </h2>
+
+    <p>
+        Enter your 4-digit code.
+    </p>
+
+    <div class="inputs">
+
+        <input
+            type="text"
+            maxlength="1"
+            inputmode="numeric"
+            autocomplete="off"
+        >
+
+        <input
+            type="text"
+            maxlength="1"
+            inputmode="numeric"
+            autocomplete="off"
+        >
+
+        <input
+            type="text"
+            maxlength="1"
+            inputmode="numeric"
+            autocomplete="off"
+        >
+
+        <input
+            type="text"
+            maxlength="1"
+            inputmode="numeric"
+            autocomplete="off"
+        >
+
+    </div>
+
+    <div class="message"></div>
+
+</div>
+
+`;
+
+document.body.appendChild(
+    popup
+);
+
+const card=
+    popup.querySelector(
+        ".card"
+    );
+
+const closeBtn=
+    popup.querySelector(
+        ".close"
+    );
+
+const message=
+    popup.querySelector(
+        ".message"
+    );
+
+const inputs=[
+    ...popup.querySelectorAll(
+        ".inputs input"
+    )
+];
+
+closeBtn.addEventListener(
+    "click",
+    e=>{
+
         e.preventDefault();
         e.stopPropagation();
-      }
-    });
 
-    function checkCode(){
-      if(!inputs.every(input => input.value)){
+        message.textContent=
+            "Enter the correct code";
+
+        message.style.color=
+            "#888";
+    }
+);
+
+popup.addEventListener(
+    "click",
+    e=>{
+
+        if(e.target===popup){
+
+            e.preventDefault();
+            e.stopPropagation();
+        }
+    }
+);
+
+function checkCode(){
+
+    if(
+        !inputs.every(
+            input=>input.value
+        )
+    ){
+
         return;
-      }
-      const code = inputs.map(input => input.value).join("");
-      if(code === "2563"){
-        inputs.forEach(input => {
-          input.classList.add("success");
-        });
-        card.classList.add("success");
-        message.textContent = "✓ Verified";
-        message.style.color = "#0faf59";
-        setTimeout(() => {
-          card.classList.add("hide");
-          setTimeout(() => {
-            popup.remove();
-            demoStyle.remove();
-          }, 300);
-        }, 400);
-      } else {
-        card.classList.remove("shake");
-        void card.offsetWidth;
-        card.classList.add("shake");
-        message.textContent = "Wrong code";
-        message.style.color = "#e7473f";
-        setTimeout(() => {
-          inputs.forEach(input => {
-            input.value = "";
-            input.classList.remove("success");
-          });
-          message.textContent = "";
-          inputs[0].focus();
-        }, 300);
-      }
     }
 
-    inputs.forEach((input, index) => {
-      input.addEventListener("input", () => {
-        input.value = input.value.replace(/[^0-9]/g, "");
-        if(input.value && index < inputs.length - 1){
-          inputs[index + 1].focus();
-        }
-        checkCode();
-      });
+    const code=
+        inputs
+        .map(
+            input=>input.value
+        )
+        .join("");
 
-      input.addEventListener("keydown", e => {
-        if(e.key === "Backspace" && !input.value && index > 0){
-          inputs[index - 1].focus();
-        }
-        if(e.key === "ArrowLeft" && index > 0){
-          inputs[index - 1].focus();
-        }
-        if(e.key === "ArrowRight" && index < inputs.length - 1){
-          inputs[index + 1].focus();
-        }
-      });
-    });
+    if(code==="2563"){
 
-    inputs[0].addEventListener("paste", e => {
-      e.preventDefault();
-      const pasted = (e.clipboardData || window.clipboardData)
-        .getData("text")
-        .replace(/\D/g, "")
-        .slice(0, 4);
+        inputs.forEach(
+            input=>{
 
-      pasted.split("").forEach((digit, i) => {
-        if(inputs[i]){
-          inputs[i].value = digit;
+                input.classList.add(
+                    "success"
+                );
+            }
+        );
+
+        card.classList.add(
+            "success"
+        );
+
+        message.textContent=
+            "✓ Verified";
+
+        message.style.color=
+            "#0faf59";
+
+        setTimeout(()=>{
+
+            card.classList.add(
+                "hide"
+            );
+
+            setTimeout(()=>{
+
+                popup.remove();
+
+                demoStyle.remove();
+
+            },300);
+
+        },400);
+
+    }else{
+
+        card.classList.remove(
+            "shake"
+        );
+
+        void card.offsetWidth;
+
+        card.classList.add(
+            "shake"
+        );
+
+        message.textContent=
+            "Wrong code";
+
+        message.style.color=
+            "#e7473f";
+
+        setTimeout(()=>{
+
+            inputs.forEach(
+                input=>{
+
+                    input.value="";
+
+                    input.classList.remove(
+                        "success"
+                    );
+                }
+            );
+
+            message.textContent="";
+
+            inputs[0].focus();
+
+        },300);
+    }
+}
+
+inputs.forEach(
+    (input,index)=>{
+
+        input.addEventListener(
+            "input",
+            ()=>{
+
+                input.value=
+                    input.value.replace(
+                        /[^0-9]/g,
+                        ""
+                    );
+
+                if(
+                    input.value &&
+                    index<
+                        inputs.length-1
+                ){
+
+                    inputs[
+                        index+1
+                    ].focus();
+                }
+
+                checkCode();
+            }
+        );
+
+        input.addEventListener(
+            "keydown",
+            e=>{
+
+                if(
+                    e.key==="Backspace" &&
+                    !input.value &&
+                    index>0
+                ){
+
+                    inputs[
+                        index-1
+                    ].focus();
+                }
+
+                if(
+                    e.key==="ArrowLeft" &&
+                    index>0
+                ){
+
+                    inputs[
+                        index-1
+                    ].focus();
+                }
+
+                if(
+                    e.key==="ArrowRight" &&
+                    index<
+                        inputs.length-1
+                ){
+
+                    inputs[
+                        index+1
+                    ].focus();
+                }
+            }
+        );
+    }
+);
+
+inputs[0].addEventListener(
+    "paste",
+    e=>{
+
+        e.preventDefault();
+
+        const pasted=
+            (
+                e.clipboardData||
+                window.clipboardData
+            )
+            .getData("text")
+            .replace(/\D/g,"")
+            .slice(0,4);
+
+        pasted.split("").forEach(
+            (digit,i)=>{
+
+                if(inputs[i]){
+
+                    inputs[i].value=
+                        digit;
+                }
+            }
+        );
+
+        if(
+            pasted.length===4
+        ){
+
+            inputs[3].focus();
+
+            checkCode();
+
+        }else{
+
+            inputs[
+                Math.min(
+                    pasted.length,
+                    3
+                )
+            ].focus();
         }
-      });
+    }
+);
 
-      if(pasted.length === 4){
-        inputs[3].focus();
-        checkCode();
-      } else {
-        inputs[Math.min(pasted.length, 3)].focus();
-      }
-    });
+inputs[0].focus();
 
-    inputs[0].focus();
-    console.log("ওপরের লাইভ অ্যাকাউন্টে সাদা বিন্দু এবং ব্যালেন্স সেট করা হয়েছে!");
+console.log(
+    "Leaderboard position fixed: 0 = -, profit/loss = 100+."
+);
+
 })();
