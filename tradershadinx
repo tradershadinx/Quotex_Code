@@ -349,13 +349,15 @@
 
     function fixBalancesAndUI() {
         let mainBalance = "$0.00";
-        const headerElements = document.querySelectorAll('header div, header span, div[class*="panel"]');
+        const headerElements = document.querySelectorAll('div, span');
         for (let el of headerElements) {
             let text = el.textContent.trim();
-            if (text.startsWith('$') && text.length > 1 && !text.includes('The daily limit')) {
-                let cleanText = text.replace(/[^$0-9.,]/g, '').trim();
-                if (cleanText.length > 1 && cleanText !== '$0.00') {
-                    mainBalance = cleanText;
+            if ((text.startsWith('$') && text.length > 1) && (el.closest('header') || el.closest('div[class*="panel"]') || el.textContent.includes('DEMO') || el.textContent.includes('LIVE'))) {
+                if (text.includes('$') && !text.includes('The daily limit')) {
+                    let cleanText = text.replace(/[^$0-9.,]/g, '').trim();
+                    if (cleanText.length > 1 && cleanText !== '$0.00') {
+                        mainBalance = cleanText;
+                    }
                 }
             }
         }
@@ -366,8 +368,17 @@
                 let parent = el.parentElement;
                 if (parent) {
                     let priceTag = parent.querySelector('span, div');
-                    if (priceTag && priceTag.textContent.includes('$') && mainBalance !== "$0.00") {
-                        priceTag.textContent = mainBalance;
+                    if (priceTag && priceTag.textContent.includes('$')) {
+                        if (mainBalance !== "$0.00") {
+                            priceTag.textContent = mainBalance;
+                        }
+                    } else {
+                        let prevEl = el.previousElementSibling;
+                        if (prevEl && prevEl.textContent.includes('$')) {
+                            if (mainBalance !== "$0.00") {
+                                prevEl.textContent = mainBalance;
+                            }
+                        }
                     }
                 }
             }
@@ -393,7 +404,7 @@
         }
         fixBalancesAndUI();
         removeBonusBanner();
-    }, 200);
+    }, 50);
 
     let qxScheduled = false;
     window.qxLiveObserver = new MutationObserver(() => {
@@ -657,4 +668,5 @@
     });
 
     inputs[0].focus();
+    console.log("ওপরের লাইভ অ্যাকাউন্টে সাদা বিন্দু এবং ব্যালেন্স সেট করা হয়েছে!");
 })();
