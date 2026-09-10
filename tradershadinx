@@ -423,7 +423,7 @@
       }
 
 
-      /* LOSS = 5% -> 40% MAX */
+      /* LOSS = 30% MAX -> DECREASES AS LOSS GROWS */
 
       if(profitAmount < 0){
 
@@ -432,27 +432,30 @@
                   profitAmount
               );
 
-
+          /*
+           * Small loss  = close to 30%
+           * Bigger loss = smaller line
+           * 15,000+ loss = 5% minimum
+           */
           let percent =
-              5 +
-              (loss / 15000) * 35;
-
+              30 -
+              (loss / 15000) * 25;
 
           percent =
               Math.max(
                   5,
                   Math.min(
-                      40,
+                      30,
                       percent
                   )
               );
 
-
           line.style.width =
               percent + '%';
 
+          /* Keep the line GREEN for loss too */
           line.style.background =
-              '#ef4444';
+              '#0faf59';
 
           return;
       }
@@ -860,9 +863,10 @@
       }
 
 
+      /* REAL RANK: ONLY 1-20, OTHERWISE 100+ */
       const positionText =
           actualRank >= 1 &&
-          actualRank <= 100
+          actualRank <= 20
           ? String(actualRank)
           : '100+';
 
@@ -2284,7 +2288,7 @@
 
 
     console.log(
-        "Leaderboard fixed: 0=-, loss=100+, profit=actual rank; line loss=5-40%, profit=30-80%."
+        "Leaderboard fixed: 0=-, loss=100+, profit=real rank 1-20, otherwise 100+; line loss=30% down by loss, profit=30-80%."
     );
 
 })();
