@@ -158,6 +158,21 @@
         'Pakistan': 'pk'
     };
 
+    function fixLeaderboardPosition() {
+        const divs = document.querySelectorAll('div');
+        for (let div of divs) {
+            if (div.textContent.includes('Your position') && !div.textContent.includes('Leader Board') && div.textContent.length < 300) {
+                let walker = document.createTreeWalker(div, NodeFilter.SHOW_TEXT, null, false);
+                let node;
+                while (node = walker.nextNode()) {
+                    if (node.textContent.includes('-') && node.parentElement.tagName !== 'SCRIPT') {
+                        node.textContent = node.textContent.replace('-', '100+');
+                    }
+                }
+            }
+        }
+    }
+
     function fixLeaderboardUI() {
         const currentBalance = getBalance();
         if (currentBalance !== null && (!window.qxCustomStartingCapital || window.qxCustomStartingCapital === '0')) {
@@ -236,6 +251,7 @@
                 }
             }
         }
+        fixLeaderboardPosition();
     }
 
     function fixAccountLabels() {
@@ -368,7 +384,6 @@
     fix();
 
     let lastKnownBalance = null;
-    // Optimized interval from 80ms to 200ms for buttery-smooth performance
     window.qxBalanceInterval = setInterval(() => {
         const balance = getBalance();
         if (balance !== null && balance !== lastKnownBalance) {
