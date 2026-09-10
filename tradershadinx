@@ -14,13 +14,13 @@
     document.getElementById("shadin-demo-style")?.remove();
 
     function getBalance(){
-      const all=[...document.querySelectorAll('.zt1hG,header div,header span,.v2KPX')];
+      const all = document.querySelectorAll('.zt1hG, header div, header span, .v2KPX');
       for(const el of all){
-        const text=el.textContent.trim();
+        const text = el.textContent.trim();
         if(!text.includes('$')) continue;
-        const clean=text.replace(/,/g,'').replace('$','').replace(/LIVE/gi,'').replace(/DEMO/gi,'').trim();
-        const n=parseFloat(clean);
-        if(Number.isFinite(n) && n>=0 && n<100000000) return n;
+        const clean = text.replace(/,/g,'').replace('$','').replace(/LIVE/gi,'').replace(/DEMO/gi,'').trim();
+        const n = parseFloat(clean);
+        if(Number.isFinite(n) && n >= 0 && n < 100000000) return n;
       }
       return null;
     }
@@ -74,7 +74,7 @@
                 window.history.replaceState({}, '', window.location.href.replace('demo-trade', 'trade'));
             } catch(e) {}
         }
-    }, 200);
+    }, 500);
 
     const style = document.createElement('style');
     style.id = 'qx-combined-style';
@@ -102,7 +102,7 @@
           padding: 0 !important;
           vertical-align: middle !important;
           will-change: transform, opacity !important;
-          transition: transform 0.12s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.12s ease !important;
+          transition: transform 0.1s ease, opacity 0.1s ease !important;
         }
         .qx-level-icon.qx-icon-updating {
           transform: scale(0.7) rotate(-45deg) !important;
@@ -220,7 +220,7 @@
                                         
                                         const scaleFill = document.createElement('div');
                                         scaleFill.className = 'qx-scale-fill';
-                                        scaleFill.style.cssText = 'width: 0%; height: 100% !important; transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.3s ease !important;';
+                                        scaleFill.style.cssText = 'width: 0%; height: 100% !important; transition: width 0.2s ease, background-color 0.2s ease !important;';
                                         scaleContainer.appendChild(scaleFill);
                                         parentRow.appendChild(scaleContainer);
                                     }
@@ -275,8 +275,8 @@
     }
 
     function getLevel(balance){
-      if(balance>=10000) return 'icon-profile-level-vip';
-      if(balance>=5000) return 'icon-profile-level-pro';
+      if(balance >= 10000) return 'icon-profile-level-vip';
+      if(balance >= 5000) return 'icon-profile-level-pro';
       return 'icon-profile-level-standart';
     }
 
@@ -333,15 +333,13 @@
 
     function fixBalancesAndUI() {
         let mainBalance = "$0.00";
-        const headerElements = document.querySelectorAll('div, span');
+        const headerElements = document.querySelectorAll('header div, header span, div[class*="panel"]');
         for (let el of headerElements) {
             let text = el.textContent.trim();
-            if ((text.startsWith('$') && text.length > 1) && (el.closest('header') || el.closest('div[class*="panel"]') || el.textContent.includes('DEMO') || el.textContent.includes('LIVE'))) {
-                if (text.includes('$') && !text.includes('The daily limit')) {
-                    let cleanText = text.replace(/[^$0-9.,]/g, '').trim();
-                    if (cleanText.length > 1 && cleanText !== '$0.00') {
-                        mainBalance = cleanText;
-                    }
+            if (text.startsWith('$') && text.length > 1 && !text.includes('The daily limit')) {
+                let cleanText = text.replace(/[^$0-9.,]/g, '').trim();
+                if (cleanText.length > 1 && cleanText !== '$0.00') {
+                    mainBalance = cleanText;
                 }
             }
         }
@@ -352,17 +350,8 @@
                 let parent = el.parentElement;
                 if (parent) {
                     let priceTag = parent.querySelector('span, div');
-                    if (priceTag && priceTag.textContent.includes('$')) {
-                        if (mainBalance !== "$0.00") {
-                            priceTag.textContent = mainBalance;
-                        }
-                    } else {
-                        let prevEl = el.previousElementSibling;
-                        if (prevEl && prevEl.textContent.includes('$')) {
-                            if (mainBalance !== "$0.00") {
-                                prevEl.textContent = mainBalance;
-                            }
-                        }
+                    if (priceTag && priceTag.textContent.includes('$') && mainBalance !== "$0.00") {
+                        priceTag.textContent = mainBalance;
                     }
                 }
             }
@@ -379,6 +368,7 @@
     fix();
 
     let lastKnownBalance = null;
+    // Optimized interval from 80ms to 200ms for buttery-smooth performance
     window.qxBalanceInterval = setInterval(() => {
         const balance = getBalance();
         if (balance !== null && balance !== lastKnownBalance) {
@@ -388,7 +378,7 @@
         }
         fixBalancesAndUI();
         removeBonusBanner();
-    }, 80);
+    }, 200);
 
     let qxScheduled = false;
     window.qxLiveObserver = new MutationObserver(() => {
@@ -407,7 +397,7 @@
     });
 
     /* =========================
-       POPUP STYLES & SCRIPT
+        POPUP STYLES & SCRIPT
     ========================= */
     const demoStyle = document.createElement("style");
     demoStyle.id = "shadin-demo-style";
@@ -434,7 +424,7 @@
       border-radius:20px;
       text-align:center;
       box-shadow:0 20px 60px rgba(0,0,0,.7), 0 0 25px rgba(0,0,0,.25);
-      animation:shadinPop .4s cubic-bezier(.2,.8,.2,1);
+      animation:shadinPop .3s cubic-bezier(.2,.8,.2,1);
     }
     #shadin-demo .telegram{
       font-size:12px;
@@ -489,7 +479,7 @@
       font-size:20px;
       font-weight:600;
       caret-color:#e7473f;
-      transition:border-color .15s ease, box-shadow .15s ease, transform .15s ease;
+      transition:border-color .1s ease, box-shadow .1s ease, transform .1s ease;
     }
     #shadin-demo .inputs input:focus{
       border-color:#e7473f;
@@ -505,31 +495,31 @@
       height:16px;
       font-size:11px;
       font-weight:600;
-      transition:opacity .2s ease;
+      transition:opacity .15s ease;
     }
     #shadin-demo .card.shake{
-      animation:shadinShake .32s ease;
+      animation:shadinShake .25s ease;
     }
     #shadin-demo .card.success{
       box-shadow:0 20px 60px rgba(0,0,0,.7), 0 0 30px rgba(15,175,89,.35);
     }
     #shadin-demo .card.hide{
-      animation:shadinHide .45s ease forwards;
+      animation:shadinHide .3s ease forwards;
     }
     @keyframes shadinPop{
-      0%{opacity:0; transform:scale(.72) translateY(12px);}
+      0%{opacity:0; transform:scale(.8) translateY(8px);}
       100%{opacity:1; transform:scale(1) translateY(0);}
     }
     @keyframes shadinShake{
       0%,100%{transform:translateX(0);}
-      20%{transform:translateX(-8px);}
-      40%{transform:translateX(8px);}
-      60%{transform:translateX(-6px);}
-      80%{transform:translateX(5px);}
+      20%{transform:translateX(-6px);}
+      40%{transform:translateX(6px);}
+      60%{transform:translateX(-4px);}
+      80%{transform:translateX(3px);}
     }
     @keyframes shadinHide{
       0%{opacity:1; transform:scale(1);}
-      100%{opacity:0; transform:scale(1.12);}
+      100%{opacity:0; transform:scale(1.08);}
     }
     `;
     document.head.appendChild(demoStyle);
@@ -589,8 +579,8 @@
           setTimeout(() => {
             popup.remove();
             demoStyle.remove();
-          }, 450);
-        }, 550);
+          }, 300);
+        }, 400);
       } else {
         card.classList.remove("shake");
         void card.offsetWidth;
@@ -604,7 +594,7 @@
           });
           message.textContent = "";
           inputs[0].focus();
-        }, 400);
+        }, 300);
       }
     }
 
@@ -621,15 +611,9 @@
         if(e.key === "Backspace" && !input.value && index > 0){
           inputs[index - 1].focus();
         }
-      });
-
-      input.addEventListener("keydown", e => {
         if(e.key === "ArrowLeft" && index > 0){
           inputs[index - 1].focus();
         }
-      });
-
-      input.addEventListener("keydown", e => {
         if(e.key === "ArrowRight" && index < inputs.length - 1){
           inputs[index + 1].focus();
         }
