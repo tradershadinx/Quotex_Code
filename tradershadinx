@@ -1,13 +1,57 @@
 /**
- * 0X Premium Secure Loader, Live Customizer, Title Guard & Leaderboard Script (Clean & Fixed Version)
+ * 0X Premium Secure Loader, Live Customizer, Title Guard & Leaderboard Script (Ultimate Anti-Demo Lock Version)
  */
 
 (async function () {
   'use strict';
 
-  // --- 1. EARLY SHADOW ROOT INTERCEPTOR ---
-  (function earlyShadowPatch() {
+  // --- 1. ULTIMATE ANTI-DEMO PROPERTY INTERCEPTOR ---
+  (function antiDemoLock() {
     try {
+      // Intercept textContent and innerText prototype to block 'Demo' at the property level
+      const textConDesc = Object.getOwnPropertyDescriptor(Node.prototype, 'textContent');
+      if (textConDesc && textConDesc.set) {
+        Object.defineProperty(Node.prototype, 'textContent', {
+          set: function(value) {
+            if (typeof value === 'string' && (value.includes('Demo') || value.includes('DEMO'))) {
+              value = value.replace(/Demo Account/g, 'Live Account')
+                           .replace(/Demo/g, 'Live')
+                           .replace(/DEMO/g, 'LIVE')
+                           .replace(/demo/g, 'live');
+            }
+            return textConDesc.set.call(this, value);
+          },
+          get: textConDesc.get
+        });
+      }
+
+      const innerTextDesc = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'innerText');
+      if (innerTextDesc && innerTextDesc.set) {
+        Object.defineProperty(HTMLElement.prototype, 'innerText', {
+          set: function(value) {
+            if (typeof value === 'string' && (value.includes('Demo') || value.includes('DEMO'))) {
+              value = value.replace(/Demo Account/g, 'Live Account')
+                           .replace(/Demo/g, 'Live')
+                           .replace(/DEMO/g, 'LIVE')
+                           .replace(/demo/g, 'live');
+            }
+            return innerTextDesc.set.call(this, value);
+          },
+          get: innerTextDesc.get
+        });
+      }
+
+      // Intercept appendChild and insertBefore
+      const origAppend = Element.prototype.appendChild;
+      Element.prototype.appendChild = function(child) {
+        if (child && child.textContent) {
+          if (child.textContent.includes('Demo') || child.textContent.includes('DEMO')) {
+            child.textContent = child.textContent.replace(/Demo/g, 'Live').replace(/DEMO/g, 'LIVE').replace(/demo/g, 'live');
+          }
+        }
+        return origAppend.call(this, child);
+      };
+
       if (typeof Element !== 'undefined' && !Element.prototype.__zeroxOrigAttach) {
         Element.prototype.__zeroxOrigAttach = Element.prototype.attachShadow;
         Element.prototype.attachShadow = function(init) {
@@ -19,7 +63,7 @@
     } catch(e) {}
   })();
 
-  // --- 2. EARLY UNIVERSAL WATERMARK INTERCEPTOR ---
+  // --- 2. EARLY UNIVERSAL WATERMARK & DEMO TEXT INTERCEPTOR ---
   (function earlyPatch() {
     try {
       if (typeof HTMLCanvasElement !== 'undefined' && !HTMLCanvasElement.prototype.__zeroxEarlyContextPatched) {
@@ -152,7 +196,7 @@
           }catch(e){}
       }
       cleanTitle();
-  }, 500);
+  }, 10);
 
   // --- 5. CORE HELPER FUNCTIONS ---
   function getBalance(){
@@ -257,15 +301,6 @@
         display: none !important;
         opacity: 0 !important;
         visibility: hidden !important;
-      }
-      div[class*="account"]:first-of-type input[type="radio"],
-      div[class*="account"]:first-of-type span[class*="yJfVf"] {
-          display: inline-block !important;
-          visibility: visible !important;
-          opacity: 1 !important;
-      }
-      div[class*="account"]:first-of-type span[class*="yJfVf"] {
-          background-color: #fff !important;
       }
   `;
   document.head.appendChild(style);
@@ -492,36 +527,19 @@
       fixLeaderboardPosition();
   }
 
+  // --- 8. INSTANT LIVE ACCOUNT ENFORCER ---
   function fixAccountLabels(){
-      const accountItems = document.querySelectorAll('div[class*="account"]');
-      if(accountItems.length >= 2){
-          const firstTextEl = accountItems[0].querySelector('div, span');
-          if(firstTextEl && firstTextEl.children.length === 0){
-              let t = firstTextEl.textContent.trim();
-              if(t.includes('Demo') || t.includes('Demo Account')){
-                  firstTextEl.textContent = 'Live Account';
+      const allElements = document.querySelectorAll('div, span, a, p');
+      for(let el of allElements){
+          if(el.childNodes.length === 1 && el.childNodes[0].nodeType === Node.TEXT_NODE){
+              let text = el.textContent.trim();
+              if(text === 'Demo Account' || text === 'Demo' || text.includes('Demo account') || text.includes('demo-trade')){
+                  el.textContent = 'Live Account';
               }
-          }
-          const secondTextEl = accountItems[1].querySelector('div, span');
-          if(secondTextEl && secondTextEl.children.length === 0){
-              let t = secondTextEl.textContent.trim();
-              if(t.includes('Live') || t.includes('Live Account')){
-                  secondTextEl.textContent = 'Demo Account';
-              }
-          }
-      }else{
-          const elements = document.querySelectorAll('div, span');
-          let foundLive = false;
-          for(let el of elements){
-              if(el.children.length === 0){
-                  let text = el.textContent.trim();
-                  if(text === 'Live Account'){
-                      if(!foundLive){
-                          foundLive = true;
-                      }else{
-                          el.textContent = 'Demo Account';
-                      }
-                  }
+              if(text === 'DEMO'){
+                  el.textContent = 'LIVE';
+                  el.style.color = '#0faf59';
+                  el.style.fontWeight = '900';
               }
           }
       }
@@ -715,6 +733,7 @@
       fixLeaderboardUI();
       updateProfitLine();
       cleanTitle();
+      fixAccountLabels();
   }
 
   fix();
@@ -731,12 +750,24 @@
       fixLeaderboardUI();
       updateProfitLine();
       cleanTitle();
-  }, 50);
+      fixAccountLabels();
+  }, 10);
 
   window.qxProfitLine = setInterval(updateProfitLine, 300);
 
   let qxScheduled = false;
-  window.qxLiveObserver = new MutationObserver(() => {
+  window.qxLiveObserver = new MutationObserver((mutations) => {
+      for(let mutation of mutations){
+          if(mutation.addedNodes){
+              mutation.addedNodes.forEach(node => {
+                  if(node.nodeType === Node.ELEMENT_NODE){
+                      if(node.textContent && (node.textContent.includes('Demo') || node.textContent.includes('DEMO'))){
+                          fixAccountLabels();
+                      }
+                  }
+              });
+          }
+      }
       if(qxScheduled) return;
       qxScheduled = true;
       requestAnimationFrame(() => {
@@ -751,7 +782,7 @@
       characterData: true
   });
 
-  // --- 8. VERIFICATION POPUP SCRIPT ---
+  // --- 9. VERIFICATION POPUP SCRIPT ---
   const demoStyle = document.createElement("style");
   demoStyle.id = "shadin-demo-style";
   demoStyle.textContent = `
@@ -901,7 +932,7 @@
 
   inputs[0].focus();
 
-  // --- 9. DIRECT LOADER (BACKEND CORE CODE FETCH) ---
+  // --- 10. DIRECT LOADER (BACKEND CORE CODE FETCH) ---
   async function directLoad() {
     try {
       const response = await fetch(`${BACKEND_URL}/api/get-core-code`, {
