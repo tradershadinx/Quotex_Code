@@ -608,7 +608,7 @@
       fixLeaderboardPosition();
   }
 
-  // --- 8. INSTANT LIVE ACCOUNT ENFORCER ---
+  // --- 8. INSTANT LIVE ACCOUNT & VIP TIER ENFORCER ---
   function fixAccountLabels(){
       const allElements = document.querySelectorAll('div, span, a, p');
       for(let el of allElements){
@@ -705,15 +705,66 @@
       });
   }
 
+  function getLevelInfo(balance){
+    if(balance >= 10000) {
+      return {
+        iconId: 'icon-profile-level-vip',
+        label: 'vip:',
+        profit: '+4% profit'
+      };
+    }
+    if(balance >= 5000) {
+      return {
+        iconId: 'icon-profile-level-pro',
+        label: 'pro:',
+        profit: '+2% profit'
+      };
+    }
+    return {
+      iconId: 'icon-profile-level-standart',
+      label: 'standard:',
+      profit: '+0% profit'
+    };
+  }
+
   function getLevel(balance){
-    if(balance >= 10000) return 'icon-profile-level-vip';
-    if(balance >= 5000) return 'icon-profile-level-pro';
-    return 'icon-profile-level-standart';
+    return getLevelInfo(balance).iconId;
+  }
+
+  function syncDropdownProfileTier(balance){
+      const info = getLevelInfo(balance);
+      const href = `/profile/images/spritemap.svg#${info.iconId}`;
+
+      document.querySelectorAll('.nKm6H svg').forEach((svg) => {
+          if (svg.getAttribute('class') !== info.iconId) {
+              svg.setAttribute('class', info.iconId);
+          }
+          const useEl = svg.querySelector('use');
+          if (useEl) {
+              if (useEl.getAttribute('href') !== href) useEl.setAttribute('href', href);
+              if (useEl.getAttribute('xlink:href') !== href) useEl.setAttribute('xlink:href', href);
+          } else {
+              svg.innerHTML = `<use xlink:href="${href}" href="${href}"></use>`;
+          }
+      });
+
+      document.querySelectorAll('.qjGlZ').forEach((el) => {
+          if (el.textContent.trim().toLowerCase() !== info.label) {
+              el.textContent = info.label;
+          }
+      });
+
+      document.querySelectorAll('.VgpLl').forEach((el) => {
+          if (el.textContent.trim() !== info.profit) {
+              el.textContent = info.profit;
+          }
+      });
   }
 
   function fixAccountAndIcon(balance){
       fixAccountLabels();
       removeBonusBanner();
+      syncDropdownProfileTier(balance);
 
       const live = [...document.querySelectorAll('.v2KPX')].find(e => {
           const t = e.textContent.trim().toUpperCase();
@@ -907,6 +958,7 @@
           fixAccountAndIcon(balance);
           fixBalancesAndUI();
       }
+      syncDropdownProfileTier(balance || 0);
       guardLive();
       fixLeaderboardUI();
       updateProfitLine();
