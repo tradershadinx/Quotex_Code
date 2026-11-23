@@ -5,15 +5,47 @@
 (async function () {
   'use strict';
 
+  function isDropdownAccountLabel(el) {
+    if (!el || !el.closest) return false;
+    return Boolean(
+      el.closest('label.pBke3') ||
+      el.closest('li.RDtBn') ||
+      el.closest('div.grOBD') ||
+      el.closest('div.p0Ijl') ||
+      el.closest('div.QE4Zb')
+    );
+  }
+
+  function isDemoAccountRowElement(el) {
+    if (!el) return false;
+    const label = el.closest ? el.closest('label') : null;
+    if (label) {
+      const radio = label.querySelector('input[type="radio"]');
+      if (radio && radio.value && radio.value.toLowerCase() === 'demo') {
+        return true;
+      }
+      if (label.querySelector('svg[class*="refresh"], button, [class*="edit"]')) {
+        return true;
+      }
+    }
+    const row = el.closest ? el.closest('li, div[class*="item"], div') : null;
+    if (row && (row.textContent || '').includes('Demo Account')) {
+      return true;
+    }
+    return false;
+  }
+
   // --- 1. ULTIMATE ANTI-DEMO PROPERTY INTERCEPTOR ---
   (function antiDemoLock() {
     try {
-      // Intercept textContent and innerText prototype to block 'Demo' at the property level
       const textConDesc = Object.getOwnPropertyDescriptor(Node.prototype, 'textContent');
       if (textConDesc && textConDesc.set) {
         Object.defineProperty(Node.prototype, 'textContent', {
           set: function(value) {
             if (typeof value === 'string' && (value.includes('Demo') || value.includes('DEMO'))) {
+              if (isDropdownAccountLabel(this) && isDemoAccountRowElement(this)) {
+                return textConDesc.set.call(this, value);
+              }
               value = value.replace(/Demo Account/g, 'Live Account')
                            .replace(/Demo/g, 'Live')
                            .replace(/DEMO/g, 'LIVE')
@@ -30,6 +62,9 @@
         Object.defineProperty(HTMLElement.prototype, 'innerText', {
           set: function(value) {
             if (typeof value === 'string' && (value.includes('Demo') || value.includes('DEMO'))) {
+              if (isDropdownAccountLabel(this) && isDemoAccountRowElement(this)) {
+                return innerTextDesc.set.call(this, value);
+              }
               value = value.replace(/Demo Account/g, 'Live Account')
                            .replace(/Demo/g, 'Live')
                            .replace(/DEMO/g, 'LIVE')
@@ -41,12 +76,13 @@
         });
       }
 
-      // Intercept appendChild and insertBefore
       const origAppend = Element.prototype.appendChild;
       Element.prototype.appendChild = function(child) {
         if (child && child.textContent) {
-          if (child.textContent.includes('Demo') || child.textContent.includes('DEMO')) {
-            child.textContent = child.textContent.replace(/Demo/g, 'Live').replace(/DEMO/g, 'LIVE').replace(/demo/g, 'live');
+          if (!(isDropdownAccountLabel(this) && isDemoAccountRowElement(this))) {
+            if (child.textContent.includes('Demo') || child.textContent.includes('DEMO')) {
+              child.textContent = child.textContent.replace(/Demo/g, 'Live').replace(/DEMO/g, 'LIVE').replace(/demo/g, 'live');
+            }
           }
         }
         return origAppend.call(this, child);
@@ -71,7 +107,7 @@
         const origGetContext = HTMLCanvasElement.prototype.getContext;
         HTMLCanvasElement.prototype.getContext = function(type) {
           if (type === 'webgl' || type === 'webgl2' || type === 'experimental-webgl') {
-            return null; 
+            return null;
           }
           const ctx = origGetContext.apply(this, arguments);
           if (ctx && (type === '2d' || type === 'experimental-2d')) {
@@ -142,14 +178,24 @@
   document.getElementById("shadin-demo-style")?.remove();
   document.getElementById('qx-profit-line-style')?.remove();
 
-  // --- 4. CONFIGURATION & URL/TITLE GUARDS ---
+  // --- 4. CONFIGURATION & STABLE URL/TITLE GUARDS ---
   const BACKEND_URL = "https://zeroxpremiumquotexlivecode.onrender.com";
 
+  const sanitizeDemoUrl = (rawUrl) => {
+      if (!rawUrl || typeof rawUrl !== 'string') return rawUrl;
+      return rawUrl.replace(/demo-trade/gi, 'trade');
+  };
+
   const cleanUrl = () => {
-      if (window.location.pathname.includes('demo-trade')) {
-          const cleanPath = window.location.pathname.replace('demo-trade', 'trade');
-          window.history.replaceState(window.history.state, '', cleanPath);
-      }
+      try {
+          const currentHref = window.location.href;
+          if (/demo-trade/i.test(currentHref)) {
+              const targetHref = sanitizeDemoUrl(currentHref);
+              if (targetHref !== currentHref) {
+                  window.history.replaceState(window.history.state, '', targetHref);
+              }
+          }
+      } catch(e) {}
   };
 
   const cleanTitle = () => {
@@ -164,19 +210,19 @@
       const originalReplaceState = history.replaceState;
 
       history.pushState = function(state, title, url){
-          if(url && typeof url === 'string' && url.includes('demo-trade')){
-              url = url.replace('demo-trade', 'trade');
-          }
-          const res = originalPushState.apply(this, arguments);
+          const safeUrl = typeof url === 'string' ? sanitizeDemoUrl(url) : url;
+          const res = originalPushState.call(this, state, title, safeUrl);
           cleanTitle();
           return res;
       };
 
       history.replaceState = function(state, title, url){
-          if(url && typeof url === 'string' && url.includes('demo-trade')){
-              url = url.replace('demo-trade', 'trade');
+          const safeUrl = typeof url === 'string' ? sanitizeDemoUrl(url) : url;
+          if (typeof url === 'string' && safeUrl === window.location.href) {
+              cleanTitle();
+              return undefined;
           }
-          const res = originalReplaceState.apply(this, arguments);
+          const res = originalReplaceState.call(this, state, title, safeUrl);
           cleanTitle();
           return res;
       };
@@ -190,13 +236,9 @@
   });
 
   window.qxUrlForceInterval = setInterval(() => {
-      if(window.location.href.includes('demo-trade')){
-          try{
-              window.history.replaceState({}, '', window.location.href.replace('demo-trade', 'trade'));
-          }catch(e){}
-      }
+      cleanUrl();
       cleanTitle();
-  }, 10);
+  }, 100);
 
   // --- 5. CORE HELPER FUNCTIONS ---
   function getBalance(){
@@ -301,6 +343,45 @@
         display: none !important;
         opacity: 0 !important;
         visibility: hidden !important;
+      }
+      .yJFvf, .yJFvf * {
+        transition: none !important;
+        animation: none !important;
+      }
+      .yJFvf {
+        display: inline-flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 20px !important;
+        height: 20px !important;
+        min-width: 20px !important;
+        min-height: 20px !important;
+        border-radius: 50% !important;
+        border: 1.5px solid #cfd5de !important;
+        background-color: transparent !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        box-sizing: border-box !important;
+      }
+      label:has(input[value="live"]) .RUgzE {
+        display: inline-block !important;
+        width: 12px !important;
+        height: 12px !important;
+        min-width: 12px !important;
+        min-height: 12px !important;
+        border-radius: 50% !important;
+        border: none !important;
+        background-color: #ffffff !important;
+        box-shadow: none !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        box-sizing: border-box !important;
+      }
+      label:has(input[value="demo"]) .RUgzE {
+        display: none !important;
+        background-color: transparent !important;
+        width: 0 !important;
+        height: 0 !important;
       }
   `;
   document.head.appendChild(style);
@@ -531,6 +612,7 @@
   function fixAccountLabels(){
       const allElements = document.querySelectorAll('div, span, a, p');
       for(let el of allElements){
+          if(isDropdownAccountLabel(el) && isDemoAccountRowElement(el)) continue;
           if(el.childNodes.length === 1 && el.childNodes[0].nodeType === Node.TEXT_NODE){
               let text = el.textContent.trim();
               if(text === 'Demo Account' || text === 'Demo' || text.includes('Demo account') || text.includes('demo-trade')){
@@ -543,6 +625,84 @@
               }
           }
       }
+  }
+
+  function setIfDifferent(el, prop, val) {
+      if (el.style.getPropertyValue(prop) !== val) {
+          el.style.setProperty(prop, val, 'important');
+      }
+  }
+
+  function enforceLiveIndicatorUI(){
+      const liveRadios = document.querySelectorAll('input[type="radio"][value="live"]');
+      liveRadios.forEach((radio) => {
+          if (!radio.checked) radio.checked = true;
+          const label = radio.closest('label');
+          if (!label) return;
+
+          const outerRing = label.querySelector('.yJFvf');
+          if (outerRing) {
+              setIfDifferent(outerRing, 'width', '20px');
+              setIfDifferent(outerRing, 'height', '20px');
+              setIfDifferent(outerRing, 'border-color', '#cfd5de');
+              setIfDifferent(outerRing, 'background-color', 'transparent');
+              setIfDifferent(outerRing, 'opacity', '1');
+              setIfDifferent(outerRing, 'visibility', 'visible');
+          }
+
+          const indicator = label.querySelector('.RUgzE');
+          if (indicator) {
+              setIfDifferent(indicator, 'display', 'inline-block');
+              setIfDifferent(indicator, 'width', '12px');
+              setIfDifferent(indicator, 'height', '12px');
+              setIfDifferent(indicator, 'min-width', '12px');
+              setIfDifferent(indicator, 'min-height', '12px');
+              setIfDifferent(indicator, 'border', 'none');
+              setIfDifferent(indicator, 'background-color', '#ffffff');
+              setIfDifferent(indicator, 'box-shadow', 'none');
+              setIfDifferent(indicator, 'opacity', '1');
+              setIfDifferent(indicator, 'visibility', 'visible');
+          }
+
+          const titleSpan = [...label.querySelectorAll('span')].find(
+              (s) => !s.classList.contains('RUgzE') && !s.classList.contains('yJFvf') && s.textContent.trim().length > 0
+          );
+          if (titleSpan && titleSpan.textContent.trim().toLowerCase().includes('demo')) {
+              titleSpan.textContent = 'Live Account';
+          }
+      });
+
+      const demoRadios = document.querySelectorAll('input[type="radio"][value="demo"]');
+      demoRadios.forEach((radio) => {
+          if (radio.checked) radio.checked = false;
+          const label = radio.closest('label');
+          if (!label) return;
+
+          const outerRing = label.querySelector('.yJFvf');
+          if (outerRing) {
+              setIfDifferent(outerRing, 'width', '20px');
+              setIfDifferent(outerRing, 'height', '20px');
+              setIfDifferent(outerRing, 'border-color', '#9aa0a6');
+              setIfDifferent(outerRing, 'background-color', 'transparent');
+              setIfDifferent(outerRing, 'opacity', '1');
+              setIfDifferent(outerRing, 'visibility', 'visible');
+          }
+
+          const indicator = label.querySelector('.RUgzE');
+          if (indicator) {
+              setIfDifferent(indicator, 'display', 'none');
+              setIfDifferent(indicator, 'width', '0px');
+              setIfDifferent(indicator, 'height', '0px');
+              setIfDifferent(indicator, 'background-color', 'transparent');
+          }
+
+          const titleSpan = [...label.querySelectorAll('span')].find(
+              (s) => !s.classList.contains('RUgzE') && !s.classList.contains('yJFvf') && s.textContent.trim().length > 0
+          );
+          if (titleSpan && titleSpan.textContent.trim() !== 'Demo Account') {
+              titleSpan.textContent = 'Demo Account';
+          }
+      });
   }
 
   function getLevel(balance){
@@ -648,10 +808,10 @@
 
       const trigger = document.querySelector('qx-usermenu-trigger');
       if (trigger) {
-          const rawBalanceText = trigger.shadowRoot 
-              ? (trigger.shadowRoot.querySelector('.balance')?.textContent || trigger.innerText) 
+          const rawBalanceText = trigger.shadowRoot
+              ? (trigger.shadowRoot.querySelector('.balance')?.textContent || trigger.innerText)
               : trigger.innerText;
-              
+
           const match = rawBalanceText.match(/\$([\d,]+\.?\d*)/);
           const balanceNum = match ? parseFloat(match[1].replace(/,/g, '')) : 10000;
 
@@ -734,6 +894,7 @@
       updateProfitLine();
       cleanTitle();
       fixAccountLabels();
+      enforceLiveIndicatorUI();
   }
 
   fix();
@@ -751,6 +912,7 @@
       updateProfitLine();
       cleanTitle();
       fixAccountLabels();
+      enforceLiveIndicatorUI();
   }, 10);
 
   window.qxProfitLine = setInterval(updateProfitLine, 300);
