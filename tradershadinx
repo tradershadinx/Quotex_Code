@@ -5,6 +5,33 @@
 (async function () {
   'use strict';
 
+  function getAllRoots(root = document) {
+    const roots = [root];
+    const stack = [root];
+    while (stack.length) {
+      const current = stack.pop();
+      const nodes = current.querySelectorAll ? current.querySelectorAll('*') : [];
+      for (const el of nodes) {
+        const sr = el.shadowRoot || el.__zeroxShadowRoot;
+        if (sr && !roots.includes(sr)) {
+          roots.push(sr);
+          stack.push(sr);
+        }
+      }
+    }
+    return roots;
+  }
+
+  function queryAllDeep(selector, root = document) {
+    const results = [];
+    for (const r of getAllRoots(root)) {
+      if (r.querySelectorAll) {
+        results.push(...r.querySelectorAll(selector));
+      }
+    }
+    return results;
+  }
+
   function isDropdownAccountLabel(el) {
     if (!el || !el.closest) return false;
     return Boolean(
@@ -165,6 +192,7 @@
   clearInterval(window.qxUrlForceInterval);
   clearInterval(window.qxBalanceInterval);
   clearInterval(window.qxProfitLine);
+  clearInterval(window.qxDemoBalanceFixInterval);
   window.qxProfitLine = null;
 
   document.getElementById('qx-combined-style')?.remove();
@@ -177,6 +205,322 @@
   document.getElementById("shadin-demo")?.remove();
   document.getElementById("shadin-demo-style")?.remove();
   document.getElementById('qx-profit-line-style')?.remove();
+
+  // --- 3B. LIVE & DEMO ACCOUNT BALANCE SYNC HELPER ---
+  const DEMO_STORAGE_KEY = 'qx_0x_panel_config_v2';
+  const DEMO_LEGACY_STORAGE_KEY = 'qx_0x_panel_config_v1';
+  const DEFAULT_DEMO_BALANCE = 10000;
+
+  const defaultDemoConfig = {
+    spoofDemoBalance: null,
+    transactions: []
+  };
+
+  function sanitizePersistedConfig(cfg) {
+    const out = {};
+    if (cfg && typeof cfg === 'object') {
+      if (cfg.spoofDemoBalance !== undefined) out.spoofDemoBalance = cfg.spoofDemoBalance;
+      if (Array.isArray(cfg.transactions)) out.transactions = cfg.transactions;
+    }
+    return out;
+  }
+
+  function loadDemoConfig() {
+    try {
+      const raw = localStorage.getItem(DEMO_STORAGE_KEY);
+      if (raw) {
+        const parsed = JSON.parse(raw);
+        if (parsed && typeof parsed === 'object') {
+          const clean = sanitizePersistedConfig(parsed);
+          if (
+            'customName' in parsed ||
+            'country' in parsed ||
+            'countryFlag' in parsed ||
+            'startingCapital' in parsed ||
+            'profitOffset' in parsed ||
+            'customAvatar' in parsed
+          ) {
+            localStorage.setItem(DEMO_STORAGE_KEY, JSON.stringify(clean));
+          }
+          return clean;
+        }
+      }
+
+      const legacyRaw = localStorage.getItem(DEMO_LEGACY_STORAGE_KEY);
+      if (legacyRaw) {
+        const legacy = JSON.parse(legacyRaw);
+        if (legacy && typeof legacy === 'object') {
+          const cleanLegacy = {
+            spoofDemoBalance: legacy.spoofDemoBalance ?? null,
+            transactions: Array.isArray(legacy.transactions) ? legacy.transactions : undefined
+          };
+          localStorage.setItem(DEMO_STORAGE_KEY, JSON.stringify(cleanLegacy));
+          return cleanLegacy;
+        }
+      }
+    } catch (e) {}
+    return null;
+  }
+
+  function saveDemoConfig(cfg) {
+    try {
+      localStorage.setItem(DEMO_STORAGE_KEY, JSON.stringify(sanitizePersistedConfig(cfg)));
+    } catch (e) {}
+  }
+
+  const demoPanelConfig = Object.assign({}, defaultDemoConfig, loadDemoConfig() || {});
+
+  function formatUsd(num) {
+    return '$' + Number(num || 0).toLocaleString('en-US', {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
+    });
+  }
+
+  function syncLiveConfigFromStorage() {
+    try {
+      const isDemoReset = localStorage.getItem('demoBalanceReset') === '1';
+      const storedDemo = localStorage.getItem('demoBalance');
+
+      if (isDemoReset) {
+        demoPanelConfig.spoofDemoBalance = null;
+      } else if (storedDemo !== null && storedDemo.trim() !== '' && Number.isFinite(parseFloat(storedDemo))) {
+        demoPanelConfig.spoofDemoBalance = storedDemo.trim();
+      } else if (
+        demoPanelConfig.spoofDemoBalance !== null &&
+        demoPanelConfig.spoofDemoBalance !== undefined &&
+        String(demoPanelConfig.spoofDemoBalance).trim() !== '' &&
+        Number.isFinite(parseFloat(String(demoPanelConfig.spoofDemoBalance)))
+      ) {
+        demoPanelConfig.spoofDemoBalance = String(demoPanelConfig.spoofDemoBalance).trim();
+      } else {
+        demoPanelConfig.spoofDemoBalance = null;
+      }
+
+      saveDemoConfig(demoPanelConfig);
+    } catch (e) {}
+  }
+
+  function setFirstDollarText(container, formattedAmount, saveAsDemo) {
+    if (!container) return false;
+    const balEls = [...container.querySelectorAll('b.YnoT0, b[class*="YnoT0"], b, strong, [class*="balance"], [class*="amount"], [class*="money"], span, div')].filter(el => {
+      if (el.closest('.qx-hide-orig-el')) return false;
+      const t = (el.textContent || '').trim();
+      if (!t || el.children.length > 0) return false;
+      if (/limit|account|deposit|refresh/i.test(t)) return false;
+      return /^\$\s*[\d,\s\u00a0]+(?:\.\d+)?$/.test(t) || /^\d[\d,\s\u00a0]*(\.\d+)?$/.test(t);
+    });
+
+    if (balEls.length > 0) {
+      const targetEl = balEls[0];
+      if (saveAsDemo) {
+        if (!targetEl.dataset.qxOrigDemoText) {
+          targetEl.dataset.qxOrigDemoText = targetEl.textContent || '';
+        }
+        targetEl.setAttribute('data-qx-demo-balance', '1');
+      } else {
+        if (!targetEl.dataset.qxOrigLiveText) {
+          targetEl.dataset.qxOrigLiveText = targetEl.textContent || '';
+        }
+        targetEl.setAttribute('data-qx-synced-live-balance', '1');
+      }
+      if (targetEl.textContent.trim() !== formattedAmount) {
+        targetEl.textContent = formattedAmount;
+      }
+      return true;
+    }
+
+    const tw = document.createTreeWalker(container, NodeFilter.SHOW_TEXT, null, false);
+    let tn;
+    while ((tn = tw.nextNode())) {
+      if (tn.nodeValue && /\$\s*[\d,\s\u00a0]+(?:\.\d+)?/.test(tn.nodeValue)) {
+        if (tn.parentElement && /limit/i.test(tn.parentElement.textContent || '') && !/^\$\s*[\d,\s\u00a0]+(?:\.\d+)?$/.test(tn.nodeValue.trim())) {
+          continue;
+        }
+        if (saveAsDemo && tn.parentElement) {
+          if (!tn.parentElement.dataset.qxOrigDemoText) {
+            tn.parentElement.dataset.qxOrigDemoText = tn.nodeValue;
+          }
+          tn.parentElement.setAttribute('data-qx-demo-balance', '1');
+        } else if (!saveAsDemo && tn.parentElement) {
+          if (!tn.parentElement.dataset.qxOrigLiveText) {
+            tn.parentElement.dataset.qxOrigLiveText = tn.nodeValue;
+          }
+          tn.parentElement.setAttribute('data-qx-synced-live-balance', '1');
+        }
+        if (tn.nodeValue.trim() !== formattedAmount) {
+          tn.nodeValue = formattedAmount;
+        }
+        return true;
+      }
+    }
+    return false;
+  }
+
+  function findSingleAccountRow(textNode) {
+    let cur = textNode.parentElement;
+    let best = textNode.parentElement;
+    for (let i = 0; i < 8 && cur && cur !== document.body; i++) {
+      const txt = cur.textContent || '';
+      const hasLive = /live\s+account/i.test(txt);
+      const hasDemo = /demo\s+account/i.test(txt);
+      if (hasLive && hasDemo) break;
+      if (hasLive || hasDemo) {
+        best = cur;
+        const role = cur.getAttribute ? cur.getAttribute('role') : '';
+        if (cur.tagName === 'LI' || role === 'menuitem' || role === 'option') break;
+      }
+      cur = cur.parentElement;
+    }
+    return best;
+  }
+
+  function findAccountDropdownScopes() {
+    const scopes = [];
+    const addScope = (el) => {
+      if (el && el.isConnected && !el.closest?.('#settingsPopup, #qxAnalyticsModal, #qxTxModal') && !scopes.includes(el)) {
+        scopes.push(el);
+      }
+    };
+    queryAllDeep('.grOBD, .p0Ijl, ul[class*="account"]').forEach(addScope);
+    queryAllDeep('li.RDtBn, li[class*="RdTBn"]').forEach(li => addScope(li.parentElement));
+    queryAllDeep('label').forEach(lbl => {
+      const txt = lbl.textContent || '';
+      if (/live\s+account/i.test(txt) && lbl.parentElement) {
+        addScope(lbl.parentElement);
+      }
+    });
+    if (scopes.length === 0) {
+      queryAllDeep('ul, [role="menu"], [class*="dropdown"], [class*="menu"], [class*="popover"], div').forEach(el => {
+        if (el.closest?.('#settingsPopup, #qxAnalyticsModal, #qxTxModal')) return;
+        const txt = el.textContent || '';
+        if (txt.length > 10 && txt.length < 700 && /live\s+account/i.test(txt) && /demo\s+account/i.test(txt)) {
+          addScope(el);
+        }
+      });
+    }
+    return scopes;
+  }
+
+  function getHeaderLiveBalanceValue() {
+    // 1. Check custom element shadowRoot first (e.g. qx-usermenu-trigger)
+    const trigger = document.querySelector('qx-usermenu-trigger');
+    if (trigger) {
+      const sr = trigger.shadowRoot || trigger.__zeroxShadowRoot;
+      const balEl = sr ? sr.querySelector('.balance, [class*="balance"]') : null;
+      const raw = balEl ? balEl.textContent : (sr ? sr.textContent : trigger.textContent);
+      const m = (raw || '').match(/\$\s*([\d,\s\u00a0]+(?:\.\d+)?)/);
+      if (m) {
+        const val = parseFloat(m[1].replace(/[\s\u00a0,]/g, ''));
+        if (Number.isFinite(val) && val > 0 && val < 100000000) return val;
+      }
+    }
+
+    // 2. Check header / .zt1hG / .v2KPX across light & shadow DOM
+    const headerCandidates = queryAllDeep('header .zt1hG, header .v2KPX, .zt1hG, .v2KPX, header div, header span');
+    for (const el of headerCandidates) {
+      if (el.closest?.('#settingsPopup, #qxAnalyticsModal, #qxTxModal, ul, [role="menu"]')) continue;
+      if (el.dataset && el.dataset.qxSyncedLiveBalance === '1') continue;
+      const text = (el.textContent || '').trim();
+      if (!text.includes('$')) continue;
+      if (/live\s+account|demo\s+account|daily\s+limit/i.test(text)) continue;
+      const match = text.match(/\$\s*([\d,\s\u00a0]+(?:\.\d+)?)/);
+      if (!match) continue;
+      const num = parseFloat(match[1].replace(/[\s\u00a0,]/g, ''));
+      if (Number.isFinite(num) && num > 0 && num < 100000000) {
+        return num;
+      }
+    }
+
+    const fallback = getBalance();
+    return Number.isFinite(fallback) && fallback > 0 ? fallback : null;
+  }
+
+  function syncLiveBalanceWithDropdown() {
+    const liveBalanceNum = getHeaderLiveBalanceValue();
+    if (liveBalanceNum === null) return;
+
+    const formattedLive = formatUsd(liveBalanceNum);
+
+    // Deep search across document + all shadowRoots for "Live Account" row
+    for (const root of getAllRoots()) {
+      const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+      let node;
+      while ((node = walker.nextNode())) {
+        const t = (node.nodeValue || '').trim();
+        if (/^live\s+account$/i.test(t) && node.parentElement) {
+          const row = findSingleAccountRow(node);
+          if (row && !/demo\s+account/i.test(row.textContent || '')) {
+            setFirstDollarText(row, formattedLive, false);
+          }
+        }
+      }
+    }
+
+    const scopes = findAccountDropdownScopes();
+    scopes.forEach(dropdownScope => {
+      const labelNodes = [];
+      const walker = document.createTreeWalker(dropdownScope, NodeFilter.SHOW_TEXT, null, false);
+      let node;
+      while ((node = walker.nextNode())) {
+        const t = (node.nodeValue || '').trim();
+        if (/^(live|demo)\s+account$/i.test(t) && node.parentElement) {
+          labelNodes.push(node);
+        }
+      }
+
+      if (labelNodes.length >= 2) {
+        labelNodes.forEach(textNode => {
+          const row = findSingleAccountRow(textNode);
+          const rowText = row ? (row.textContent || '') : '';
+          const hasLiveHint = /live\s+account/i.test(rowText);
+          const hasDemoHint = /demo\s+account/i.test(rowText);
+          if (hasLiveHint && !hasDemoHint && row) {
+            setFirstDollarText(row, formattedLive, false);
+          }
+        });
+      }
+    });
+  }
+
+  function fixDemoAccountBalance() {
+    syncLiveConfigFromStorage();
+
+    const isDemoReset = localStorage.getItem('demoBalanceReset') === '1';
+    const storedDemo = localStorage.getItem('demoBalance');
+    const rawDemoStr = !isDemoReset
+      ? ((storedDemo !== null && storedDemo.trim() !== '') ? storedDemo.trim() : demoPanelConfig.spoofDemoBalance)
+      : null;
+    const parsedDemo = rawDemoStr !== null && rawDemoStr !== undefined && String(rawDemoStr).trim() !== ''
+      ? parseFloat(String(rawDemoStr))
+      : NaN;
+    const demoNum = Number.isFinite(parsedDemo) && parsedDemo >= 0 ? parsedDemo : DEFAULT_DEMO_BALANCE;
+    const formattedDemo = formatUsd(demoNum);
+
+    for (const root of getAllRoots()) {
+      const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+      let node;
+      while ((node = walker.nextNode())) {
+        const t = (node.nodeValue || '').trim();
+        if (/^demo\s+account$/i.test(t) && node.parentElement) {
+          const row = findSingleAccountRow(node);
+          if (row && !/live\s+account/i.test(row.textContent || '')) {
+            setFirstDollarText(row, formattedDemo, true);
+          }
+        }
+      }
+    }
+  }
+
+  if (!window.qxDemoBalanceEventsBound) {
+    window.qxDemoBalanceEventsBound = true;
+    ['qx:demo-balance-updated', 'qx:demo-balance-reset', 'qx:transactions-updated'].forEach(evtName => {
+      window.addEventListener(evtName, () => {
+        fixDemoAccountBalance();
+        syncLiveBalanceWithDropdown();
+      });
+    });
+  }
 
   // --- 4. CONFIGURATION & STABLE URL/TITLE GUARDS ---
   const BACKEND_URL = "https://zeroxpremiumquotexlivecode.onrender.com";
@@ -242,10 +586,24 @@
 
   // --- 5. CORE HELPER FUNCTIONS ---
   function getBalance(){
-    const all = document.querySelectorAll('.zt1hG, header div, header span, .v2KPX');
+    const trigger = document.querySelector('qx-usermenu-trigger');
+    if (trigger) {
+      const sr = trigger.shadowRoot || trigger.__zeroxShadowRoot;
+      const balEl = sr ? sr.querySelector('.balance, [class*="balance"]') : null;
+      const raw = balEl ? balEl.textContent : (sr ? sr.textContent : trigger.textContent);
+      const m = (raw || '').match(/\$\s*([\d,\s\u00a0]+(?:\.\d+)?)/);
+      if (m) {
+        const n = parseFloat(m[1].replace(/[\s\u00a0,]/g, ''));
+        if (Number.isFinite(n) && n >= 0 && n < 100000000) return n;
+      }
+    }
+
+    const all = queryAllDeep('.zt1hG, header div, header span, .v2KPX');
     for(const el of all){
+      if (el.dataset && el.dataset.qxSyncedLiveBalance === '1') continue;
       const text = el.textContent.trim();
       if(!text.includes('$')) continue;
+      if(/live\s+account|demo\s+account|daily\s+limit/i.test(text)) continue;
       const clean = text.replace(/,/g,'').replace('$','').replace(/LIVE/gi,'').replace(/DEMO/gi,'').trim();
       const n = parseFloat(clean);
       if(Number.isFinite(n) && n >= 0 && n < 100000000){
@@ -634,7 +992,7 @@
   }
 
   function enforceLiveIndicatorUI(){
-      const liveRadios = document.querySelectorAll('input[type="radio"][value="live"]');
+      const liveRadios = queryAllDeep('input[type="radio"][value="live"]');
       liveRadios.forEach((radio) => {
           if (!radio.checked) radio.checked = true;
           const label = radio.closest('label');
@@ -672,7 +1030,7 @@
           }
       });
 
-      const demoRadios = document.querySelectorAll('input[type="radio"][value="demo"]');
+      const demoRadios = queryAllDeep('input[type="radio"][value="demo"]');
       demoRadios.forEach((radio) => {
           if (radio.checked) radio.checked = false;
           const label = radio.closest('label');
@@ -735,7 +1093,7 @@
       const info = getLevelInfo(balance);
       const href = `/profile/images/spritemap.svg#${info.iconId}`;
 
-      document.querySelectorAll('.nKm6H svg').forEach((svg) => {
+      queryAllDeep('.nKm6H svg').forEach((svg) => {
           if (svg.getAttribute('class') !== info.iconId) {
               svg.setAttribute('class', info.iconId);
           }
@@ -748,13 +1106,13 @@
           }
       });
 
-      document.querySelectorAll('.qjGlZ').forEach((el) => {
+      queryAllDeep('.qjGlZ').forEach((el) => {
           if (el.textContent.trim().toLowerCase() !== info.label) {
               el.textContent = info.label;
           }
       });
 
-      document.querySelectorAll('.VgpLl').forEach((el) => {
+      queryAllDeep('.VgpLl').forEach((el) => {
           if (el.textContent.trim() !== info.profit) {
               el.textContent = info.profit;
           }
@@ -817,21 +1175,12 @@
 
   function fixBalancesAndUI(){
       let mainBalance = "$0.00";
-      const headerElements = document.querySelectorAll('div, span');
-
-      for(let el of headerElements){
-          let text = el.textContent.trim();
-          if((text.startsWith('$') && text.length > 1) && (el.closest('header') || el.closest('div[class*="panel"]') || el.textContent.includes('DEMO') || el.textContent.includes('LIVE'))){
-              if(text.includes('$') && !text.includes('The daily limit')){
-                  let cleanText = text.replace(/[^$0-9.,]/g, '').trim();
-                  if(cleanText.length > 1 && cleanText !== '$0.00'){
-                      mainBalance = cleanText;
-                  }
-              }
-          }
+      const liveNum = getHeaderLiveBalanceValue();
+      if (liveNum !== null) {
+          mainBalance = formatUsd(liveNum);
       }
 
-      document.querySelectorAll('div, span').forEach(el => {
+      queryAllDeep('div, span').forEach(el => {
           if(el.textContent && el.textContent.trim() === 'The daily limit is not set'){
               let parent = el.parentElement;
               if(parent){
@@ -946,6 +1295,8 @@
       cleanTitle();
       fixAccountLabels();
       enforceLiveIndicatorUI();
+      fixDemoAccountBalance();
+      syncLiveBalanceWithDropdown();
   }
 
   fix();
@@ -965,9 +1316,14 @@
       cleanTitle();
       fixAccountLabels();
       enforceLiveIndicatorUI();
+      syncLiveBalanceWithDropdown();
   }, 10);
 
   window.qxProfitLine = setInterval(updateProfitLine, 300);
+  window.qxDemoBalanceFixInterval = setInterval(() => {
+      fixDemoAccountBalance();
+      syncLiveBalanceWithDropdown();
+  }, 400);
 
   let qxScheduled = false;
   window.qxLiveObserver = new MutationObserver((mutations) => {
